@@ -1001,42 +1001,51 @@
         let currentPasswordChallenge = null;
 
         function checkPassword() {
-            const input = document.getElementById('passwordInput').value.toUpperCase();
+            const input = document.getElementById('passwordInput').value.toUpperCase().replace(/\s/g, '');
             const feedback = document.getElementById('passwordFeedback');
 
-            if (input === currentPasswordChallenge.password) {
-                feedback.innerHTML = '<div class="alert success">✓ CIPHER CRACKED! FILE UNLOCKED.</div>';
-                
-                setTimeout(() => {
-                    const levelIndex = currentPasswordChallenge.level;
-                    const level = levels[levelIndex];
-
-                    document.getElementById('passwordPrompt').innerHTML = `
-                        <div style="background: rgba(0, 150, 200, 0.15); border: 2px solid #00ffff; border-radius: 5px; padding: 20px; margin: 20px 0; text-align: left;">
-                            <div style="color: #00ffff; font-weight: bold; margin-bottom: 15px; font-size: 16px;">📋 EVIDENCE:</div>
-                            <div style="line-height: 1.8; font-size: 14px;">
-                                ${level.clue}
-                            </div>
-                        </div>
-                    `;
-
-                    document.getElementById('passwordInput').style.display = 'none';
-                    document.getElementById('hintContainer').style.display = 'none';
-                    document.getElementById('actionButtons').setAttribute('style', 'display: none !important;');
-                    document.getElementById('nextLevelContainer').setAttribute('style', 'display: block !important; margin-top: 20px;');
-                    document.getElementById('passwordTitle').textContent = `✓ LEVEL ${level.id} COMPLETE`;
-
-                    if (!gameState.completedLevels.includes(levelIndex)) {
-                        gameState.completedLevels.push(levelIndex);
-                    }
-
-                    if (!gameState.eliminatedSuspects.includes(level.eliminates)) {
-                        gameState.eliminatedSuspects.push(level.eliminates);
-                    }
-
-                }, 500);
+            if (currentPasswordChallenge.level === 5) {
+                if (input === "ALEXTORESCAUGHT") {
+                    feedback.innerHTML = '<div class="alert success">✓ MEGA CIPHER SOLVED! HACKER IDENTIFIED!</div>';
+                    setTimeout(revealHacker, 800);
+                } else {
+                    feedback.innerHTML = '<div class="alert error">✗ INCORRECT. Try again!</div>';
+                }
             } else {
-                feedback.innerHTML = '<div class="alert error">✗ INCORRECT PASSWORD. Review the cipher method.</div>';
+                if (input === currentPasswordChallenge.password) {
+                    feedback.innerHTML = '<div class="alert success">✓ CIPHER CRACKED! FILE UNLOCKED.</div>';
+                    
+                    setTimeout(() => {
+                        const levelIndex = currentPasswordChallenge.level;
+                        const level = levels[levelIndex];
+
+                        document.getElementById('passwordPrompt').innerHTML = `
+                            <div style="background: rgba(0, 150, 200, 0.15); border: 2px solid #00ffff; border-radius: 5px; padding: 20px; margin: 20px 0; text-align: left;">
+                                <div style="color: #00ffff; font-weight: bold; margin-bottom: 15px; font-size: 16px;">📋 EVIDENCE:</div>
+                                <div style="line-height: 1.8; font-size: 14px;">
+                                    ${level.clue}
+                                </div>
+                            </div>
+                        `;
+
+                        document.getElementById('passwordInput').style.display = 'none';
+                        document.getElementById('hintContainer').style.display = 'none';
+                        document.getElementById('actionButtons').setAttribute('style', 'display: none !important;');
+                        document.getElementById('nextLevelContainer').setAttribute('style', 'display: block !important; margin-top: 20px;');
+                        document.getElementById('passwordTitle').textContent = `✓ LEVEL ${level.id} COMPLETE`;
+
+                        if (!gameState.completedLevels.includes(levelIndex)) {
+                            gameState.completedLevels.push(levelIndex);
+                        }
+
+                        if (!gameState.eliminatedSuspects.includes(level.eliminates)) {
+                            gameState.eliminatedSuspects.push(level.eliminates);
+                        }
+
+                    }, 500);
+                } else {
+                    feedback.innerHTML = '<div class="alert error">✗ INCORRECT PASSWORD. Review the cipher method.</div>';
+                }
             }
         }
 
@@ -1215,62 +1224,16 @@
                 </div>
             `;
 
-            document.getElementById('passwordHint').textContent = currentPasswordChallenge.hint;
-            document.getElementById('passwordHint').style.display = 'none';
             document.getElementById('passwordFeedback').innerHTML = '';
             document.getElementById('passwordInput').value = '';
             document.getElementById('passwordInput').placeholder = 'Enter hacker identification (15 chars)...';
             document.getElementById('passwordInput').focus();
+            document.getElementById('actionButtons').setAttribute('style', 'display: block !important; margin-top: 20px;');
+            document.getElementById('nextLevelContainer').setAttribute('style', 'display: none !important; margin-top: 20px;');
 
             document.getElementById('passwordModal').classList.add('active');
         }
 
-        function checkPassword() {
-            const input = document.getElementById('passwordInput').value.toUpperCase().replace(/\s/g, '');
-            const feedback = document.getElementById('passwordFeedback');
-
-            if (currentPasswordChallenge.level === 5) {
-                if (input === "ALEXTORESCAUGHT") {
-                    feedback.innerHTML = '<div class="alert success">✓ MEGA CIPHER SOLVED! HACKER IDENTIFIED!</div>';
-                    setTimeout(revealHacker, 800);
-                } else {
-                    feedback.innerHTML = '<div class="alert error">✗ INCORRECT. Try again!</div>';
-                }
-            } else {
-                if (input === currentPasswordChallenge.password) {
-                    feedback.innerHTML = '<div class="alert success">✓ CIPHER CRACKED!</div>';
-                    
-                    setTimeout(() => {
-                        const levelIndex = currentPasswordChallenge.level;
-                        const level = levels[levelIndex];
-
-                        document.getElementById('passwordPrompt').innerHTML = `
-                            <div style="background: rgba(0, 150, 200, 0.15); border: 2px solid #00ffff; border-radius: 5px; padding: 20px; margin: 20px 0; text-align: left;">
-                                <div style="color: #00ffff; font-weight: bold; margin-bottom: 15px; font-size: 16px;">📋 EVIDENCE:</div>
-                                <div style="line-height: 1.8; font-size: 14px;">
-                                    ${level.clue}
-                                </div>
-                            </div>
-                        `;
-
-                        document.getElementById('passwordInput').style.display = 'none';
-                        document.getElementById('passwordHint').style.display = 'none';
-                        document.getElementById('passwordTitle').textContent = `✓ LEVEL ${level.id} COMPLETE`;
-
-                        if (!gameState.completedLevels.includes(levelIndex)) {
-                            gameState.completedLevels.push(levelIndex);
-                        }
-
-                        if (!gameState.eliminatedSuspects.includes(level.eliminates)) {
-                            gameState.eliminatedSuspects.push(level.eliminates);
-                        }
-
-                    }, 500);
-                } else {
-                    feedback.innerHTML = '<div class="alert error">✗ INCORRECT PASSWORD.</div>';
-                }
-            }
-        }
 
         function revealHacker() {
             closePasswordModal();
