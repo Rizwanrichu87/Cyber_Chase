@@ -16,13 +16,13 @@ Your mission is to:
 ## 🚀 How to Play
 
 1. Clone or download this repository.
-2. Open `ServerHackMystery.html` in any modern web browser.
+2. Open `index.html` in any modern web browser.
 3. Use the navigation menu to review the breach timeline, inspect suspects, and access the cipher decryption levels.
 4. Good luck, detective!
 
 ## 📁 Repository Contents
 
-- `ServerHackMystery.html`: The main playable game file (HTML/CSS/JS).
+- `index.html`: The main playable game file (HTML/CSS/JS).
 - `GAME_GUIDE_AND_SOLUTIONS.txt`: A walkthrough of the game with all cipher solutions.
 - `GAME_STRUCTURE_AND_FLOWCHART.txt`: Developer notes on the game's logic and design.
 - `INSTRUCTIONS.txt`: General context about the challenges.
