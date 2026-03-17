@@ -34,11 +34,12 @@
         }
 
         .typing-text {
-            overflow: hidden;
+            display: inline-block;
+            text-align: left;
             border-right: 2px solid #00ff00;
             white-space: pre-wrap;
             word-wrap: break-word;
-            animation: typing 2.5s steps(40, end), blink 0.75s step-end infinite;
+            animation: blink 0.75s step-end infinite;
         }
 
         .header-bar {
@@ -485,15 +486,10 @@
     <div class="modal active" id="introModal">
         <div class="modal-content">
             <div class="modal-title">⚠ CRITICAL BREACH DETECTED ⚠</div>
-            <div class="modal-text">
-                <div class="typing-text">Your company's main server has been compromised.
-A sophisticated attacker has infiltrated your network.
-You have 5 suspects. ONE of them is the hacker.
-Your mission: Crack ciphers and find the truth.
-WARNING: The attacker's identity remains UNKNOWN.
-Solve the final mega cipher to reveal who they are.</div>
+            <div class="modal-text" style="min-height: 180px;">
+                <div class="typing-text" id="introTextContainer"></div>
             </div>
-            <button class="btn" onclick="startGame()" style="margin-top: 30px; font-size: 16px;">▶ BEGIN INVESTIGATION</button>
+            <button class="btn" id="startBtn" onclick="startGame()" style="margin-top: 30px; font-size: 16px; display: none;">▶ BEGIN INVESTIGATION</button>
         </div>
     </div>
 
@@ -515,6 +511,40 @@ Solve the final mega cipher to reveal who they are.</div>
     </div>
 
     <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const introLines = [
+                "Your company's main server has been compromised.",
+                "A sophisticated attacker has infiltrated your network.",
+                "You have 5 suspects. ONE of them is the hacker.",
+                "Your mission: Crack ciphers and find the truth.",
+                "WARNING: The attacker's identity remains UNKNOWN.",
+                "Solve the final mega cipher to reveal who they are."
+            ];
+            
+            const container = document.getElementById("introTextContainer");
+            const btn = document.getElementById("startBtn");
+            let currentLine = 0;
+            let currentWord = 0;
+            let words = introLines[currentLine].split(" ");
+            
+            const typeInterval = setInterval(() => {
+                if (currentWord < words.length) {
+                    container.textContent += (currentWord === 0 ? "" : " ") + words[currentWord];
+                    currentWord++;
+                } else {
+                    currentLine++;
+                    if (currentLine < introLines.length) {
+                        words = introLines[currentLine].split(" ");
+                        currentWord = 0;
+                        container.textContent += "\n";
+                    } else {
+                        clearInterval(typeInterval);
+                        btn.style.display = "inline-block";
+                    }
+                }
+            }, 100);
+        });
+
         const gameState = {
             currentLevel: 0,
             completedLevels: [],
