@@ -500,11 +500,17 @@
             <div id="passwordPrompt" class="modal-text"></div>
             <div id="cipherInfo"></div>
             <input type="text" class="password-input" id="passwordInput" placeholder="Enter decrypted password...">
-            <div class="password-hint" id="passwordHint" style="display: none;"></div>
-            <div>
+            <div id="hintContainer" style="display: none; margin-top: 20px; padding: 15px; border: 1px solid #ffa500; border-radius: 3px; background: rgba(255, 165, 0, 0.05); text-align: left;">
+                <div style="color: #ffa500; font-weight: bold; margin-bottom: 10px;">⚠ ADMIN AUTHENTICATION REQUIRED FOR HINTS ⚠</div>
+                <input type="text" class="password-input" id="adminPasswordInput" placeholder="Enter Admin Password..." style="border-color: #ffa500; color: #ffa500; margin-top: 0; margin-bottom: 10px;">
+                <button class="btn" onclick="unlockHint()" style="background: rgba(255, 165, 0, 0.1); border: 2px solid #ffa500; color: #ffa500; width: 100%; margin: 0;">UNLOCK NEXT HINT</button>
+                <div id="adminFeedback" style="color: #ff0000; margin-top: 10px; font-size: 14px;"></div>
+                <div id="hintTextDisplay" style="margin-top: 15px;"></div>
+            </div>
+            <div style="margin-top: 20px;">
                 <button class="btn" onclick="checkPassword()">DECRYPT</button>
                 <button class="btn" onclick="closePasswordModal()">CANCEL</button>
-                <button class="btn" onclick="toggleHint()" style="background: rgba(255, 165, 0, 0.1); border: 2px solid #ffa500; color: #ffa500;">HINT</button>
+                <button class="btn" onclick="toggleHint()" style="background: rgba(255, 165, 0, 0.1); border: 2px solid #ffa500; color: #ffa500;">HINTS</button>
             </div>
             <div id="passwordFeedback" style="margin-top: 15px; min-height: 30px;"></div>
         </div>
@@ -612,8 +618,9 @@
                 cipherText: "CEBTBPBY47",
                 cipherType: "ROT13",
                 password: "PROTOCOL47",
-                hint: "ROT13: Each letter shifts 13 positions forward.",
-                hint2: "SSH protocol + breach minute (47) = PROTOCOL47",
+                hint1: "ROT13: Each letter shifts 13 positions forward.",
+                hint2: "The SSH protocol is related to the password.",
+                hint3: "SSH protocol + breach minute (47) = PROTOCOL47",
                 clue: "Irregular IP found accessing from outside. Marcus Chen VPN login at breach time. But fitness tracker shows gym visit. MARCUS CHEN CLEARED.",
                 suspect: 0,
                 eliminates: 0,
@@ -627,8 +634,9 @@
                 cipherText: "PCXMFNRD2024",
                 cipherType: "Caesar (Shift 5)",
                 password: "EXCHANGE2024",
-                hint: "Caesar Cipher: Try shifts 1-25 until it makes sense.",
-                hint2: "Microsoft email software + 2024 = EXCHANGE2024",
+                hint1: "Caesar Cipher: Try shifts 1-25 until it makes sense.",
+                hint2: "It relates to an email server software and the year 2024.",
+                hint3: "Microsoft email software + 2024 = EXCHANGE2024",
                 clue: "Paula Rodriguez out-of-office: Brazil vacation. Visa stamps confirm. Airline records verify. PAULA RODRIGUEZ CLEARED.",
                 suspect: 1,
                 eliminates: 1,
@@ -642,8 +650,9 @@
                 cipherText: "PVIRXOB64BRM",
                 cipherType: "Atbash (A↔Z, B↔Y)",
                 password: "KERNEL64BIT",
-                hint: "Atbash Cipher: Each letter maps backward in alphabet.",
-                hint2: "Operating system kernel + 64-bit architecture",
+                hint1: "Atbash Cipher: Each letter maps backward in alphabet.",
+                hint2: "It refers to the operating system core and its architecture.",
+                hint3: "Operating system kernel + 64-bit architecture = KERNEL64BIT",
                 clue: "Commands from Devon Patel's workstation. But cellular data shows LAX Airport. TSA confirms flight at 2:30 AM (before breach). DEVON PATEL CLEARED.",
                 suspect: 2,
                 eliminates: 2,
@@ -657,8 +666,9 @@
                 cipherText: "FMTMO443YJM",
                 cipherType: "Vigenère (Key: FIREWALL)",
                 password: "TCPIP443SSL",
-                hint: "Vigenère Cipher: Uses a keyword to encrypt/decrypt.",
-                hint2: "TCP/IP + port 443 + SSL/TLS encryption",
+                hint1: "Vigenère Cipher: Uses a keyword to encrypt/decrypt.",
+                hint2: "The keyword is FIREWALL. Think of networking protocols.",
+                hint3: "TCP/IP + port 443 + SSL/TLS encryption = TCPIP443SSL",
                 clue: "Breach from internal network. Iris Wagner present 12 hours continuously. 8 witnesses confirm. IRIS WAGNER CLEARED.",
                 suspect: 3,
                 eliminates: 3,
@@ -897,8 +907,8 @@
             currentPasswordChallenge = {
                 level: levelIndex,
                 password: level.password,
-                hint: level.hint,
-                hint2: level.hint2,
+                levelData: level,
+                hintStage: 0,
                 title: `LEVEL ${level.id}: ${level.name}`,
                 cipherText: level.cipherText,
                 cipherType: level.cipherType
@@ -922,8 +932,10 @@
                 </div>
             `;
 
-            document.getElementById('passwordHint').textContent = level.hint;
-            document.getElementById('passwordHint').style.display = 'none';
+            document.getElementById('hintContainer').style.display = 'none';
+            document.getElementById('hintTextDisplay').innerHTML = '';
+            document.getElementById('adminPasswordInput').value = '';
+            document.getElementById('adminFeedback').textContent = '';
             document.getElementById('passwordFeedback').innerHTML = '';
             document.getElementById('passwordInput').value = '';
             document.getElementById('passwordInput').focus();
@@ -945,12 +957,40 @@
         }
 
         function toggleHint() {
-            const hintElement = document.getElementById('passwordHint');
-            if (hintElement.style.display === 'none') {
-                hintElement.style.display = 'block';
-            } else {
-                hintElement.innerHTML = currentPasswordChallenge.hint2;
+            const hintContainer = document.getElementById('hintContainer');
+            hintContainer.style.display = hintContainer.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function unlockHint() {
+            const pass = document.getElementById('adminPasswordInput').value.toUpperCase();
+            const feedback = document.getElementById('adminFeedback');
+            
+            if (pass !== "ADMIN" && pass !== "ADMIN123") {
+                feedback.textContent = "ACCESS DENIED: INVALID ADMIN PASSWORD";
+                return;
             }
+            feedback.textContent = "";
+            
+            if (currentPasswordChallenge.hintStage < 3) {
+                currentPasswordChallenge.hintStage++;
+            }
+            
+            const hintDisplay = document.getElementById('hintTextDisplay');
+            let html = "";
+            const levelData = currentPasswordChallenge.levelData;
+            
+            if (currentPasswordChallenge.hintStage >= 1) {
+                html += `<div class="password-hint" style="margin-top: 10px;"><strong>HINT 1:</strong> ${levelData.hint1}</div>`;
+            }
+            if (currentPasswordChallenge.hintStage >= 2) {
+                html += `<div class="password-hint" style="margin-top: 10px;"><strong>HINT 2:</strong> ${levelData.hint2}</div>`;
+            }
+            if (currentPasswordChallenge.hintStage >= 3) {
+                html += `<div class="password-hint" style="margin-top: 10px;"><strong>HINT 3 (EASIEST):</strong> ${levelData.hint3}</div>`;
+            }
+            
+            hintDisplay.innerHTML = html;
+            document.getElementById('adminPasswordInput').value = "";
         }
 
         let currentPasswordChallenge = null;
@@ -976,7 +1016,7 @@
                     `;
 
                     document.getElementById('passwordInput').style.display = 'none';
-                    document.getElementById('passwordHint').style.display = 'none';
+                    document.getElementById('hintContainer').style.display = 'none';
                     document.getElementById('passwordTitle').textContent = `✓ LEVEL ${level.id} COMPLETE`;
 
                     if (!gameState.completedLevels.includes(levelIndex)) {
