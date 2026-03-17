@@ -942,8 +942,8 @@
             document.getElementById('passwordFeedback').innerHTML = '';
             document.getElementById('passwordInput').value = '';
             document.getElementById('passwordInput').focus();
-            document.getElementById('actionButtons').style.display = 'block';
-            document.getElementById('nextLevelContainer').style.display = 'none';
+            document.getElementById('actionButtons').setAttribute('style', 'display: block !important; margin-top: 20px;');
+            document.getElementById('nextLevelContainer').setAttribute('style', 'display: none !important; margin-top: 20px;');
 
             document.getElementById('passwordModal').classList.add('active');
         }
@@ -1022,8 +1022,8 @@
 
                     document.getElementById('passwordInput').style.display = 'none';
                     document.getElementById('hintContainer').style.display = 'none';
-                    document.getElementById('actionButtons').style.display = 'none';
-                    document.getElementById('nextLevelContainer').style.display = 'block';
+                    document.getElementById('actionButtons').setAttribute('style', 'display: none !important;');
+                    document.getElementById('nextLevelContainer').setAttribute('style', 'display: block !important; margin-top: 20px;');
                     document.getElementById('passwordTitle').textContent = `✓ LEVEL ${level.id} COMPLETE`;
 
                     if (!gameState.completedLevels.includes(levelIndex)) {
@@ -1043,8 +1043,8 @@
         function closePasswordModal() {
             document.getElementById('passwordModal').classList.remove('active');
             document.getElementById('passwordInput').style.display = 'block';
-            document.getElementById('actionButtons').style.display = 'block';
-            document.getElementById('nextLevelContainer').style.display = 'none';
+            document.getElementById('actionButtons').setAttribute('style', 'display: block !important; margin-top: 20px;');
+            document.getElementById('nextLevelContainer').setAttribute('style', 'display: none !important; margin-top: 20px;');
         }
 
         function goToNextLevel() {
