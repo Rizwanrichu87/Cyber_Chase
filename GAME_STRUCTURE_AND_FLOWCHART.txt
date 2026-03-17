@@ -1,0 +1,431 @@
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║              OPERATION: BREACH - GAME STRUCTURE & FLOWCHART                   ║
+║                    Visual Guide to Game Progression                          ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+
+
+📊 OVERALL GAME STRUCTURE
+═══════════════════════════════════════════════════════════════════════════════
+
+                              GAME START
+                                  ↓
+                    ╔═══════════════════════════════╗
+                    ║  INTRO MODAL                  ║
+                    ║  "Critical Breach Detected"   ║
+                    ║  [BEGIN INVESTIGATION]        ║
+                    ╚═══════════════════════════════╝
+                                  ↓
+                    ╔═══════════════════════════════╗
+                    ║  HOME PAGE                    ║
+                    ║  - Case Overview              ║
+                    ║  - 5 Level Progress Tracker   ║
+                    ║  - Navigation Menu            ║
+                    ╚═══════════════════════════════╝
+                                  ↓
+                    ┌─────────────────────────────┐
+                    │ Player Chooses Path:        │
+                    │ 1. Learn Story              │
+                    │ 2. Review Suspects          │
+                    │ 3. Start Challenges         │
+                    │ 4. Check Evidence/Timeline  │
+                    └─────────────────────────────┘
+                                  ↓
+                    ╔═══════════════════════════════╗
+                    ║  CHALLENGE LEVELS             ║
+                    ║  (4 Encrypted Files)          ║
+                    ║  (1 Mega Puzzle)              ║
+                    ╚═══════════════════════════════╝
+                                  ↓
+                    ╔═══════════════════════════════╗
+                    ║  FINAL REVELATION             ║
+                    ║  Alex Torres = Hacker!        ║
+                    ║  Full Evidence Shown          ║
+                    ║  Case Closed                  ║
+                    ╚═══════════════════════════════╝
+
+
+🔐 PASSWORD CHALLENGE FLOW
+═══════════════════════════════════════════════════════════════════════════════
+
+LEVEL 1
+┌────────────────────────────────────────────┐
+│ FILE: access_logs.enc                      │
+│ PASSWORD: PROTOCOL47                       │
+│ HINT: What protocol? Add 47.               │
+├────────────────────────────────────────────┤
+│ ✓ CORRECT                                  │
+│ ↓                                          │
+│ CLUE REVEALED: Marcus Chen has gym alibi   │
+│ ↓                                          │
+│ SUSPECT CLEARED: Marcus Chen ✓             │
+└────────────────────────────────────────────┘
+         ↓
+    Level 1 Complete
+         ↓
+    [LEVEL 2 UNLOCKED]
+
+
+LEVEL 2
+┌────────────────────────────────────────────┐
+│ FILE: email_archives.enc                   │
+│ PASSWORD: EXCHANGE2024                     │
+│ HINT: Microsoft software + year            │
+├────────────────────────────────────────────┤
+│ ✓ CORRECT                                  │
+│ ↓                                          │
+│ CLUE REVEALED: Paula in Brazil on vacation │
+│ ↓                                          │
+│ SUSPECT CLEARED: Paula Rodriguez ✓         │
+└────────────────────────────────────────────┘
+         ↓
+    Level 2 Complete
+         ↓
+    [LEVEL 3 UNLOCKED]
+
+
+LEVEL 3
+┌────────────────────────────────────────────┐
+│ FILE: system_logs.enc                      │
+│ PASSWORD: KERNEL64BIT                      │
+│ HINT: OS core + architecture               │
+├────────────────────────────────────────────┤
+│ ✓ CORRECT                                  │
+│ ↓                                          │
+│ CLUE REVEALED: Devon at airport/on flight  │
+│ ↓                                          │
+│ SUSPECT CLEARED: Devon Patel ✓             │
+└────────────────────────────────────────────┘
+         ↓
+    Level 3 Complete
+         ↓
+    [LEVEL 4 UNLOCKED]
+
+
+LEVEL 4
+┌────────────────────────────────────────────┐
+│ FILE: firewall_records.enc                 │
+│ PASSWORD: TCPIP443SSL                      │
+│ HINT: Network protocol + port + encryption │
+├────────────────────────────────────────────┤
+│ ✓ CORRECT                                  │
+│ ↓                                          │
+│ CLUE REVEALED: Iris has 8 witnesses        │
+│ ↓                                          │
+│ SUSPECT CLEARED: Iris Wagner ✓             │
+└────────────────────────────────────────────┘
+         ↓
+    Level 4 Complete
+         ↓
+    [LEVEL 5 UNLOCKED - MEGA PUZZLE]
+
+
+LEVEL 5 (MEGA PUZZLE)
+┌────────────────────────────────────────────┐
+│ META-PUZZLE CHALLENGE                      │
+│ Extract from previous passwords:           │
+│ L1 (PROTOCOL47) → first 4 = PROT           │
+│ L2 (EXCHANGE2024) → last 4 = 2024          │
+│ L3 (KERNEL64BIT) → K & 6 = K6              │
+│ L4 (TCPIP443SSL) → P & 3 = P3              │
+│ Combine: PROT2024K6P3                      │
+├────────────────────────────────────────────┤
+│ ✓ CORRECT                                  │
+│ ↓                                          │
+│ ⚡ FINAL REVELATION ⚡                    │
+│ ALEX TORRES IS THE HACKER!                 │
+│ - Duplicate login sessions                 │
+│ - Cryptocurrency transfers                 │
+│ - Motive: Passed over for promotion        │
+│ - Evidence: Burner phone, ghost logins     │
+│ ↓                                          │
+│ 🎉 CASE CLOSED 🎉                        │
+└────────────────────────────────────────────┘
+
+
+📈 SUSPECT ELIMINATION CHART
+═══════════════════════════════════════════════════════════════════════════════
+
+START: 5 SUSPECTS
+┌─────────────────────────────┐
+│ 1. Marcus Chen              │
+│ 2. Paula Rodriguez          │
+│ 3. Devon Patel              │
+│ 4. Iris Wagner              │
+│ 5. Alex Torres              │
+└─────────────────────────────┘
+
+AFTER LEVEL 1: 4 REMAINING
+┌─────────────────────────────┐
+│ ✓ Marcus Chen [CLEARED]     │
+│ 2. Paula Rodriguez          │
+│ 3. Devon Patel              │
+│ 4. Iris Wagner              │
+│ 5. Alex Torres              │
+└─────────────────────────────┘
+
+AFTER LEVEL 2: 3 REMAINING
+┌─────────────────────────────┐
+│ ✓ Marcus Chen [CLEARED]     │
+│ ✓ Paula Rodriguez [CLEARED] │
+│ 3. Devon Patel              │
+│ 4. Iris Wagner              │
+│ 5. Alex Torres              │
+└─────────────────────────────┘
+
+AFTER LEVEL 3: 2 REMAINING
+┌─────────────────────────────┐
+│ ✓ Marcus Chen [CLEARED]     │
+│ ✓ Paula Rodriguez [CLEARED] │
+│ ✓ Devon Patel [CLEARED]     │
+│ 4. Iris Wagner              │
+│ 5. Alex Torres              │
+└─────────────────────────────┘
+
+AFTER LEVEL 4: 1 REMAINING
+┌─────────────────────────────┐
+│ ✓ Marcus Chen [CLEARED]     │
+│ ✓ Paula Rodriguez [CLEARED] │
+│ ✓ Devon Patel [CLEARED]     │
+│ ✓ Iris Wagner [CLEARED]     │
+│ 5. Alex Torres              │
+└─────────────────────────────┘
+
+AFTER LEVEL 5: REVEALED
+┌─────────────────────────────┐
+│ ✓ Marcus Chen [CLEARED]     │
+│ ✓ Paula Rodriguez [CLEARED] │
+│ ✓ Devon Patel [CLEARED]     │
+│ ✓ Iris Wagner [CLEARED]     │
+│ ⚠ Alex Torres [GUILTY]      │
+└─────────────────────────────┘
+
+
+🎯 NAVIGATION MENU STRUCTURE
+═══════════════════════════════════════════════════════════════════════════════
+
+                        SIDEBAR MENU
+                        ═══════════════
+                        
+    🏠 HOME
+    │  ├─ Case Overview
+    │  ├─ Incident Summary
+    │  └─ Level Progress Display
+    │
+    🔍 INVESTIGATION
+    │  ├─ Case Details
+    │  ├─ Timeline
+    │  └─ Key Insights
+    │
+    👥 SUSPECTS
+    │  ├─ Marcus Chen (Network Admin) [CLEARED/GUILTY]
+    │  ├─ Paula Rodriguez (Database Arch) [CLEARED]
+    │  ├─ Devon Patel (Security Analyst) [CLEARED]
+    │  ├─ Iris Wagner (Data Entry) [CLEARED]
+    │  └─ Alex Torres (Junior Dev) [CLEARED/GUILTY]
+    │
+    🎯 CHALLENGE LEVELS
+    │  ├─ Level 1: Access Logs [LOCKED/COMPLETED]
+    │  ├─ Level 2: Email Archives [LOCKED/COMPLETED]
+    │  ├─ Level 3: System Logs [LOCKED/COMPLETED]
+    │  ├─ Level 4: Firewall Records [LOCKED/COMPLETED]
+    │  └─ Level 5: Mega Puzzle [LOCKED/COMPLETED]
+    │
+    📋 EVIDENCE
+    │  ├─ Level 1 Evidence
+    │  ├─ Level 2 Evidence
+    │  ├─ Level 3 Evidence
+    │  ├─ Level 4 Evidence
+    │  └─ Evidence Timeline
+    │
+    ⏱ TIMELINE
+    │  ├─ 02:47 AM - Breach Initiated
+    │  ├─ 02:48 AM - Authentication Bypass
+    │  ├─ 02:52 AM - Data Exfiltration
+    │  ├─ 03:05 AM - Backdoor Installed
+    │  ├─ 03:15 AM - Log Manipulation
+    │  └─ 03:47 AM - Detection
+    │
+    🔐 MEGA PUZZLE
+    └─ Final Challenge (Unlocks after Level 4)
+
+
+🔓 PASSWORD PUZZLE HIERARCHY
+═══════════════════════════════════════════════════════════════════════════════
+
+                    DIFFICULTY PROGRESSION
+                    
+    ⭐ EASY
+    ├─ Level 1: PROTOCOL47 (SSH + 47)
+    └─ Level 2: EXCHANGE2024 (Software + Year)
+    
+    ⭐⭐⭐ MEDIUM
+    ├─ Level 3: KERNEL64BIT (OS + Architecture)
+    └─ Level 4: TCPIP443SSL (3 components)
+    
+    ⭐⭐⭐⭐⭐ MEGA PUZZLE
+    └─ Level 5: PROT2024K6P3 (Meta-puzzle)
+
+
+🔑 META-PUZZLE SOLUTION PATH
+═══════════════════════════════════════════════════════════════════════════════
+
+LEVEL 5 PUZZLE SOLVING:
+
+Step 1: Review Level 1 Password
+        PROTOCOL47
+        ↓
+        Extract first 4 letters
+        ↓
+        PROT
+        
+Step 2: Review Level 2 Password
+        EXCHANGE2024
+        ↓
+        Extract last 4 letters/digits
+        ↓
+        2024
+        
+Step 3: Review Level 3 Password
+        KERNEL64BIT
+        ↓
+        Extract K (first letter) + 6 (first digit)
+        ↓
+        K6
+        
+Step 4: Review Level 4 Password
+        TCPIP443SSL
+        ↓
+        Extract P (from TCP) + 3 (from 443)
+        ↓
+        P3
+        
+Step 5: Combine in order
+        PROT + 2024 + K6 + P3
+        ↓
+        PROT2024K6P3
+        
+Step 6: Enter password
+        ↓
+        ✓ CORRECT
+        ↓
+        Final file unlocks
+        ↓
+        ALEX TORRES REVEALED
+
+
+💡 HINT PROGRESSION SYSTEM (ADMIN REQUIRED)
+═══════════════════════════════════════════════════════════════════════════════
+
+TIMELINE OF HINTS FOR STUCK PLAYERS:
+
+0-5 MIN: No hints given (Let them read puzzle)
+
+5+ MIN: 
+  └─ Player clicks "HINTS" button
+  └─ Enters Admin Password: ADMIN (or ADMIN123)
+  └─ Unlocks: TIER 1 HINT (Hard - Explains Cipher Mechanic)
+
+10+ MIN: If still struggling
+  └─ Player clicks "HINTS" button again
+  └─ Enters Admin Password: ADMIN
+  └─ Unlocks: TIER 2 HINT (Medium - Thematic Clue)
+
+15+ MIN: If completely stuck
+  └─ Player clicks "HINTS" button again
+  └─ Enters Admin Password: ADMIN
+  └─ Unlocks: TIER 3 HINT (Easy - Exact Equation)
+
+GAME MASTER OVERRIDE:
+  └─ Game Master can enter ADMIN at any time to reveal hints
+  └─ Game Master can provide the exact password as a last resort
+
+
+🎬 NARRATIVE PROGRESSION
+═══════════════════════════════════════════════════════════════════════════════
+
+ACT I: EXPOSITION
+└─ Intro: Server breached, hacker in building
+└─ Setup: 5 suspects introduced
+└─ Stakes: Company's data, security at risk
+
+ACT II: INVESTIGATION (Levels 1-4)
+├─ Clue 1: Marcus Chen seems suspicious (but cleared)
+├─ Clue 2: Paula Rodriguez pattern found (but cleared)
+├─ Clue 3: Devon Patel appears guilty (but cleared)
+├─ Clue 4: Iris Wagner is present (but cleared)
+└─ Tension: Everyone has alibis, who is guilty?
+
+ACT III: CLIMAX (Level 5)
+└─ Final puzzle reveals duplicate login sessions
+└─ Connection: Only Alex Torres could do this
+
+ACT IV: RESOLUTION
+├─ Hacker identified: Alex Torres
+├─ Motivation revealed: Promotion denied
+├─ Method: Advanced session hijacking
+└─ Case closed: Hacker arrested
+
+THEME: The most dangerous person is the one you overlook
+
+
+📱 USER INTERFACE LAYOUT
+═══════════════════════════════════════════════════════════════════════════════
+
+┌─────────────────────────────────────────────────────────────────────┐
+│  ⚠ OPERATION: BREACH ⚠                    [TIME DISPLAY: 00:00:00]  │
+├──────────────┬─────────────────────────────────────────────────────┤
+│              │                                                       │
+│  NAVIGATION  │               MAIN CONTENT AREA                      │
+│              │                                                       │
+│  🏠 HOME     │  Page title and content dynamically loaded           │
+│              │                                                       │
+│  🔍 INVESTIG │  ┌──────────────────────────────────────────────┐   │
+│              │  │  Content Updates Based on Selection           │   │
+│  👥 SUSPECTS │  │  - Text content                              │   │
+│              │  │  - Password input forms                       │   │
+│  🎯 LEVELS   │  │  - Evidence cards                            │   │
+│              │  │  - Timeline displays                         │   │
+│  📋 EVIDENCE │  │  - Suspect profiles                          │   │
+│              │  │  - Clue boxes                                │   │
+│  ⏱ TIMELINE  │  │  - Alert messages                           │   │
+│              │  │  - Buttons for interaction                   │   │
+│  🔐 PUZZLE   │  └──────────────────────────────────────────────┘   │
+│              │                                                       │
+└──────────────┴─────────────────────────────────────────────────────┘
+
+
+🎨 COLOR CODING SYSTEM
+═══════════════════════════════════════════════════════════════════════════════
+
+🟢 GREEN (#00ff00)
+├─ Success messages
+├─ Completed levels
+├─ Active elements
+└─ "Ready to go" indicators
+
+🔴 RED (#ff0000)
+├─ Critical alerts
+├─ Hacker identification
+├─ Locked files (encrypted)
+└─ Danger warnings
+
+🟡 YELLOW (#ffff00)
+├─ Hints
+├─ Important notes
+├─ Evidence highlights
+└─ Suspect cleared status
+
+🔵 BLUE (#0064c8, #00a8ff)
+├─ Clue boxes
+├─ Evidence cards
+├─ Information sections
+└─ Timeline elements
+
+⚫ BLACK/DARK (#0a0e27)
+├─ Background
+├─ Text areas
+└─ Primary display
+
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                     END OF GAME STRUCTURE GUIDE                              ║
+╚═══════════════════════════════════════════════════════════════════════════════╝

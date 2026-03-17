@@ -1,0 +1,551 @@
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║        OPERATION: BREACH - COMPLETE USER GUIDE & SETUP INSTRUCTIONS          ║
+║                   Server Hack Mystery Game - Setup & Play                    ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+
+
+🎮 QUICK START GUIDE
+═══════════════════════════════════════════════════════════════════════════════
+
+1. OPEN THE FILE
+   └─ Open "ServerHackMystery.html" in any web browser
+   
+2. START THE GAME
+   └─ Click "BEGIN INVESTIGATION"
+   
+3. NAVIGATE THE INTERFACE
+   └─ Use the sidebar menu to access different sections
+   
+4. COMPLETE LEVELS
+   └─ Go to "CHALLENGE LEVELS" to decrypt each level
+   
+5. SOLVE THE MEGA PUZZLE
+   └─ After completing all 4 levels, unlock Level 5
+
+
+📋 WHAT YOU'LL FIND IN THE GAME
+═══════════════════════════════════════════════════════════════════════════════
+
+HOME
+├─ Overview of the incident
+├─ Game objectives
+└─ Quick navigation buttons
+
+INVESTIGATION
+├─ Case summary and breach details
+├─ Timeline of the hack
+└─ Key insights about the crime
+
+SUSPECTS
+├─ Profiles of all 5 employees
+├─ Their roles and departments
+├─ Status (under investigation or cleared)
+└─ Elimination reasons once cleared
+
+CHALLENGE LEVELS
+├─ 4 encrypted file challenges (Levels 1-4)
+├─ 1 mega puzzle challenge (Level 5)
+├─ Password input for each file
+├─ Hints to solve passwords
+└─ Unlocked clues that eliminate suspects
+
+EVIDENCE
+├─ Collection of all discovered clues
+├─ File names and contents
+├─ Updated list as you progress
+└─ Visual evidence cards
+
+TIMELINE
+├─ Detailed breach timeline
+├─ Minute-by-minute events
+├─ Key incident moments
+└─ Investigation start time
+
+MEGA PUZZLE
+├─ Final challenge (unlocks after Level 4)
+├─ Meta-puzzle using all previous passwords
+└─ Reveals the hacker's identity
+
+
+🔐 THE 5 PASSWORD CHALLENGES
+═══════════════════════════════════════════════════════════════════════════════
+
+LEVEL 1: ACCESS LOGS
+Password: PROTOCOL47
+Puzzle: What security protocol + breach time minute = password?
+Difficulty: ⭐ EASY
+
+LEVEL 2: EMAIL ARCHIVES  
+Password: EXCHANGE2024
+Puzzle: Microsoft email software + current year = password?
+Difficulty: ⭐⭐ EASY-MEDIUM
+
+LEVEL 3: SYSTEM LOGS
+Password: KERNEL64BIT
+Puzzle: OS core software + architecture type = password?
+Difficulty: ⭐⭐⭐ MEDIUM
+
+LEVEL 4: FIREWALL RECORDS
+Password: TCPIP443SSL
+Puzzle: Network protocol + secure port + encryption = password?
+Difficulty: ⭐⭐⭐⭐ HARD
+
+LEVEL 5: MEGA PUZZLE (Meta-Challenge)
+Password: PROT2024K6P3
+Puzzle: Extract parts from each previous password and combine
+Difficulty: ⭐⭐⭐⭐⭐ EXTREMELY HARD
+
+
+👥 THE 5 SUSPECTS (LIVE STOCK PHOTOS)
+═══════════════════════════════════════════════════════════════════════════════
+
+1. MARCUS CHEN - Senior Network Admin
+   └─ Eliminated in Level 1 (Gym alibi confirmed)
+
+2. PAULA RODRIGUEZ - Database Architect
+   └─ Eliminated in Level 2 (Brazil vacation confirmed)
+
+3. DEVON PATEL - Security Analyst
+   └─ Eliminated in Level 3 (Airport/flight confirmed)
+
+4. IRIS WAGNER - Data Entry Specialist
+   └─ Eliminated in Level 4 (Witnesses at work confirmed)
+
+5. ALEX TORRES - Junior Developer ⭐ THE HACKER
+   └─ Revealed in Level 5 (Duplicate login sessions discovered)
+
+
+🎯 GAME FLOW & STRATEGY
+═══════════════════════════════════════════════════════════════════════════════
+
+START
+  ↓
+→ Read the HOME section to understand the case
+  ↓
+→ Review SUSPECTS to know who you're investigating
+  ↓
+→ Check INVESTIGATION for breach details
+  ↓
+→ Go to CHALLENGE LEVELS
+  ↓
+→ LEVEL 1: Solve password puzzle, unlock clue, eliminate suspect #1
+  ↓
+→ LEVEL 2: Solve password puzzle, unlock clue, eliminate suspect #2
+  ↓
+→ LEVEL 3: Solve password puzzle, unlock clue, eliminate suspect #3
+  ↓
+→ LEVEL 4: Solve password puzzle, unlock clue, eliminate suspect #4
+  ↓
+→ LEVEL 5: Meta-puzzle unlocks with all 4 password elements
+  ↓
+→ Solve mega puzzle: PROT2024K6P3
+  ↓
+→ REVELATION: ALEX TORRES is the hacker!
+  ↓
+END
+
+
+🔍 HOW TO SOLVE THE PASSWORDS
+═══════════════════════════════════════════════════════════════════════════════
+
+LEVEL 1 SOLUTION EXAMPLE:
+Question: "What protocol is used for secure shell access? Add 47 to it."
+Thought process:
+  1. What protocol for secure shell? → SSH
+  2. What do we add? → 47 (minutes in the breach time 02:47)
+  3. Format: The word + number → PROTOCOL47
+Answer: PROTOCOL47 ✓
+
+LEVEL 2 SOLUTION EXAMPLE:
+Question: "What is Microsoft's enterprise email software? Add the year."
+Thought process:
+  1. Microsoft's email server? → Exchange
+  2. Current year? → 2024
+  3. Format: Software name + year → EXCHANGE2024
+Answer: EXCHANGE2024 ✓
+
+LEVEL 3 SOLUTION EXAMPLE:
+Question: "What is the OS kernel? Described by what architecture?"
+Thought process:
+  1. Core OS software? → Kernel
+  2. Modern architecture? → 64-bit (most common today)
+  3. Format: Term + architecture → KERNEL64BIT
+Answer: KERNEL64BIT ✓
+
+LEVEL 4 SOLUTION EXAMPLE:
+Question: "Network protocol suite? Secure port number? Encryption?"
+Thought process:
+  1. Network foundation? → TCP/IP
+  2. Secure HTTPS port? → 443
+  3. Encryption standard? → SSL (or TLS)
+  4. Format: Combine all → TCPIP443SSL (no spaces or slashes)
+Answer: TCPIP443SSL ✓
+
+LEVEL 5 SOLUTION EXAMPLE:
+Question: "Extract and combine elements from previous passwords"
+Thought process:
+  1. From PROTOCOL47: First 4 letters → PROT
+  2. From EXCHANGE2024: Last 4 letters → 2024
+  3. From KERNEL64BIT: First letter (K) + digit (6) → K6
+  4. From TCPIP443SSL: Middle letter (P) + port digit (3) → P3
+  5. Combine in order: PROT + 2024 + K6 + P3 → PROT2024K6P3
+Answer: PROT2024K6P3 ✓
+
+
+💡 HINT SYSTEM (ADMIN REQUIRED)
+═══════════════════════════════════════════════════════════════════════════════
+
+Each level includes an admin-locked 3-tier hint system. If you're stuck:
+
+STEP 1: Click the "HINTS" button on the decryption modal
+STEP 2: Enter the master admin password: ADMIN (or ADMIN123)
+STEP 3: Read Tier 1 (Hard) Hint
+STEP 4: If still stuck, enter "ADMIN" again to unlock Tier 2 (Medium) Hint
+STEP 5: If completely lost, enter "ADMIN" a third time for Tier 3 (Easy) Hint
+STEP 6: As a last resort, ask the Game Master for help.
+
+
+🎬 NARRATIVE EXPERIENCE
+═══════════════════════════════════════════════════════════════════════════════
+
+The game tells a story of corporate espionage and internal sabotage. As you 
+progress through each level, you'll build a case against different suspects, 
+systematically eliminating them through forensic evidence.
+
+The twist: The person you were never directly investigating is revealed as 
+the guilty party. This is intentional. The game uses misdirection through 
+alibis to make you overlook the real hacker.
+
+THEMES:
+├─ Cybersecurity awareness
+├─ Social engineering and oversight
+├─ Forensic analysis
+├─ Logical deduction
+└─ The "hiding in plain sight" trope
+
+
+⚙ TECHNICAL REQUIREMENTS
+═══════════════════════════════════════════════════════════════════════════════
+
+BROWSER REQUIREMENTS:
+✓ Any modern web browser (Chrome, Firefox, Safari, Edge)
+✓ JavaScript enabled (enabled by default)
+✓ HTML5 support
+✓ No plugins needed
+
+SYSTEM REQUIREMENTS:
+✓ Works on Windows, Mac, Linux
+✓ Works on tablets and phones (responsive design)
+✓ No internet connection needed (fully self-contained)
+✓ ~500 KB file size
+
+CANNOT BE PLAYED ON:
+✗ Very old browsers (IE 6, 7, 8)
+✗ Text-only browsers
+✗ Systems with JavaScript disabled
+
+
+🖥 HOW TO OPEN THE FILE
+═══════════════════════════════════════════════════════════════════════════════
+
+WINDOWS:
+1. Right-click on ServerHackMystery.html
+2. Select "Open with"
+3. Choose your browser (Chrome, Firefox, Edge, etc.)
+4. Click Open
+
+MACBOOK:
+1. Double-click ServerHackMystery.html
+2. It will open in your default browser
+3. Or right-click → Open With → Select browser
+
+LINUX:
+1. Open terminal in the file directory
+2. Type: firefox ServerHackMystery.html
+   OR: google-chrome ServerHackMystery.html
+   OR: open the file manager and double-click
+
+MOBILE (Phone/Tablet):
+1. Download the file to your device
+2. Open the file manager
+3. Tap on ServerHackMystery.html
+4. Select your browser to open it
+
+
+🕐 TIME ESTIMATES
+═══════════════════════════════════════════════════════════════════════════════
+
+INTRO & SETUP: 2-3 minutes
+LEVEL 1: 5-10 minutes (easy)
+LEVEL 2: 5-10 minutes (easy)
+LEVEL 3: 10-15 minutes (medium)
+LEVEL 4: 10-15 minutes (medium)
+LEVEL 5 (Mega Puzzle): 15-30 minutes (hard)
+
+TOTAL: 45 minutes to 1.5 hours (depending on difficulty and hints used)
+
+FASTEST POSSIBLE: 30 minutes (with all passwords known)
+SLOWEST POSSIBLE: 2+ hours (no hints, thinking hard)
+RECOMMENDED: 1 hour (hints available, moderate difficulty)
+
+
+👨‍💼 FOR GAME MASTERS / ORGANIZERS
+═══════════════════════════════════════════════════════════════════════════════
+
+SETUP:
+1. Distribute ServerHackMystery.html to all participants
+2. Have them open it in a web browser
+3. Explain they have a mystery to solve
+4. Tell them they have [TIME] to complete it
+5. Let them begin
+
+DURING THE GAME:
+├─ Monitor progress without giving away answers
+├─ Provide hints if someone is stuck for 10+ minutes
+├─ Keep the time (optional)
+├─ Keep energy high with encouragement
+└─ Let them work through the puzzle themselves
+
+HINT GIVING:
+├─ Don't give the password directly at first
+├─ Give clues to help them think
+├─ Point them toward the puzzle
+├─ Let them discover the answer
+└─ Only give the password if they're completely lost
+
+AFTER COMPLETION:
+├─ Ask what they think of the twist ending
+├─ Discuss the cybersecurity concepts
+├─ Review the evidence with them
+├─ Discuss how Alex went undetected
+└─ Talk about real-world security implications
+
+
+🏆 SCORING & ACHIEVEMENTS (Optional)
+═══════════════════════════════════════════════════════════════════════════════
+
+If using this competitively:
+
+POINTS PER LEVEL:
+├─ Level 1: 10 points (easy)
+├─ Level 2: 15 points (easy-medium)
+├─ Level 3: 25 points (medium)
+├─ Level 4: 35 points (hard)
+├─ Level 5: 50 points (mega puzzle)
+└─ TOTAL: 135 points possible
+
+TIME BONUS (Optional):
+├─ Complete in under 45 min: +20 points
+├─ Complete in 45-60 min: +10 points
+├─ Complete in 60-90 min: +5 points
+└─ Over 90 min: no bonus
+
+HINT PENALTY (Optional):
+├─ No hints used: +25 points
+├─ Used hints but no passwords: +15 points
+├─ Used 1-2 passwords: +5 points
+└─ Used 3+ passwords: no bonus
+
+SAMPLE SCORING:
+Team A: All puzzles + bonus = 135 + 20 + 25 = 180 points (BEST)
+Team B: All puzzles + small bonus = 135 + 5 + 15 = 155 points
+Team C: All puzzles no bonus = 135 + 0 + 0 = 135 points
+
+
+❓ FREQUENTLY ASKED QUESTIONS
+═══════════════════════════════════════════════════════════════════════════════
+
+Q: Can I skip levels?
+A: No. Levels must be completed in order. Level 2 unlocks after Level 1, etc.
+
+Q: Can I go back to previous levels?
+A: Yes! You can review completed levels in the Evidence section.
+
+Q: What if I enter the wrong password?
+A: The game will tell you it's incorrect. Try again. Hints are available.
+
+Q: How many tries do I get for passwords?
+A: Unlimited tries. Keep guessing until you get it right!
+
+Q: Can I play this in a group?
+A: Absolutely! Groups can work together to solve the puzzles. Great for teamwork!
+
+Q: What if I get stuck on the mega puzzle?
+A: Check your notes from previous levels. The passwords themselves are clues.
+
+Q: Is there a timer?
+A: The game shows the current time, but no enforced time limit (unless you set one).
+
+Q: Can I save my progress?
+A: The game doesn't have a save function. Complete it in one session or start fresh.
+
+Q: What's the twist ending?
+A: We won't spoil it! But you'll be surprised. The person you least suspect is guilty.
+
+Q: Why wasn't I suspicious of Alex Torres?
+A: That's the point! They were overlooked on purpose. Perfect alibi + ignored person = perfect disguise.
+
+Q: Can I play this solo or is it only for groups?
+A: Fully playable solo OR in groups. Works either way!
+
+Q: Is this realistic?
+A: The security and hacking elements are based on real techniques. Great for learning!
+
+
+🎓 EDUCATIONAL VALUE
+═══════════════════════════════════════════════════════════════════════════════
+
+This game teaches:
+
+CYBERSECURITY TOPICS:
+├─ SSH (Secure Shell) protocol
+├─ TCP/IP networking foundation
+├─ SSL/TLS encryption
+├─ Firewall and network monitoring
+├─ Authentication and access control
+├─ Email security and log analysis
+├─ System-level security threats
+└─ Incident response procedures
+
+SOFT SKILLS:
+├─ Logical deduction
+├─ Pattern recognition
+├─ Problem-solving
+├─ Teamwork and collaboration
+├─ Critical thinking
+├─ Attention to detail
+└─ Narrative comprehension
+
+AWARENESS TOPICS:
+├─ Inside threats are real
+├─ Social engineering
+├─ Overlooking obvious answers
+├─ Importance of monitoring
+├─ Everyone has access is risky
+└─ Security culture matters
+
+
+📝 TIPS FOR BETTER EXPERIENCE
+═══════════════════════════════════════════════════════════════════════════════
+
+1. READ EVERYTHING CAREFULLY
+   └─ The puzzle descriptions contain the clues you need
+
+2. TAKE NOTES
+   └─ Write down passwords as you discover them
+   └─ Note what each level reveals
+   └─ Track which suspects are eliminated
+
+3. USE THE EVIDENCE SECTION
+   └─ Review discovered clues
+   └─ Connect dots between levels
+   └─ Build your case
+
+4. THINK LIKE A DETECTIVE
+   └─ Question the alibis
+   └─ Look for technical evidence
+   └─ Consider motive and opportunity
+
+5. DON'T GIVE UP
+   └─ If stuck, take a break
+   └─ Hints are available
+   └─ Sometimes the answer is simpler than you think
+
+6. ENJOY THE STORY
+   └─ This is as much narrative as puzzle
+   └─ Appreciate the twist ending
+   └─ Discuss it with your group
+
+
+🎉 WHAT HAPPENS AT THE END
+═══════════════════════════════════════════════════════════════════════════════
+
+After solving the mega puzzle with password PROT2024K6P3, you will:
+
+1. See the final file unlock
+2. Discover that ALEX TORRES is the hacker
+3. Learn about the duplicate login sessions
+4. Find evidence of cryptocurrency transfers
+5. See the motive (passed over for promotion)
+6. Understand how they evaded detection
+
+FINAL MESSAGE:
+"The most dangerous hacker is the one you don't suspect. The quiet person 
+ in the corner. The junior developer nobody knows. That's how they hide."
+
+Then you can:
+- Restart the game to try again
+- Discuss the twist with others
+- Review the evidence
+- Learn about real security threats
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                          GAME MASTER CHECKLIST
+═══════════════════════════════════════════════════════════════════════════════
+
+BEFORE THE GAME:
+☐ Download ServerHackMystery.html
+☐ Test it in your browser
+☐ Read the complete guide (this document)
+☐ Read the password hints document
+☐ Decide on time limit (if any)
+☐ Decide on competitive/collaborative mode
+☐ Print hints if needed for backup
+☐ Brief participants on the story
+
+DURING THE GAME:
+☐ Start at a specific time
+☐ Monitor participant progress
+☐ Watch for stuck participants
+☐ Provide hints when needed
+☐ Maintain energy and engagement
+☐ Answer clarifying questions
+☐ Note down completion times (if scoring)
+
+AFTER THE GAME:
+☐ Congratulate winners/finishers
+☐ Discuss the twist ending
+☐ Review the security lessons
+☐ Collect feedback
+☐ Share the learning points
+☐ Plan next game (if interested)
+
+SUPPORTING DOCUMENTS:
+✓ ServerHackMystery.html - Main game file
+✓ GAME_GUIDE_AND_SOLUTIONS.txt - Complete solutions
+✓ PASSWORD_HINTS_AND_REFERENCE.txt - Hints and strategies
+✓ INSTRUCTIONS.txt - This file (user guide)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                              CONTACT NOTES
+═══════════════════════════════════════════════════════════════════════════════
+
+This game was created as an immersive cybersecurity mystery experience.
+
+CUSTOMIZATION:
+- You can modify the character names and details
+- You can change the time stamp or date
+- You can adjust the story details
+- You can add custom clues or evidence
+
+TECHNICAL ISSUES:
+- If the game doesn't load, try a different browser
+- If features don't work, enable JavaScript
+- If styling looks wrong, clear browser cache and reload
+
+QUESTIONS?
+- Refer to the guide documents
+- Review the password hints
+- Check the FAQ section above
+- Think about the puzzle logically
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                        END OF USER GUIDE
+═══════════════════════════════════════════════════════════════════════════════
+
+Ready to investigate? Open ServerHackMystery.html and begin!
+
+Good luck. The hacker is waiting to be exposed.
