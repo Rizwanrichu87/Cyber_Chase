@@ -507,10 +507,13 @@
                 <div id="adminFeedback" style="color: #ff0000; margin-top: 10px; font-size: 14px;"></div>
                 <div id="hintTextDisplay" style="margin-top: 15px;"></div>
             </div>
-            <div style="margin-top: 20px;">
+            <div id="actionButtons" style="margin-top: 20px;">
                 <button class="btn" onclick="checkPassword()">DECRYPT</button>
                 <button class="btn" onclick="closePasswordModal()">CANCEL</button>
                 <button class="btn" onclick="toggleHint()" style="background: rgba(255, 165, 0, 0.1); border: 2px solid #ffa500; color: #ffa500;">HINTS</button>
+            </div>
+            <div id="nextLevelContainer" style="display: none; margin-top: 20px;">
+                <button class="btn" onclick="goToNextLevel()" style="background: rgba(0, 255, 0, 0.2); border: 2px solid #00ff00; color: #00ff00; width: 100%;">NEXT LEVEL ➡</button>
             </div>
             <div id="passwordFeedback" style="margin-top: 15px; min-height: 30px;"></div>
         </div>
@@ -939,6 +942,8 @@
             document.getElementById('passwordFeedback').innerHTML = '';
             document.getElementById('passwordInput').value = '';
             document.getElementById('passwordInput').focus();
+            document.getElementById('actionButtons').style.display = 'block';
+            document.getElementById('nextLevelContainer').style.display = 'none';
 
             document.getElementById('passwordModal').classList.add('active');
         }
@@ -1017,6 +1022,8 @@
 
                     document.getElementById('passwordInput').style.display = 'none';
                     document.getElementById('hintContainer').style.display = 'none';
+                    document.getElementById('actionButtons').style.display = 'none';
+                    document.getElementById('nextLevelContainer').style.display = 'block';
                     document.getElementById('passwordTitle').textContent = `✓ LEVEL ${level.id} COMPLETE`;
 
                     if (!gameState.completedLevels.includes(levelIndex)) {
@@ -1036,6 +1043,13 @@
         function closePasswordModal() {
             document.getElementById('passwordModal').classList.remove('active');
             document.getElementById('passwordInput').style.display = 'block';
+            document.getElementById('actionButtons').style.display = 'block';
+            document.getElementById('nextLevelContainer').style.display = 'none';
+        }
+
+        function goToNextLevel() {
+            closePasswordModal();
+            showChallenges();
         }
 
         function showEvidence() {
