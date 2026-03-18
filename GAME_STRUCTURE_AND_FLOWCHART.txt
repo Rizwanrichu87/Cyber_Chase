@@ -38,7 +38,7 @@
                                   ↓
                     ╔═══════════════════════════════╗
                     ║  FINAL REVELATION             ║
-                    ║  Alex Torres = Hacker!        ║
+                    ║  Lyra Vance = Hacker!        ║
                     ║  Full Evidence Shown          ║
                     ║  Case Closed                  ║
                     ╚═══════════════════════════════╝
@@ -55,9 +55,9 @@ LEVEL 1
 ├────────────────────────────────────────────┤
 │ ✓ CORRECT                                  │
 │ ↓                                          │
-│ CLUE REVEALED: Marcus Chen has gym alibi   │
+│ CLUE REVEALED: Nova Black on holocast   │
 │ ↓                                          │
-│ SUSPECT CLEARED: Marcus Chen ✓             │
+│ SUSPECT CLEARED: Nova Black ✓             │
 └────────────────────────────────────────────┘
          ↓
     Level 1 Complete
@@ -73,9 +73,9 @@ LEVEL 2
 ├────────────────────────────────────────────┤
 │ ✓ CORRECT                                  │
 │ ↓                                          │
-│ CLUE REVEALED: Paula in Brazil on vacation │
+│ CLUE REVEALED: Elias in Brazil on vacation │
 │ ↓                                          │
-│ SUSPECT CLEARED: Paula Rodriguez ✓         │
+│ SUSPECT CLEARED: Elias Vance ✓         │
 └────────────────────────────────────────────┘
          ↓
     Level 2 Complete
@@ -91,9 +91,9 @@ LEVEL 3
 ├────────────────────────────────────────────┤
 │ ✓ CORRECT                                  │
 │ ↓                                          │
-│ CLUE REVEALED: Devon at airport/on flight  │
+│ CLUE REVEALED: Aris at airport/on flight  │
 │ ↓                                          │
-│ SUSPECT CLEARED: Devon Patel ✓             │
+│ SUSPECT CLEARED: Dr. Aris Thorne ✓             │
 └────────────────────────────────────────────┘
          ↓
     Level 3 Complete
@@ -109,9 +109,9 @@ LEVEL 4
 ├────────────────────────────────────────────┤
 │ ✓ CORRECT                                  │
 │ ↓                                          │
-│ CLUE REVEALED: Iris has 8 witnesses        │
+│ CLUE REVEALED: Kaelen has 8 witnesses        │
 │ ↓                                          │
-│ SUSPECT CLEARED: Iris Wagner ✓             │
+│ SUSPECT CLEARED: Kaelen Cross ✓             │
 └────────────────────────────────────────────┘
          ↓
     Level 4 Complete
@@ -147,56 +147,56 @@ LEVEL 5 (MEGA PUZZLE)
 
 START: 5 SUSPECTS
 ┌─────────────────────────────┐
-│ 1. Marcus Chen              │
-│ 2. Paula Rodriguez          │
-│ 3. Devon Patel              │
-│ 4. Iris Wagner              │
-│ 5. Alex Torres              │
+│ 1. Nova Black              │
+│ 2. Elias Vance          │
+│ 3. Dr. Aris Thorne              │
+│ 4. Kaelen Cross              │
+│ 5. Lyra Vance              │
 └─────────────────────────────┘
 
 AFTER LEVEL 1: 4 REMAINING
 ┌─────────────────────────────┐
-│ ✓ Marcus Chen [CLEARED]     │
-│ 2. Paula Rodriguez          │
-│ 3. Devon Patel              │
-│ 4. Iris Wagner              │
-│ 5. Alex Torres              │
+│ ✓ Nova Black [CLEARED]     │
+│ 2. Elias Vance          │
+│ 3. Dr. Aris Thorne              │
+│ 4. Kaelen Cross              │
+│ 5. Lyra Vance              │
 └─────────────────────────────┘
 
 AFTER LEVEL 2: 3 REMAINING
 ┌─────────────────────────────┐
-│ ✓ Marcus Chen [CLEARED]     │
-│ ✓ Paula Rodriguez [CLEARED] │
-│ 3. Devon Patel              │
-│ 4. Iris Wagner              │
-│ 5. Alex Torres              │
+│ ✓ Nova Black [CLEARED]     │
+│ ✓ Elias Vance [CLEARED] │
+│ 3. Dr. Aris Thorne              │
+│ 4. Kaelen Cross              │
+│ 5. Lyra Vance              │
 └─────────────────────────────┘
 
 AFTER LEVEL 3: 2 REMAINING
 ┌─────────────────────────────┐
-│ ✓ Marcus Chen [CLEARED]     │
-│ ✓ Paula Rodriguez [CLEARED] │
-│ ✓ Devon Patel [CLEARED]     │
-│ 4. Iris Wagner              │
-│ 5. Alex Torres              │
+│ ✓ Nova Black [CLEARED]     │
+│ ✓ Elias Vance [CLEARED] │
+│ ✓ Dr. Aris Thorne [CLEARED]     │
+│ 4. Kaelen Cross              │
+│ 5. Lyra Vance              │
 └─────────────────────────────┘
 
 AFTER LEVEL 4: 1 REMAINING
 ┌─────────────────────────────┐
-│ ✓ Marcus Chen [CLEARED]     │
-│ ✓ Paula Rodriguez [CLEARED] │
-│ ✓ Devon Patel [CLEARED]     │
-│ ✓ Iris Wagner [CLEARED]     │
-│ 5. Alex Torres              │
+│ ✓ Nova Black [CLEARED]     │
+│ ✓ Elias Vance [CLEARED] │
+│ ✓ Dr. Aris Thorne [CLEARED]     │
+│ ✓ Kaelen Cross [CLEARED]     │
+│ 5. Lyra Vance              │
 └─────────────────────────────┘
 
 AFTER LEVEL 5: REVEALED
 ┌─────────────────────────────┐
-│ ✓ Marcus Chen [CLEARED]     │
-│ ✓ Paula Rodriguez [CLEARED] │
-│ ✓ Devon Patel [CLEARED]     │
-│ ✓ Iris Wagner [CLEARED]     │
-│ ⚠ Alex Torres [GUILTY]      │
+│ ✓ Nova Black [CLEARED]     │
+│ ✓ Elias Vance [CLEARED] │
+│ ✓ Dr. Aris Thorne [CLEARED]     │
+│ ✓ Kaelen Cross [CLEARED]     │
+│ ⚠ Lyra Vance [GUILTY]      │
 └─────────────────────────────┘
 
 
@@ -217,11 +217,11 @@ AFTER LEVEL 5: REVEALED
     │  └─ Key Insights
     │
     👥 SUSPECTS
-    │  ├─ Marcus Chen (Network Admin) [CLEARED/GUILTY]
-    │  ├─ Paula Rodriguez (Database Arch) [CLEARED]
-    │  ├─ Devon Patel (Security Analyst) [CLEARED]
-    │  ├─ Iris Wagner (Data Entry) [CLEARED]
-    │  └─ Alex Torres (Junior Dev) [CLEARED/GUILTY]
+    │  ├─ Nova Black (Lead AI Architect) [CLEARED/GUILTY]
+    │  ├─ Elias Vance (Head of Security) [CLEARED]
+    │  ├─ Dr. Aris Thorne (Chief Data Scientist) [CLEARED]
+    │  ├─ Kaelen Cross (Server Tech) [CLEARED]
+    │  └─ Lyra Vance (PR Director) [CLEARED/GUILTY]
     │
     🎯 CHALLENGE LEVELS
     │  ├─ Level 1: Access Logs [LOCKED/COMPLETED]
@@ -349,18 +349,18 @@ ACT I: EXPOSITION
 └─ Stakes: Company's data, security at risk
 
 ACT II: INVESTIGATION (Levels 1-4)
-├─ Clue 1: Marcus Chen seems suspicious (but cleared)
-├─ Clue 2: Paula Rodriguez pattern found (but cleared)
-├─ Clue 3: Devon Patel appears guilty (but cleared)
-├─ Clue 4: Iris Wagner is present (but cleared)
+├─ Clue 1: Nova Black seems suspicious (but cleared)
+├─ Clue 2: Elias Vance pattern found (but cleared)
+├─ Clue 3: Dr. Aris Thorne appears guilty (but cleared)
+├─ Clue 4: Kaelen Cross is present (but cleared)
 └─ Tension: Everyone has alibis, who is guilty?
 
 ACT III: CLIMAX (Level 5)
 └─ Final puzzle reveals duplicate login sessions
-└─ Connection: Only Alex Torres could do this
+└─ Connection: Only Lyra Vance could do this
 
 ACT IV: RESOLUTION
-├─ Hacker identified: Alex Torres
+├─ Hacker identified: Lyra Vance
 ├─ Motivation revealed: Promotion denied
 ├─ Method: Advanced session hijacking
 └─ Case closed: Hacker arrested

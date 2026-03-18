@@ -99,20 +99,20 @@ Difficulty: ⭐⭐⭐⭐⭐ EXTREMELY HARD
 👥 THE 5 SUSPECTS (LIVE STOCK PHOTOS)
 ═══════════════════════════════════════════════════════════════════════════════
 
-1. NOVA BLACK - Senior Network Admin
-   └─ Eliminated in Level 1 (Gym alibi confirmed)
+1. NOVA BLACK - Lead AI Architect
+   └─ Eliminated in Level 1 (Livestreaming keynote address)
 
-2. ELIAS VANCE - Database Architect
-   └─ Eliminated in Level 2 (Brazil vacation confirmed)
+2. ELIAS VANCE - Head of Security
+   └─ Eliminated in Level 2 (Unconscious in medical bay)
 
-3. DR. ARIS THORNE - Security Analyst
-   └─ Eliminated in Level 3 (Airport/flight confirmed)
+3. DR. ARIS THORNE - Chief Data Scientist
+   └─ Eliminated in Level 3 (Credentials stolen externally)
 
-4. KAELEN CROSS - Data Entry Specialist
-   └─ Eliminated in Level 4 (Witnesses at work confirmed)
+4. KAELEN CROSS - Server Technician
+   └─ Eliminated in Level 4 (Off-world at Delta-9)
 
-5. LYRA VANCE - Junior Developer ⭐ THE HACKER
-   └─ Revealed in Level 5 (Duplicate login sessions discovered)
+5. LYRA VANCE - PR Director ⭐ THE CORPORATE SPY
+   └─ Revealed in Level 5 (Social engineered access)
 
 
 🎯 GAME FLOW & STRATEGY

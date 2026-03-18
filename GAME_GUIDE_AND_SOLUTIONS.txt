@@ -7,9 +7,9 @@
 ═══════════════════════════════════════════════════════════════════════════════
 
 INCIDENT: Corporate server hack on March 17, 2026 at 002:47 AM standard time
-SCOPE: Customer database, financial records, and system backdoor compromised
+SCOPE: Genesis AI source code from quantum vault compromised
 INVESTIGATION: Identify the hacker among 5 employees
-TWIST: The eliminated suspect IS the actual hacker!
+TWIST: The ignored executive IS the actual corporate spy!
 
 
 🕵️ CHARACTER PROFILES (5 SUSPECTS)
@@ -69,7 +69,7 @@ TWIST: The eliminated suspect IS the actual hacker!
             └─ Admin-level access granted
 
 02:52 AM ───── DATA EXFILTRATION BEGINS
-            └─ 2.3 GB customer database + 800 MB financial records
+            └─ Extracted Genesis core logic (12 PB)
 
 03:05 AM ───── BACKDOOR INSTALLATION
             └─ Persistent remote access mechanism installed
@@ -93,9 +93,9 @@ LEVEL 1: ACCESS LOGS
 │  └─ How to solve: What protocol for secure shell access? → SSH
 │                   Add the breach time minutes → 47
 │                   Answer: QUANTUMCORE (SSH = Secure Shell Protocol)
-├─ Clue Unlocked: Suspicious IP found. Marcus Chen eliminated from suspicion.
-│                 But he was at the gym—confirmed by fitness tracker data.
-└─ Suspect Cleared: MARCUS CHEN
+├─ Clue Unlocked: Surveillance footage shows NOVA BLACK's access card was used.
+│                 But she was live on a cross-continental holocast giving a keynote.
+└─ Suspect Cleared: NOVA BLACK
 
 
 LEVEL 2: EMAIL ARCHIVES
@@ -104,9 +104,9 @@ LEVEL 2: EMAIL ARCHIVES
 │  └─ How to solve: Microsoft's enterprise email server software → EXCHANGE
 │                   Current year → 2024
 │                   Answer: GENESISVIRUS
-├─ Clue Unlocked: Paula Rodriguez out of office in Brazil. Visa stamps verify travel.
-│                 Email logs show no activity during breach window.
-└─ Suspect Cleared: PAULA RODRIGUEZ
+├─ Clue Unlocked: ELIAS VANCE's security override code was used.
+│                 But medical bay biometrics show he was undergoing neural surgery.
+└─ Suspect Cleared: ELIAS VANCE
 
 
 LEVEL 3: SYSTEM LOGS
@@ -115,10 +115,9 @@ LEVEL 3: SYSTEM LOGS
 │  └─ How to solve: Core software layer of operating systems → KERNEL
 │                   System architecture (32-bit or 64-bit) → 64BIT
 │                   Answer: CYBERDEFENSE
-├─ Clue Unlocked: Commands from Devon Patel's workstation, BUT cellular data
-│                 shows them at LAX Airport when breach occurred.
-│                 TSA records confirm flight boarding: 02:30 AM (17 min BEFORE breach)
-└─ Suspect Cleared: DEVON PATEL
+├─ Clue Unlocked: Analysis of DR. ARIS THORNE's terminal shows the breach originated there.
+│                 But external perimeter logs show his credentials were brute-forced prior.
+└─ Suspect Cleared: DR. ARIS THORNE
 
 
 LEVEL 4: FIREWALL RECORDS
@@ -128,10 +127,9 @@ LEVEL 4: FIREWALL RECORDS
 │                   Secure port number (HTTPS) → 443
 │                   Encryption protocol → SSL/TLS
 │                   Answer: ZEROEXPLOIT
-├─ Clue Unlocked: Initial breach from internal network. Iris Wagner was physically
-│                 present in building for 12 hours continuously.
-│                 8 colleagues observed her throughout breach window.
-└─ Suspect Cleared: IRIS WAGNER
+├─ Clue Unlocked: The heist required a physical manual bypass.
+│                 Transport manifests prove KAELEN CROSS was off-world at Delta-9.
+└─ Suspect Cleared: KAELEN CROSS
 
 
 LEVEL 5: MEGA PUZZLE (FINAL CHALLENGE)
@@ -154,7 +152,7 @@ LEVEL 5: MEGA PUZZLE (FINAL CHALLENGE)
 │
 ├─ FINAL PASSWORD: QUANGENECYBEZERO
 │
-└─ THE TWIST: After eliminating everyone else... LYRA VANCE is revealed as the hacker!
+└─ THE TWIST: After eliminating everyone else... LYRA VANCE (PR Director) is revealed as the corporate spy!
 
 
 💡 HINT SYSTEM MECHANICS
