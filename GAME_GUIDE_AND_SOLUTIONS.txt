@@ -1,12 +1,12 @@
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║                  OPERATION: BREACH - COMPLETE GAME GUIDE                    ║
+║                  OPERATION: NEON SHADOW - COMPLETE GAME GUIDE                    ║
 ║                    Server Hack Mystery - 5 Levels Challenge                  ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
 🎬 STORYLINE OVERVIEW
 ═══════════════════════════════════════════════════════════════════════════════
 
-INCIDENT: Corporate server hack on March 17, 2026 at 02:47 AM
+INCIDENT: Corporate server hack on March 17, 2026 at 002:47 AM standard time
 SCOPE: Customer database, financial records, and system backdoor compromised
 INVESTIGATION: Identify the hacker among 5 employees
 TWIST: The eliminated suspect IS the actual hacker!
@@ -47,7 +47,7 @@ TWIST: The eliminated suspect IS the actual hacker!
    ├─ Eliminated In: LEVEL 4
    └─ Elimination Reason: Multiple witnesses saw her at work during entire breach window.
 
-5. ALEX TORRES ⭐ THE HACKER
+5. LYRA VANCE ⭐ THE HACKER
    ├─ Role: Junior Developer
    ├─ Department: Development
    ├─ User ID: dev_junior
@@ -89,10 +89,10 @@ TWIST: The eliminated suspect IS the actual hacker!
 
 LEVEL 1: ACCESS LOGS
 ├─ File Name: access_logs.enc
-├─ Password: PROTOCOL47
+├─ Password: QUANTUMCORE
 │  └─ How to solve: What protocol for secure shell access? → SSH
 │                   Add the breach time minutes → 47
-│                   Answer: PROTOCOL47 (SSH = Secure Shell Protocol)
+│                   Answer: QUANTUMCORE (SSH = Secure Shell Protocol)
 ├─ Clue Unlocked: Suspicious IP found. Marcus Chen eliminated from suspicion.
 │                 But he was at the gym—confirmed by fitness tracker data.
 └─ Suspect Cleared: MARCUS CHEN
@@ -100,10 +100,10 @@ LEVEL 1: ACCESS LOGS
 
 LEVEL 2: EMAIL ARCHIVES
 ├─ File Name: email_archives.enc
-├─ Password: EXCHANGE2024
+├─ Password: GENESISVIRUS
 │  └─ How to solve: Microsoft's enterprise email server software → EXCHANGE
 │                   Current year → 2024
-│                   Answer: EXCHANGE2024
+│                   Answer: GENESISVIRUS
 ├─ Clue Unlocked: Paula Rodriguez out of office in Brazil. Visa stamps verify travel.
 │                 Email logs show no activity during breach window.
 └─ Suspect Cleared: PAULA RODRIGUEZ
@@ -111,10 +111,10 @@ LEVEL 2: EMAIL ARCHIVES
 
 LEVEL 3: SYSTEM LOGS
 ├─ File Name: system_logs.enc
-├─ Password: KERNEL64BIT
+├─ Password: CYBERDEFENSE
 │  └─ How to solve: Core software layer of operating systems → KERNEL
 │                   System architecture (32-bit or 64-bit) → 64BIT
-│                   Answer: KERNEL64BIT
+│                   Answer: CYBERDEFENSE
 ├─ Clue Unlocked: Commands from Devon Patel's workstation, BUT cellular data
 │                 shows them at LAX Airport when breach occurred.
 │                 TSA records confirm flight boarding: 02:30 AM (17 min BEFORE breach)
@@ -123,11 +123,11 @@ LEVEL 3: SYSTEM LOGS
 
 LEVEL 4: FIREWALL RECORDS
 ├─ File Name: firewall_records.enc
-├─ Password: TCPIP443SSL
+├─ Password: ZEROEXPLOIT
 │  └─ How to solve: Network protocol suite → TCP/IP
 │                   Secure port number (HTTPS) → 443
 │                   Encryption protocol → SSL/TLS
-│                   Answer: TCPIP443SSL
+│                   Answer: ZEROEXPLOIT
 ├─ Clue Unlocked: Initial breach from internal network. Iris Wagner was physically
 │                 present in building for 12 hours continuously.
 │                 8 colleagues observed her throughout breach window.
@@ -138,23 +138,23 @@ LEVEL 5: MEGA PUZZLE (FINAL CHALLENGE)
 ├─ This level requires data from ALL previous levels!
 │
 ├─ THE PUZZLE:
-│  ├─ From Level 1 (PROTOCOL47): Take first 4 letters → PROT
-│  ├─ From Level 2 (EXCHANGE2024): Take last 4 letters → 2024
-│  ├─ From Level 3 (KERNEL64BIT): Take positions 1 and 5 → K, E... wait, position 1 is K, position 5 is N... 
-│  │                              Actually: position 1 in "KERNEL64BIT" = K
+│  ├─ From Level 1 (QUANTUMCORE): Take first 4 letters → PROT
+│  ├─ From Level 2 (GENESISVIRUS): Take last 4 letters → 2024
+│  ├─ From Level 3 (CYBERDEFENSE): Take positions 1 and 5 → K, E... wait, position 1 is K, position 5 is N... 
+│  │                              Actually: position 1 in "CYBERDEFENSE" = K
 │  │                              Position 5 = E... Let me recalculate:
 │  │                              K(1)E(2)R(3)N(4)E(5)L(6)6(7)4(8)B(9)I(10)T(11)
 │  │                              Position 1 = K, Position 5 = E... hmm
 │  │                              For the actual solution: K and 6 (from 64) → K6
-│  ├─ From Level 4 (TCPIP443SSL): Take positions 3 and 8 → P (position 3) and 3 (position 8)
+│  ├─ From Level 4 (ZEROEXPLOIT): Take positions 3 and 8 → P (position 3) and 3 (position 8)
 │  │                              T(1)C(2)P(3)I(4)P(5)4(6)4(7)3(8)S(9)S(10)L(11)
 │  │                              Position 3 = P, Position 8 = 3 → P3
 │  │
-│  └─ Combine in order: PROT + 2024 + K6 + P3 = PROT2024K6P3
+│  └─ Combine in order: QUAN + GENE + CYBE + ZERO = QUANGENECYBEZERO
 │
-├─ FINAL PASSWORD: PROT2024K6P3
+├─ FINAL PASSWORD: QUANGENECYBEZERO
 │
-└─ THE TWIST: After eliminating everyone else... ALEX TORRES is revealed as the hacker!
+└─ THE TWIST: After eliminating everyone else... LYRA VANCE is revealed as the hacker!
 
 
 💡 HINT SYSTEM MECHANICS
@@ -172,7 +172,7 @@ Each time the admin password is entered, it unlocks a progressively easier hint:
 Example (Level 1):
 Tier 1: "ROT13: Each letter shifts 13 positions forward."
 Tier 2: "The SSH protocol is related to the password."
-Tier 3: "SSH protocol + breach minute (47) = PROTOCOL47"
+Tier 3: "SSH protocol + breach minute (47) = QUANTUMCORE"
 
 
 🎯 GAME MECHANICS
@@ -187,7 +187,7 @@ PROGRESSION:
 TWIST ENDING:
 - Throughout the game, players are systematically eliminating suspects
 - Each eliminated person seems innocent (with perfect alibis)
-- The final revelation: The last remaining person (Alex Torres) was never
+- The final revelation: The last remaining person (Lyra Vance) was never
   directly investigated because they were overlooked as the "quiet junior dev"
 - This creates the perfect twist: The person you WEREN'T suspecting was guilty
 
@@ -228,7 +228,7 @@ DIFFICULTY SCALING:
 
 ✓ Twist Ending
   └─ All suspects except one have clear alibis
-  └─ Final suspect (Alex Torres) has duplicate login sessions
+  └─ Final suspect (Lyra Vance) has duplicate login sessions
   └─ Cryptocurrency transfers discovered in final revelation
   └─ Motives uncovered (passed over for promotion, negative review)
 
@@ -238,23 +238,23 @@ DIFFICULTY SCALING:
 
 FOR THE GAME MASTER / ORGANIZER:
 
-Level 1: PROTOCOL47
+Level 1: QUANTUMCORE
   - Share this if participants struggle
   - Hint: SSH (Secure Shell Protocol) + 47 (minutes)
 
-Level 2: EXCHANGE2024
+Level 2: GENESISVIRUS
   - Share this if participants struggle  
   - Hint: Microsoft Exchange + current year
 
-Level 3: KERNEL64BIT
+Level 3: CYBERDEFENSE
   - Share this if participants struggle
   - Hint: Operating system kernel + 64-bit architecture
 
-Level 4: TCPIP443SSL
+Level 4: ZEROEXPLOIT
   - Share this if participants struggle
   - Hint: TCP/IP + port 443 + SSL/TLS protocol
 
-Level 5 (MEGA): PROT2024K6P3
+Level 5 (MEGA): QUANGENECYBEZERO
   - This should be discovered by participants through the puzzle
   - If they need help: Have them extract: 1st 4 chars of L1 + last 4 of L2 + key numbers from L3 & L4
 
@@ -291,7 +291,7 @@ Features:
 YOUR ROLE: Corporate Security Investigator
 
 THE SITUATION:
-On March 17, 2026 at 2:47 AM, your company's main server was breached. The
+On March 17, 2026 at 02:47 AM standard time, your company's main server was breached. The
 attacker managed to:
 - Extract the entire customer database
 - Steal sensitive financial records  
@@ -319,7 +319,7 @@ Iris is cleared.
 
 LEVEL 5: THE TWIST.
 All suspects have alibis. All seem innocent. But one person remains:
-ALEX TORRES. The quiet junior developer nobody paid attention to.
+LYRA VANCE. The quiet junior developer nobody paid attention to.
 
 Server logs reveal they were logged in TWICE at the same time—impossible unless
 they used advanced session hijacking techniques. Further investigation reveals:

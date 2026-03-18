@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OPERATION: BREACH - Server Hack Mystery Game</title>
+    <title>OPERATION: NEON SHADOW - Cyberpunk Espionage Game</title>
     <style>
         * {
             margin: 0;
@@ -14,7 +14,7 @@
         body {
             font-family: 'Courier New', monospace;
             background: #000000;
-            color: #00ff00;
+            color: #00ffff;
             overflow: hidden;
             height: 100vh;
         }
@@ -29,21 +29,21 @@
         }
 
         @keyframes glitch {
-            0%, 100% { text-shadow: 0 0 5px #00ff00; }
+            0%, 100% { text-shadow: 0 0 5px #00ffff; }
             50% { text-shadow: 0 0 15px #ff0000, 0 0 5px #00ffff; }
         }
 
         .typing-text {
             display: inline-block;
             text-align: left;
-            border-right: 2px solid #00ff00;
+            border-right: 2px solid #00ffff;
             white-space: pre-wrap;
             word-wrap: break-word;
             animation: blink 0.75s step-end infinite;
         }
 
         .header-bar {
-            background: #001a00;
+            background: #0a001a;
             border-bottom: 2px solid #00ff00;
             padding: 10px 20px;
             display: flex;
@@ -55,7 +55,7 @@
         .title {
             font-size: 24px;
             font-weight: bold;
-            text-shadow: 0 0 10px #00ff00;
+            text-shadow: 0 0 10px #00ffff;
             letter-spacing: 2px;
         }
 
@@ -75,7 +75,7 @@
         .sidebar {
             width: 280px;
             background: #000000;
-            border-right: 2px solid #00ff00;
+            border-right: 2px solid #00ffff;
             overflow-y: auto;
             padding: 15px;
         }
@@ -128,8 +128,8 @@
         }
 
         .modal-content {
-            background: #001a00;
-            border: 2px solid #00ff00;
+            background: #0a001a;
+            border: 2px solid #ff00ff;
             padding: 40px;
             border-radius: 10px;
             max-width: 900px;
@@ -170,7 +170,7 @@
             margin: 20px 0;
             background: rgba(0, 255, 0, 0.05);
             border: 1px solid #00ff00;
-            color: #00ff00;
+            color: #00ffff;
             font-family: 'Courier New', monospace;
             font-size: 16px;
             width: 100%;
@@ -185,8 +185,8 @@
             padding: 12px 30px;
             margin: 10px;
             background: rgba(0, 255, 0, 0.1);
-            border: 2px solid #00ff00;
-            color: #00ff00;
+            border: 2px solid #ff00ff;
+            color: #00ffff;
             cursor: pointer;
             font-family: 'Courier New', monospace;
             font-size: 14px;
@@ -227,8 +227,8 @@
         }
 
         .suspect-card {
-            background: #001a00;
-            border: 2px solid #00ff00;
+            background: #0a001a;
+            border: 2px solid #ff00ff;
             border-radius: 5px;
             overflow: hidden;
             transition: all 0.3s;
@@ -248,7 +248,7 @@
         .suspect-image {
             width: 100%;
             height: 200px;
-            background: #001a00;
+            background: #0a001a;
             overflow: hidden;
             border-bottom: 2px solid #00ff00;
         }
@@ -268,7 +268,7 @@
             font-size: 18px;
             font-weight: bold;
             margin: 10px 0;
-            color: #00ff00;
+            color: #00ffff;
         }
 
         .suspect-role {
@@ -281,7 +281,7 @@
             margin-top: 15px;
             padding-top: 15px;
             border-top: 1px solid rgba(0, 255, 0, 0.3);
-            color: #00ff00;
+            color: #00ffff;
             font-weight: bold;
             font-size: 12px;
         }
@@ -298,7 +298,7 @@
             width: 50px;
             height: 50px;
             background: rgba(0, 255, 0, 0.1);
-            border: 2px solid #00ff00;
+            border: 2px solid #ff00ff;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -329,8 +329,8 @@
 
         .alert.success {
             background: rgba(0, 255, 0, 0.2);
-            border: 2px solid #00ff00;
-            color: #00ff00;
+            border: 2px solid #ff00ff;
+            color: #00ffff;
         }
 
         .alert.error {
@@ -352,7 +352,7 @@
 
         .cipher-display {
             background: rgba(0, 255, 0, 0.1);
-            border: 2px solid #00ff00;
+            border: 2px solid #ff00ff;
             padding: 20px;
             border-radius: 5px;
             margin: 15px 0;
@@ -376,7 +376,7 @@
         h1 {
             font-size: 28px;
             margin-bottom: 20px;
-            text-shadow: 0 0 10px #00ff00;
+            text-shadow: 0 0 10px #00ffff;
         }
 
         h2 {
@@ -459,13 +459,13 @@
 </head>
 <body>
     <div class="header-bar">
-        <div class="title">⚠ OPERATION: BREACH ⚠</div>
+        <div class="title">⚡ OPERATION: NEON SHADOW ⚡</div>
         <div class="time-display" id="timeDisplay">00:00:00</div>
     </div>
 
     <div class="main-container">
         <div class="sidebar">
-            <div style="margin-bottom: 20px; font-weight: bold; text-shadow: 0 0 5px #00ff00; font-size: 14px;">
+            <div style="margin-bottom: 20px; font-weight: bold; text-shadow: 0 0 5px #00ffff; font-size: 14px;">
                 ➤ NAVIGATION MENU
             </div>
             <div class="sidebar-item active" onclick="showHome()">🏠 HOME</div>
@@ -513,7 +513,7 @@
                 <button class="btn" onclick="toggleHint()" style="background: rgba(255, 165, 0, 0.1); border: 2px solid #ffa500; color: #ffa500;">HINTS</button>
             </div>
             <div id="nextLevelContainer" style="display: none; margin-top: 20px;">
-                <button class="btn" onclick="goToNextLevel()" style="background: rgba(0, 255, 0, 0.2); border: 2px solid #00ff00; color: #00ff00; width: 100%;">VIEW CLEARED SUSPECTS ➡</button>
+                <button class="btn" onclick="goToNextLevel()" style="background: rgba(0, 255, 0, 0.2); border: 2px solid #ff00ff; color: #00ffff; width: 100%;">VIEW CLEARED SUSPECTS ➡</button>
             </div>
             <div id="passwordFeedback" style="margin-top: 15px; min-height: 30px;"></div>
         </div>
@@ -521,13 +521,13 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-            const introLines = [
-                "Your company's main server has been compromised.",
-                "A sophisticated attacker has infiltrated your network.",
-                "You have 5 suspects. ONE of them is the hacker.",
-                "Your mission: Crack ciphers and find the truth.",
-                "WARNING: The attacker's identity remains UNKNOWN.",
-                "Solve the final mega cipher to reveal who they are."
+                        const introLines = [
+                "The Genesis AI source code was stolen from OmniCorp's quantum vault.",
+                "A sophisticated corporate spy has infiltrated the executive network.",
+                "You have 5 suspects ranging from tech leads to executives.",
+                "Your mission: Crack the encryption layers and find the thief.",
+                "WARNING: The spy's identity remains completely obscured.",
+                "Solve the final mega cipher to reveal the corporate traitor."
             ];
             
             const container = document.getElementById("introTextContainer");
@@ -564,118 +564,118 @@
             hintsUsed: []
         };
 
-        const characters = {
+                const characters = {
             0: {
-                name: "MARCUS CHEN",
-                role: "Senior Network Admin",
-                dept: "Infrastructure",
-                image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60", // Stock: Professional Man
-                desc: "Quiet, keeps to himself. Rarely in meetings.",
+                name: "NOVA BLACK",
+                role: "Lead AI Architect",
+                dept: "Quantum Research",
+                image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&auto=format&fit=crop&q=60", 
+                desc: "Brilliant but obsessive. Created the Genesis AI.",
                 eliminated: false,
-                reason: "Fitness tracker confirms gym alibi during breach"
+                reason: "Livestreaming a keynote address during the exact time of the breach"
             },
             1: {
-                name: "PAULA RODRIGUEZ",
-                role: "Database Architect",
-                dept: "Backend Systems",
-                image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500&auto=format&fit=crop&q=60", // Stock: Professional Woman
-                desc: "Always busy, hard to reach. Late night worker.",
+                name: "ELIAS VANCE",
+                role: "Head of Security",
+                dept: "Corporate Defense",
+                image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&auto=format&fit=crop&q=60",
+                desc: "Ex-military. Designing the quantum vault's physical security.",
                 eliminated: false,
-                reason: "Passport stamps confirm Brazil vacation dates"
+                reason: "Cybernetics biometrics prove he was unconscious in the medical bay during the breach"
             },
             2: {
-                name: "DEVON PATEL",
-                role: "Security Analyst",
-                dept: "Cybersecurity",
-                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=60", // Stock: Young Man
-                desc: "New hire, 3 months in. Very tech-savvy.",
-                eliminated: false,
-                reason: "TSA records confirm airport presence at breach time"
-            },
-            3: {
-                name: "IRIS WAGNER",
-                role: "Data Entry Specialist",
-                dept: "Admin Support",
-                image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=60", // Stock: Young Woman
-                desc: "Been here 10 years. Very reliable and trustworthy.",
-                eliminated: false,
-                reason: "Multiple colleagues witnessed continuous presence at work"
-            },
-            4: {
-                name: "ALEX TORRES",
-                role: "Junior Developer",
-                dept: "Development",
-                image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=500&auto=format&fit=crop&q=60", // Stock: Developer Man
-                desc: "Quiet, introverted. Keeps coding. Unknown presence.",
+                name: "LYRA VANCE",
+                role: "PR Director",
+                dept: "Public Relations",
+                image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=500&auto=format&fit=crop&q=60",
+                desc: "Elegant and extremely persuasive. Not technical at all.",
                 eliminated: false,
                 reason: "UNKNOWN - Will be revealed by mega cipher"
+            },
+            3: {
+                name: "DR. ARIS THORNE",
+                role: "Chief Data Scientist",
+                dept: "Analytics Analytics",
+                image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=60",
+                desc: "Data-obsessed analyst. Has access to all employee records.",
+                eliminated: false,
+                reason: "His security credentials were stolen via external brute-force before the internal breach"
+            },
+            4: {
+                name: "KAELEN CROSS",
+                role: "Server Technician",
+                dept: "Maintenance",
+                image: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=500&auto=format&fit=crop&q=60", 
+                desc: "Maintains the cooling systems for the quantum cores.",
+                eliminated: false,
+                reason: "He was physically stationed at off-world data center Delta-9"
             }
         };
 
-        const levels = [
+                const levels = [
             {
                 id: 1,
-                name: "ACCESS LOGS",
-                description: "Decrypt access logs using ROT13 cipher",
-                fileName: "access_logs.enc",
-                cipherText: "CEBTBPBY47",
+                name: "QUANTUM ACCESS LOGS",
+                description: "Decrypt vault access sequence using ROT13 cipher",
+                fileName: "vault_access.enc",
+                cipherText: "DHNAGHAPBER",
                 cipherType: "ROT13",
-                password: "PROTOCOL47",
+                password: "QUANTUMCORE",
                 hint1: "ROT13: Each letter shifts 13 positions forward.",
-                hint2: "The SSH protocol is related to the password.",
-                hint3: "SSH protocol + breach minute (47) = PROTOCOL47",
-                clue: "Irregular IP found accessing from outside. Marcus Chen VPN login at breach time. But fitness tracker shows gym visit. MARCUS CHEN CLEARED.",
+                hint2: "It refers to the heart of the stolen AI's hardware.",
+                hint3: "Quantum computing + heart/center = QUANTUMCORE",
+                clue: "Surveillance footage shows NOVA BLACK's access card was used to ping the vault. However, during the exact minute of the breach, she was live on a cross-continental holocast giving the keynote address to 50,000 people. Her card was cloned. NOVA BLACK CLEARED.",
                 suspect: 0,
                 eliminates: 0,
-                solution: "ROT13 decoded: CEBTBPBY47 → PROTOCOL47"
+                solution: "ROT13 decoded: DHNAGHAPBER → QUANTUMCORE"
             },
             {
                 id: 2,
-                name: "EMAIL ARCHIVES",
-                description: "Crack Caesar cipher from email headers",
-                fileName: "email_archives.enc",
-                cipherText: "PCXMFNRD2024",
-                cipherType: "Caesar (Shift 5)",
-                password: "EXCHANGE2024",
-                hint1: "Caesar Cipher: Try shifts 1-25 until it makes sense.",
-                hint2: "It relates to an email server software and the year 2024.",
-                hint3: "Microsoft email software + 2024 = EXCHANGE2024",
-                clue: "Paula Rodriguez out-of-office: Brazil vacation. Visa stamps confirm. Airline records verify. PAULA RODRIGUEZ CLEARED.",
+                name: "NEURAL LINK ARCHIVES",
+                description: "Crack Caesar cipher from neural comm headers",
+                fileName: "neural_comms.enc",
+                cipherText: "JHQHVLVYLUXV",
+                cipherType: "Caesar (Shift 3)",
+                password: "GENESISVIRUS",
+                hint1: "Caesar Cipher: Try shifts 1-10 until it makes sense.",
+                hint2: "It relates to the stolen AI and a malicious program.",
+                hint3: "Genesis AI + Virus = GENESISVIRUS",
+                clue: "ELIAS VANCE's security override code was used to bypass the inner grid. But medical bay biometrics show he was undergoing mandatory neural implant maintenance during that entire 4-hour window. He was unconscious. ELIAS VANCE CLEARED.",
                 suspect: 1,
                 eliminates: 1,
-                solution: "Caesar (Shift 5) decoded: PCXMFNRD2024 → EXCHANGE2024"
+                solution: "Caesar (Shift 3) decoded: JHQHVLVYLUXV → GENESISVIRUS"
             },
             {
                 id: 3,
-                name: "SYSTEM LOGS",
-                description: "Decode Atbash cipher from system logs",
-                fileName: "system_logs.enc",
-                cipherText: "PVIRXOB64BRM",
+                name: "SECURITY MAINFRAME",
+                description: "Decode Atbash cipher from security subroutines",
+                fileName: "security_sub.enc",
+                cipherText: "XBYVIWUVUMHV",
                 cipherType: "Atbash (A↔Z, B↔Y)",
-                password: "KERNEL64BIT",
+                password: "CYBERDEFENSE",
                 hint1: "Atbash Cipher: Each letter maps backward in alphabet.",
-                hint2: "It refers to the operating system core and its architecture.",
-                hint3: "Operating system kernel + 64-bit architecture = KERNEL64BIT",
-                clue: "Commands from Devon Patel's workstation. But cellular data shows LAX Airport. TSA confirms flight at 2:30 AM (before breach). DEVON PATEL CLEARED.",
-                suspect: 2,
-                eliminates: 2,
-                solution: "Atbash decoded: PVIRXOB64BRM → KERNEL64BIT"
+                hint2: "It refers to the department that failed to stop the breach.",
+                hint3: "Cybernetic security team = CYBERDEFENSE",
+                clue: "Analysis of DR. ARIS THORNE's terminal shows the breach originated from his network node. But external perimeter logs show his credentials were brute-forced by a Chinese megacorp proxy farm just seconds prior. He was the victim, not the attacker. DR. ARIS THORNE CLEARED.",
+                suspect: 3,
+                eliminates: 3,
+                solution: "Atbash decoded: XBYVIWUVUMHV → CYBERDEFENSE"
             },
             {
                 id: 4,
-                name: "FIREWALL RECORDS",
-                description: "Solve Vigenère cipher from firewall data",
-                fileName: "firewall_records.enc",
-                cipherText: "FMTMO443YJM",
-                cipherType: "Vigenère (Key: FIREWALL)",
-                password: "TCPIP443SSL",
+                name: "PERIMETER SHIELDS",
+                description: "Solve Vigenère cipher from energy grid data",
+                fileName: "shield_grid.enc",
+                cipherText: "MIFBRBDYBMH",
+                cipherType: "Vigenère (Key: NEON)",
+                password: "ZEROEXPLOIT",
                 hint1: "Vigenère Cipher: Uses a keyword to encrypt/decrypt.",
-                hint2: "The keyword is FIREWALL. Think of networking protocols.",
-                hint3: "TCP/IP + port 443 + SSL/TLS encryption = TCPIP443SSL",
-                clue: "Breach from internal network. Iris Wagner present 12 hours continuously. 8 witnesses confirm. IRIS WAGNER CLEARED.",
-                suspect: 3,
-                eliminates: 3,
-                solution: "Vigenère (Key: FIREWALL) decoded: FMTMO443YJM → TCPIP443SSL"
+                hint2: "The keyword is NEON. It means a flaw with 0 days of warning.",
+                hint3: "Zero-day vulnerability weapon = ZEROEXPLOIT",
+                clue: "The heist required a physical manual bypass of the cooling rods by a maintenance tech. KAELEN CROSS was the only logged tech on duty. However, transport manifests prove he was actively repairing server racks at the off-world lunar facility Delta-9. KAELEN CROSS CLEARED.",
+                suspect: 4,
+                eliminates: 4,
+                solution: "Vigenère (Key: NEON) decoded: MIFBRBDYBMH → ZEROEXPLOIT"
             }
         ];
 
@@ -694,18 +694,18 @@
 
         function showHome() {
             const content = `
-                <h1 style="text-shadow: 0 0 15px #00ff00;">⚠ CASE: OPERATION BREACH ⚠</h1>
+                <h1 style="text-shadow: 0 0 15px #00ff00;">⚡ CASE: NEON SHADOW ⚡</h1>
                 
                 <div class="clue-box">
                     <strong>INCIDENT REPORT:</strong><br><br>
-                    At 02:47 AM on March 17, 2026, unauthorized server access detected.
+                    At 02:47 AM standard time, the Genesis AI source code was stolen.
                     <br><br>
                     Attacker actions:<br>
-                    • Extracted customer database (2.3 GB)<br>
-                    • Stole financial records (800 MB)<br>
-                    • Installed persistent backdoor<br>
-                    • Encrypted system logs<br><br>
-                    <strong>Status:</strong> <span style="color: #ff0000;">HACKER STILL UNKNOWN</span>
+                    • Bypassed quantum firewall layers<br>
+                    • Extracted Genesis core logic (12 PB)<br>
+                    • Wiped identity trackers<br>
+                    • Encrypted access logs<br><br>
+                    <strong>Status:</strong> <span style="color: #ff0000;">TRAITOR UNKNOWN</span>
                 </div>
 
                 <h2 style="margin-top: 30px;">Your Mission:</h2>
@@ -863,7 +863,7 @@
                 content += `
                     <div style="background: ${bgColor}; border: 2px solid ${borderColor}; border-radius: 5px; padding: 20px;">
                         <div style="font-size: 20px; font-weight: bold; margin-bottom: 10px; color: #00ffff;">LEVEL ${level.id}</div>
-                        <div style="font-size: 16px; margin-bottom: 15px; color: #00ff00;">${level.name}</div>
+                        <div style="font-size: 16px; margin-bottom: 15px; color: #00ffff;">${level.name}</div>
                         <div style="font-size: 13px; margin-bottom: 15px; color: rgba(0, 255, 0, 0.7);">
                             ${level.description}
                         </div>
@@ -873,7 +873,7 @@
                         </div>
 
                         ${isCompleted ? `
-                            <div style="color: #00ff00; font-weight: bold;">✓ SOLVED</div>
+                            <div style="color: #00ffff; font-weight: bold;">✓ SOLVED</div>
                         ` : canAccess ? `
                             <button class="btn" onclick="openLevel(${i})" style="width: 100%;">CRACK CIPHER</button>
                         ` : `
@@ -1005,7 +1005,7 @@
             const feedback = document.getElementById('passwordFeedback');
 
             if (currentPasswordChallenge.level === 5) {
-                if (input === "PROT2024K6P3") {
+                if (input === "QUANGENECYBEZERO") {
                     feedback.innerHTML = '<div class="alert success">✓ MEGA CIPHER SOLVED! HACKER IDENTIFIED!</div>';
                     setTimeout(revealHacker, 800);
                 } else {
@@ -1192,11 +1192,11 @@
         function openMegaChallenge() {
             currentPasswordChallenge = {
                 level: 5,
-                password: "PROT2024K6P3",
+                password: "QUANGENECYBEZERO",
                 levelData: {
                     hint1: "This puzzle is ABOUT the puzzles. Look at the passwords.",
                     hint2: "Extract parts from each password. First 4 letters of Level 1...",
-                    hint3: "PROT from Lvl 1, 2024 from Lvl 2, K6 from Lvl 3, P3 from Lvl 4"
+                    hint3: "QUAN from Lvl 1, GENE from Lvl 2, CYBE from Lvl 3, ZERO from Lvl 4"
                 },
                 hintStage: 0,
                 title: "MEGA CIPHER - HACKER IDENTIFICATION",
@@ -1212,22 +1212,19 @@
                 </div>
                 
                 <div class="cipher-display">
-                    P _ _ _ | _ _ _ _ | _ _ | _ _
+                    Q _ _ _ | G _ _ _ | C _ _ _ | Z _ _ _
                 </div>
                 
                 <div style="text-align: left; margin: 20px 0; padding: 15px; background: rgba(0, 255, 0, 0.05); border: 1px solid #00ff00; border-radius: 3px; font-size: 13px;">
                     <strong style="color: #00ffff;">To Decrypt:</strong><br><br>
-                    1. From Level 1: Take first 4 letters<br>
-                    2. From Level 2: Take last 4 letters<br>
-                    3. From Level 3: Take first letter and middle digit<br>
-                    4. From Level 4: Take middle letter (TCP) and middle digit (443)<br><br>
+                    Take the first 4 letters of each of the 4 passwords.<br><br>
                     The answer will be the 12-character combination.
                 </div>
             `;
 
             document.getElementById('passwordFeedback').innerHTML = '';
             document.getElementById('passwordInput').value = '';
-            document.getElementById('passwordInput').placeholder = 'Enter hacker identification (12 chars)...';
+            document.getElementById('passwordInput').placeholder = 'Enter hacker identification (16 chars)...';
             document.getElementById('passwordInput').focus();
             document.getElementById('actionButtons').setAttribute('style', 'display: block !important; margin-top: 20px;');
             document.getElementById('nextLevelContainer').setAttribute('style', 'display: none !important; margin-top: 20px;');
@@ -1240,42 +1237,39 @@
             closePasswordModal();
             
             const finalContent = `
-                <h1 style="font-size: 40px; color: #ff0000; text-shadow: 0 0 30px #ff0000; animation: glitch 0.3s infinite;">
-                    ⚡ HACKER IDENTIFIED ⚡
+                <h1 style="font-size: 40px; color: #ff00ff; text-shadow: 0 0 30px #ff00ff; animation: glitch 0.3s infinite;">
+                    ⚡ CORPORATE TRAITOR IDENTIFIED ⚡
                 </h1>
                 
-                <div style="background: rgba(255, 0, 0, 0.2); border: 3px solid #ff0000; padding: 40px; border-radius: 10px; margin: 40px 0; text-align: center;">
-                    <div style="font-size: 28px; font-weight: bold; color: #ffff00; margin-bottom: 30px;">
+                <div style="background: rgba(255, 0, 255, 0.2); border: 3px solid #ff00ff; padding: 40px; border-radius: 10px; margin: 40px 0; text-align: center;">
+                    <div style="font-size: 28px; font-weight: bold; color: #00ffff; margin-bottom: 30px;">
                         THE HACKER IS:
                     </div>
-                    <div style="font-size: 52px; font-weight: bold; color: #ff0000; text-shadow: 0 0 30px #ff0000; margin: 30px 0;">
-                        ALEX TORRES
+                    <div style="font-size: 52px; font-weight: bold; color: #ff00ff; text-shadow: 0 0 30px #ff00ff; margin: 30px 0;">
+                        LYRA VANCE
                     </div>
-                    <div style="font-size: 18px; color: #ffff00; margin-top: 20px;">
-                        Junior Developer, Development Department
+                    <div style="font-size: 18px; color: #00ffff; margin-top: 20px;">
+                        PR Director, Public Relations
                     </div>
                 </div>
 
-                <div style="background: rgba(0, 200, 255, 0.1); border: 2px solid #00a8ff; border-radius: 5px; padding: 30px; margin: 30px 0;">
-                    <div style="font-size: 20px; font-weight: bold; color: #00ffff; margin-bottom: 20px;">
+                <div style="background: rgba(0, 255, 255, 0.1); border: 2px solid #00ffff; border-radius: 5px; padding: 30px; margin: 30px 0;">
+                    <div style="font-size: 20px; font-weight: bold; color: #ff00ff; margin-bottom: 20px;">
                         🔍 FINAL EVIDENCE
                     </div>
                     
                     <div style="text-align: left; line-height: 2; font-size: 14px;">
                         <div style="margin: 15px 0;">
-                            <strong style="color: #ffff00;">Method:</strong> Advanced session hijacking. Duplicate login sessions.
+                            <strong style="color: #ffff00;">Method:</strong> Social engineering & Executive override. She convinced Elias (Security Head) to unknowingly approve a neural link bypass firmware update while he was medicated.
                         </div>
                         <div style="margin: 15px 0;">
-                            <strong style="color: #ffff00;">Skills:</strong> Deep network knowledge, security protocol understanding.
+                            <strong style="color: #ffff00;">Skills:</strong> Zero technical skills. 100% manipulation and utilizing executive level clearance credentials.
                         </div>
                         <div style="margin: 15px 0;">
-                            <strong style="color: #ffff00;">Motive:</strong> Passed over for promotion 2x. Negative reviews. Stagnant salary.
+                            <strong style="color: #ffff00;">Motive:</strong> Recruited by rival megacorp SynthTech. Embezzling Genesis AI to sell it and retire.
                         </div>
                         <div style="margin: 15px 0;">
-                            <strong style="color: #ffff00;">Financial Trail:</strong> $500K to anonymous crypto wallet (March 12).
-                        </div>
-                        <div style="margin: 15px 0;">
-                            <strong style="color: #ffff00;">Why Unsuspected:</strong> Quiet, overlooked, low-level position.
+                            <strong style="color: #ffff00;">Why Unsuspected:</strong> She's the PR Director. Tech ops assumed the hacker had to be an elite coder. They never looked at the executive suite.
                         </div>
                     </div>
                 </div>
@@ -1285,15 +1279,15 @@
                         ✓ CASE CLOSED
                     </div>
                     <div style="font-size: 14px; line-height: 1.8;">
-                        Federal warrant issued.<br>
-                        All credentials revoked.<br>
-                        Law enforcement notified.<br><br>
-                        <strong>OPERATION: BREACH - SUCCESSFUL CONCLUSION</strong>
+                        Assets frozen.<br>
+                        Corporate assassins dispatched.<br>
+                        Genesis AI secured.<br><br>
+                        <strong>OPERATION: NEON SHADOW - SUCCESSFUL CONCLUSION</strong>
                     </div>
                 </div>
 
                 <div style="margin-top: 40px; text-align: center;">
-                    <button class="btn" onclick="location.reload()" style="font-size: 16px; padding: 15px 40px;">RESTART</button>
+                    <button class="btn" onclick="location.reload()" style="font-size: 16px; padding: 15px 40px;">RESTART HACK</button>
                 </div>
             `;
 

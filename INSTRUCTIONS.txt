@@ -1,5 +1,5 @@
 ╔═══════════════════════════════════════════════════════════════════════════════╗
-║        OPERATION: BREACH - COMPLETE USER GUIDE & SETUP INSTRUCTIONS          ║
+║        OPERATION: NEON SHADOW - COMPLETE USER GUIDE & SETUP INSTRUCTIONS          ║
 ║                   Server Hack Mystery Game - Setup & Play                    ║
 ╚═══════════════════════════════════════════════════════════════════════════════╝
 
@@ -71,27 +71,27 @@ MEGA PUZZLE
 ═══════════════════════════════════════════════════════════════════════════════
 
 LEVEL 1: ACCESS LOGS
-Password: PROTOCOL47
+Password: QUANTUMCORE
 Puzzle: What security protocol + breach time minute = password?
 Difficulty: ⭐ EASY
 
 LEVEL 2: EMAIL ARCHIVES  
-Password: EXCHANGE2024
+Password: GENESISVIRUS
 Puzzle: Microsoft email software + current year = password?
 Difficulty: ⭐⭐ EASY-MEDIUM
 
 LEVEL 3: SYSTEM LOGS
-Password: KERNEL64BIT
+Password: CYBERDEFENSE
 Puzzle: OS core software + architecture type = password?
 Difficulty: ⭐⭐⭐ MEDIUM
 
 LEVEL 4: FIREWALL RECORDS
-Password: TCPIP443SSL
+Password: ZEROEXPLOIT
 Puzzle: Network protocol + secure port + encryption = password?
 Difficulty: ⭐⭐⭐⭐ HARD
 
 LEVEL 5: MEGA PUZZLE (Meta-Challenge)
-Password: PROT2024K6P3
+Password: QUANGENECYBEZERO
 Puzzle: Extract parts from each previous password and combine
 Difficulty: ⭐⭐⭐⭐⭐ EXTREMELY HARD
 
@@ -99,19 +99,19 @@ Difficulty: ⭐⭐⭐⭐⭐ EXTREMELY HARD
 👥 THE 5 SUSPECTS (LIVE STOCK PHOTOS)
 ═══════════════════════════════════════════════════════════════════════════════
 
-1. MARCUS CHEN - Senior Network Admin
+1. NOVA BLACK - Senior Network Admin
    └─ Eliminated in Level 1 (Gym alibi confirmed)
 
-2. PAULA RODRIGUEZ - Database Architect
+2. ELIAS VANCE - Database Architect
    └─ Eliminated in Level 2 (Brazil vacation confirmed)
 
-3. DEVON PATEL - Security Analyst
+3. DR. ARIS THORNE - Security Analyst
    └─ Eliminated in Level 3 (Airport/flight confirmed)
 
-4. IRIS WAGNER - Data Entry Specialist
+4. KAELEN CROSS - Data Entry Specialist
    └─ Eliminated in Level 4 (Witnesses at work confirmed)
 
-5. ALEX TORRES - Junior Developer ⭐ THE HACKER
+5. LYRA VANCE - Junior Developer ⭐ THE HACKER
    └─ Revealed in Level 5 (Duplicate login sessions discovered)
 
 
@@ -138,9 +138,9 @@ START
   ↓
 → LEVEL 5: Meta-puzzle unlocks with all 4 password elements
   ↓
-→ Solve mega puzzle: PROT2024K6P3
+→ Solve mega puzzle: QUANGENECYBEZERO
   ↓
-→ REVELATION: ALEX TORRES is the hacker!
+→ REVELATION: LYRA VANCE is the hacker!
   ↓
 END
 
@@ -153,24 +153,24 @@ Question: "What protocol is used for secure shell access? Add 47 to it."
 Thought process:
   1. What protocol for secure shell? → SSH
   2. What do we add? → 47 (minutes in the breach time 02:47)
-  3. Format: The word + number → PROTOCOL47
-Answer: PROTOCOL47 ✓
+  3. Format: The word + number → QUANTUMCORE
+Answer: QUANTUMCORE ✓
 
 LEVEL 2 SOLUTION EXAMPLE:
 Question: "What is Microsoft's enterprise email software? Add the year."
 Thought process:
   1. Microsoft's email server? → Exchange
   2. Current year? → 2024
-  3. Format: Software name + year → EXCHANGE2024
-Answer: EXCHANGE2024 ✓
+  3. Format: Software name + year → GENESISVIRUS
+Answer: GENESISVIRUS ✓
 
 LEVEL 3 SOLUTION EXAMPLE:
 Question: "What is the OS kernel? Described by what architecture?"
 Thought process:
   1. Core OS software? → Kernel
   2. Modern architecture? → 64-bit (most common today)
-  3. Format: Term + architecture → KERNEL64BIT
-Answer: KERNEL64BIT ✓
+  3. Format: Term + architecture → CYBERDEFENSE
+Answer: CYBERDEFENSE ✓
 
 LEVEL 4 SOLUTION EXAMPLE:
 Question: "Network protocol suite? Secure port number? Encryption?"
@@ -178,18 +178,18 @@ Thought process:
   1. Network foundation? → TCP/IP
   2. Secure HTTPS port? → 443
   3. Encryption standard? → SSL (or TLS)
-  4. Format: Combine all → TCPIP443SSL (no spaces or slashes)
-Answer: TCPIP443SSL ✓
+  4. Format: Combine all → ZEROEXPLOIT (no spaces or slashes)
+Answer: ZEROEXPLOIT ✓
 
 LEVEL 5 SOLUTION EXAMPLE:
 Question: "Extract and combine elements from previous passwords"
 Thought process:
-  1. From PROTOCOL47: First 4 letters → PROT
-  2. From EXCHANGE2024: Last 4 letters → 2024
-  3. From KERNEL64BIT: First letter (K) + digit (6) → K6
-  4. From TCPIP443SSL: Middle letter (P) + port digit (3) → P3
-  5. Combine in order: PROT + 2024 + K6 + P3 → PROT2024K6P3
-Answer: PROT2024K6P3 ✓
+  1. From QUANTUMCORE: First 4 letters → PROT
+  2. From GENESISVIRUS: Last 4 letters → 2024
+  3. From CYBERDEFENSE: First letter (K) + digit (6) → K6
+  4. From ZEROEXPLOIT: Middle letter (P) + port digit (3) → P3
+  5. Combine in order: QUAN + GENE + CYBE + ZERO → QUANGENECYBEZERO
+Answer: QUANGENECYBEZERO ✓
 
 
 💡 HINT SYSTEM (ADMIN REQUIRED)
@@ -382,7 +382,7 @@ A: The game doesn't have a save function. Complete it in one session or start fr
 Q: What's the twist ending?
 A: We won't spoil it! But you'll be surprised. The person you least suspect is guilty.
 
-Q: Why wasn't I suspicious of Alex Torres?
+Q: Why wasn't I suspicious of Lyra Vance?
 A: That's the point! They were overlooked on purpose. Perfect alibi + ignored person = perfect disguise.
 
 Q: Can I play this solo or is it only for groups?
@@ -460,10 +460,10 @@ AWARENESS TOPICS:
 🎉 WHAT HAPPENS AT THE END
 ═══════════════════════════════════════════════════════════════════════════════
 
-After solving the mega puzzle with password PROT2024K6P3, you will:
+After solving the mega puzzle with password QUANGENECYBEZERO, you will:
 
 1. See the final file unlock
-2. Discover that ALEX TORRES is the hacker
+2. Discover that LYRA VANCE is the hacker
 3. Learn about the duplicate login sessions
 4. Find evidence of cryptocurrency transfers
 5. See the motive (passed over for promotion)

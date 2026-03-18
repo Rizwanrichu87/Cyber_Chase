@@ -1,5 +1,5 @@
 ╔═══════════════════════════════════════════════════════════════════════════════╗
-║              OPERATION: BREACH - GAME STRUCTURE & FLOWCHART                   ║
+║              OPERATION: NEON SHADOW - GAME STRUCTURE & FLOWCHART                   ║
 ║                    Visual Guide to Game Progression                          ║
 ╚═══════════════════════════════════════════════════════════════════════════════╝
 
@@ -50,7 +50,7 @@
 LEVEL 1
 ┌────────────────────────────────────────────┐
 │ FILE: access_logs.enc                      │
-│ PASSWORD: PROTOCOL47                       │
+│ PASSWORD: QUANTUMCORE                       │
 │ HINT: What protocol? Add 47.               │
 ├────────────────────────────────────────────┤
 │ ✓ CORRECT                                  │
@@ -68,7 +68,7 @@ LEVEL 1
 LEVEL 2
 ┌────────────────────────────────────────────┐
 │ FILE: email_archives.enc                   │
-│ PASSWORD: EXCHANGE2024                     │
+│ PASSWORD: GENESISVIRUS                     │
 │ HINT: Microsoft software + year            │
 ├────────────────────────────────────────────┤
 │ ✓ CORRECT                                  │
@@ -86,7 +86,7 @@ LEVEL 2
 LEVEL 3
 ┌────────────────────────────────────────────┐
 │ FILE: system_logs.enc                      │
-│ PASSWORD: KERNEL64BIT                      │
+│ PASSWORD: CYBERDEFENSE                      │
 │ HINT: OS core + architecture               │
 ├────────────────────────────────────────────┤
 │ ✓ CORRECT                                  │
@@ -104,7 +104,7 @@ LEVEL 3
 LEVEL 4
 ┌────────────────────────────────────────────┐
 │ FILE: firewall_records.enc                 │
-│ PASSWORD: TCPIP443SSL                      │
+│ PASSWORD: ZEROEXPLOIT                      │
 │ HINT: Network protocol + port + encryption │
 ├────────────────────────────────────────────┤
 │ ✓ CORRECT                                  │
@@ -123,16 +123,16 @@ LEVEL 5 (MEGA PUZZLE)
 ┌────────────────────────────────────────────┐
 │ META-PUZZLE CHALLENGE                      │
 │ Extract from previous passwords:           │
-│ L1 (PROTOCOL47) → first 4 = PROT           │
-│ L2 (EXCHANGE2024) → last 4 = 2024          │
-│ L3 (KERNEL64BIT) → K & 6 = K6              │
-│ L4 (TCPIP443SSL) → P & 3 = P3              │
-│ Combine: PROT2024K6P3                      │
+│ L1 (QUANTUMCORE) → first 4 = PROT           │
+│ L2 (GENESISVIRUS) → last 4 = 2024          │
+│ L3 (CYBERDEFENSE) → K & 6 = K6              │
+│ L4 (ZEROEXPLOIT) → P & 3 = P3              │
+│ Combine: QUANGENECYBEZERO                      │
 ├────────────────────────────────────────────┤
 │ ✓ CORRECT                                  │
 │ ↓                                          │
 │ ⚡ FINAL REVELATION ⚡                    │
-│ ALEX TORRES IS THE HACKER!                 │
+│ LYRA VANCE IS THE HACKER!                 │
 │ - Duplicate login sessions                 │
 │ - Cryptocurrency transfers                 │
 │ - Motive: Passed over for promotion        │
@@ -255,15 +255,15 @@ AFTER LEVEL 5: REVEALED
                     DIFFICULTY PROGRESSION
                     
     ⭐ EASY
-    ├─ Level 1: PROTOCOL47 (SSH + 47)
-    └─ Level 2: EXCHANGE2024 (Software + Year)
+    ├─ Level 1: QUANTUMCORE (SSH + 47)
+    └─ Level 2: GENESISVIRUS (Software + Year)
     
     ⭐⭐⭐ MEDIUM
-    ├─ Level 3: KERNEL64BIT (OS + Architecture)
-    └─ Level 4: TCPIP443SSL (3 components)
+    ├─ Level 3: CYBERDEFENSE (OS + Architecture)
+    └─ Level 4: ZEROEXPLOIT (3 components)
     
     ⭐⭐⭐⭐⭐ MEGA PUZZLE
-    └─ Level 5: PROT2024K6P3 (Meta-puzzle)
+    └─ Level 5: QUANGENECYBEZERO (Meta-puzzle)
 
 
 🔑 META-PUZZLE SOLUTION PATH
@@ -272,28 +272,28 @@ AFTER LEVEL 5: REVEALED
 LEVEL 5 PUZZLE SOLVING:
 
 Step 1: Review Level 1 Password
-        PROTOCOL47
+        QUANTUMCORE
         ↓
         Extract first 4 letters
         ↓
         PROT
         
 Step 2: Review Level 2 Password
-        EXCHANGE2024
+        GENESISVIRUS
         ↓
         Extract last 4 letters/digits
         ↓
         2024
         
 Step 3: Review Level 3 Password
-        KERNEL64BIT
+        CYBERDEFENSE
         ↓
         Extract K (first letter) + 6 (first digit)
         ↓
         K6
         
 Step 4: Review Level 4 Password
-        TCPIP443SSL
+        ZEROEXPLOIT
         ↓
         Extract P (from TCP) + 3 (from 443)
         ↓
@@ -302,7 +302,7 @@ Step 4: Review Level 4 Password
 Step 5: Combine in order
         PROT + 2024 + K6 + P3
         ↓
-        PROT2024K6P3
+        QUANGENECYBEZERO
         
 Step 6: Enter password
         ↓
@@ -310,7 +310,7 @@ Step 6: Enter password
         ↓
         Final file unlocks
         ↓
-        ALEX TORRES REVEALED
+        LYRA VANCE REVEALED
 
 
 💡 HINT PROGRESSION SYSTEM (ADMIN REQUIRED)
@@ -372,7 +372,7 @@ THEME: The most dangerous person is the one you overlook
 ═══════════════════════════════════════════════════════════════════════════════
 
 ┌─────────────────────────────────────────────────────────────────────┐
-│  ⚠ OPERATION: BREACH ⚠                    [TIME DISPLAY: 00:00:00]  │
+│  ⚠ OPERATION: NEON SHADOW ⚠                    [TIME DISPLAY: 00:00:00]  │
 ├──────────────┬─────────────────────────────────────────────────────┤
 │              │                                                       │
 │  NAVIGATION  │               MAIN CONTENT AREA                      │
