@@ -147,56 +147,56 @@ LEVEL 5 (MEGA PUZZLE)
 
 START: 5 SUSPECTS
 ┌─────────────────────────────┐
-│ 1. Nova Black              │
-│ 2. Elias Vance          │
-│ 3. Dr. Aris Thorne              │
-│ 4. Kaelen Cross              │
-│ 5. Lyra Vance              │
+│ 1. Elias Vance              │
+│ 2. Dr. Aris Thorne          │
+│ 3. Nova Black               │
+│ 4. Lyra Vance               │
+│ 5. Kaelen Cross             │
 └─────────────────────────────┘
 
 AFTER LEVEL 1: 4 REMAINING
 ┌─────────────────────────────┐
-│ ✓ Nova Black [CLEARED]     │
-│ 2. Elias Vance          │
-│ 3. Dr. Aris Thorne              │
-│ 4. Kaelen Cross              │
-│ 5. Lyra Vance              │
+│ 1. Elias Vance              │
+│ 2. Dr. Aris Thorne          │
+│ ✓ Nova Black [CLEARED]      │
+│ 4. Lyra Vance               │
+│ 5. Kaelen Cross             │
 └─────────────────────────────┘
 
 AFTER LEVEL 2: 3 REMAINING
 ┌─────────────────────────────┐
-│ ✓ Nova Black [CLEARED]     │
-│ ✓ Elias Vance [CLEARED] │
-│ 3. Dr. Aris Thorne              │
-│ 4. Kaelen Cross              │
-│ 5. Lyra Vance              │
+│ ✓ Elias Vance [CLEARED]     │
+│ 2. Dr. Aris Thorne          │
+│ ✓ Nova Black [CLEARED]      │
+│ 4. Lyra Vance               │
+│ 5. Kaelen Cross             │
 └─────────────────────────────┘
 
 AFTER LEVEL 3: 2 REMAINING
 ┌─────────────────────────────┐
-│ ✓ Nova Black [CLEARED]     │
-│ ✓ Elias Vance [CLEARED] │
-│ ✓ Dr. Aris Thorne [CLEARED]     │
-│ 4. Kaelen Cross              │
-│ 5. Lyra Vance              │
+│ ✓ Elias Vance [CLEARED]     │
+│ ✓ Dr. Aris Thorne [CLEARED] │
+│ ✓ Nova Black [CLEARED]      │
+│ 4. Lyra Vance               │
+│ 5. Kaelen Cross             │
 └─────────────────────────────┘
 
 AFTER LEVEL 4: 1 REMAINING
 ┌─────────────────────────────┐
-│ ✓ Nova Black [CLEARED]     │
-│ ✓ Elias Vance [CLEARED] │
-│ ✓ Dr. Aris Thorne [CLEARED]     │
-│ ✓ Kaelen Cross [CLEARED]     │
-│ 5. Lyra Vance              │
+│ ✓ Elias Vance [CLEARED]     │
+│ ✓ Dr. Aris Thorne [CLEARED] │
+│ ✓ Nova Black [CLEARED]      │
+│ 4. Lyra Vance               │
+│ ✓ Kaelen Cross [CLEARED]    │
 └─────────────────────────────┘
 
 AFTER LEVEL 5: REVEALED
 ┌─────────────────────────────┐
-│ ✓ Nova Black [CLEARED]     │
-│ ✓ Elias Vance [CLEARED] │
-│ ✓ Dr. Aris Thorne [CLEARED]     │
-│ ✓ Kaelen Cross [CLEARED]     │
-│ ⚠ Lyra Vance [GUILTY]      │
+│ ✓ Elias Vance [CLEARED]     │
+│ ✓ Dr. Aris Thorne [CLEARED] │
+│ ✓ Nova Black [CLEARED]      │
+│ ⚠ Lyra Vance [GUILTY]       │
+│ ✓ Kaelen Cross [CLEARED]    │
 └─────────────────────────────┘
 
 

@@ -15,45 +15,45 @@ TWIST: The ignored executive IS the actual corporate spy!
 🕵️ CHARACTER PROFILES (5 SUSPECTS)
 ═══════════════════════════════════════════════════════════════════════════════
 
-1. MARCUS CHEN
-   ├─ Role: Senior Network Admin
-   ├─ Department: Infrastructure
-   ├─ User ID: sys_admin_m
-   ├─ Description: Quiet, keeps to himself. Rarely in meetings.
-   ├─ Eliminated In: LEVEL 1
-   └─ Elimination Reason: Found at gym during breach. Security cameras confirm.
-
-2. PAULA RODRIGUEZ
-   ├─ Role: Database Architect
-   ├─ Department: Backend Systems
-   ├─ User ID: db_architect
-   ├─ Description: Always busy, hard to reach. Late night worker.
+1. ELIAS VANCE
+   ├─ Role: Head of Security
+   ├─ Department: Corporate Defense
+   ├─ User ID: sec_chief
+   ├─ Description: Ex-military. Designing the quantum vault's physical security.
    ├─ Eliminated In: LEVEL 2
-   └─ Elimination Reason: Email logs show she was in Brazil on vacation. Passport scan verified.
+   └─ Elimination Reason: Cybernetics biometrics prove he was unconscious in the medical bay during the breach
 
-3. DEVON PATEL
-   ├─ Role: Security Analyst
-   ├─ Department: Cybersecurity
-   ├─ User ID: security_scan
-   ├─ Description: New hire, 3 months in. Very tech-savvy.
+2. DR. ARIS THORNE
+   ├─ Role: Chief Data Scientist
+   ├─ Department: Analytics
+   ├─ User ID: data_lead
+   ├─ Description: Data-obsessed analyst. Has access to all employee records.
    ├─ Eliminated In: LEVEL 3
-   └─ Elimination Reason: Phone records show presence at airport. Flying out for family emergency.
+   └─ Elimination Reason: His security credentials were stolen via external brute-force before the internal breach
 
-4. IRIS WAGNER
-   ├─ Role: Data Entry Specialist
-   ├─ Department: Admin Support
-   ├─ User ID: data_entry
-   ├─ Description: Been here 10 years. Very reliable and trustworthy.
-   ├─ Eliminated In: LEVEL 4
-   └─ Elimination Reason: Multiple witnesses saw her at work during entire breach window.
+3. NOVA BLACK
+   ├─ Role: Lead AI Architect
+   ├─ Department: Quantum Research
+   ├─ User ID: quant_arch
+   ├─ Description: Brilliant but obsessive. Created the Genesis AI.
+   ├─ Eliminated In: LEVEL 1
+   └─ Elimination Reason: Livestreaming a keynote address during the exact time of the breach
 
-5. LYRA VANCE ⭐ THE HACKER
-   ├─ Role: Junior Developer
-   ├─ Department: Development
-   ├─ User ID: dev_junior
-   ├─ Description: Quiet, introverted. Keeps coding. Nobody really knows them.
+4. LYRA VANCE ⭐ THE HACKER
+   ├─ Role: PR Director
+   ├─ Department: Public Relations
+   ├─ User ID: pr_dir
+   ├─ Description: Elegant and extremely persuasive. Not technical at all.
    ├─ Revealed In: MEGA PUZZLE (LEVEL 5)
-   └─ Final Evidence: Duplicate login sessions. Present in TWO places at once!
+   └─ Final Evidence: She used social engineering to have security bypassed on executive orders
+
+5. KAELEN CROSS
+   ├─ Role: Server Technician
+   ├─ Department: Maintenance
+   ├─ User ID: server_ops
+   ├─ Description: Maintains the cooling systems for the quantum cores.
+   ├─ Eliminated In: LEVEL 4
+   └─ Elimination Reason: He was physically stationed at off-world data center Delta-9
 
 
 ⏰ BREACH TIMELINE

@@ -568,17 +568,8 @@
             levelPoints: {}
         };
 
-                const characters = {
+                        const characters = {
             0: {
-                name: "NOVA BLACK",
-                role: "Lead AI Architect",
-                dept: "Quantum Research",
-                image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&auto=format&fit=crop&q=60", 
-                desc: "Brilliant but obsessive. Created the Genesis AI.",
-                eliminated: false,
-                reason: "Livestreaming a keynote address during the exact time of the breach"
-            },
-            1: {
                 name: "ELIAS VANCE",
                 role: "Head of Security",
                 dept: "Corporate Defense",
@@ -587,7 +578,25 @@
                 eliminated: false,
                 reason: "Cybernetics biometrics prove he was unconscious in the medical bay during the breach"
             },
+            1: {
+                name: "DR. ARIS THORNE",
+                role: "Chief Data Scientist",
+                dept: "Analytics",
+                image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=60",
+                desc: "Data-obsessed analyst. Has access to all employee records.",
+                eliminated: false,
+                reason: "His security credentials were stolen via external brute-force before the internal breach"
+            },
             2: {
+                name: "NOVA BLACK",
+                role: "Lead AI Architect",
+                dept: "Quantum Research",
+                image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&auto=format&fit=crop&q=60", 
+                desc: "Brilliant but obsessive. Created the Genesis AI.",
+                eliminated: false,
+                reason: "Livestreaming a keynote address during the exact time of the breach"
+            },
+            3: {
                 name: "LYRA VANCE",
                 role: "PR Director",
                 dept: "Public Relations",
@@ -595,15 +604,6 @@
                 desc: "Elegant and extremely persuasive. Not technical at all.",
                 eliminated: false,
                 reason: "UNKNOWN - Will be revealed by mega cipher"
-            },
-            3: {
-                name: "DR. ARIS THORNE",
-                role: "Chief Data Scientist",
-                dept: "Analytics Analytics",
-                image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=60",
-                desc: "Data-obsessed analyst. Has access to all employee records.",
-                eliminated: false,
-                reason: "His security credentials were stolen via external brute-force before the internal breach"
             },
             4: {
                 name: "KAELEN CROSS",
@@ -629,8 +629,8 @@
                 hint2: "It refers to the heart of the stolen AI's hardware.",
                 hint3: "Combine the technology type with what it represents (the heart).",
                 clue: "Surveillance footage shows NOVA BLACK's access card was used to ping the vault. However, during the exact minute of the breach, she was live on a cross-continental holocast giving the keynote address to 50,000 people. Her card was cloned. NOVA BLACK CLEARED.",
-                suspect: 0,
-                eliminates: 0,
+                suspect: 2,
+                eliminates: 2,
                 solution: "ROT13 decoded: DHNAGHAPBER → QUANTUMCORE"
             },
             {
@@ -645,8 +645,8 @@
                 hint2: "It relates to the stolen AI and a malicious program.",
                 hint3: "Combine the name of the AI with the type of malicious software it became.",
                 clue: "ELIAS VANCE's security override code was used to bypass the inner grid. But medical bay biometrics show he was undergoing mandatory neural implant maintenance during that entire 4-hour window. He was unconscious. ELIAS VANCE CLEARED.",
-                suspect: 1,
-                eliminates: 1,
+                suspect: 0,
+                eliminates: 0,
                 solution: "Caesar (Shift 3) decoded: JHQHVLVYLUXV → GENESISVIRUS"
             },
             {
@@ -661,8 +661,8 @@
                 hint2: "It refers to the department that failed to stop the breach.",
                 hint3: "Combine the prefix for digital systems with the department's primary function.",
                 clue: "Analysis of DR. ARIS THORNE's terminal shows the breach originated from his network node. But external perimeter logs show his credentials were brute-forced by a Chinese megacorp proxy farm just seconds prior. He was the victim, not the attacker. DR. ARIS THORNE CLEARED.",
-                suspect: 3,
-                eliminates: 3,
+                suspect: 1,
+                eliminates: 1,
                 solution: "Atbash decoded: XBYVIWUVUMHV → CYBERDEFENSE"
             },
             {
