@@ -1005,7 +1005,7 @@
             const feedback = document.getElementById('passwordFeedback');
 
             if (currentPasswordChallenge.level === 5) {
-                if (input === "ALEXTORESCAUGHT") {
+                if (input === "PROT2024K6P3") {
                     feedback.innerHTML = '<div class="alert success">✓ MEGA CIPHER SOLVED! HACKER IDENTIFIED!</div>';
                     setTimeout(revealHacker, 800);
                 } else {
@@ -1159,26 +1159,23 @@
                     </div>
                     
                     <div style="background: rgba(0, 0, 0, 0.3); padding: 20px; border-radius: 3px; margin-bottom: 20px;">
-                        <div style="color: #ffff00; font-weight: bold; margin-bottom: 15px; font-size: 14px;">COMBINED CIPHER TEXT:</div>
-                        <div style="font-family: 'Courier New'; font-size: 16px; letter-spacing: 2px; text-align: center; line-height: 2;">
-                            YQVG-8642-XSGM
+                        <div style="color: #ffff00; font-weight: bold; margin-bottom: 15px; font-size: 14px;">META-PUZZLE:</div>
+                        <div style="font-family: 'Courier New'; font-size: 14px; text-align: left; line-height: 1.6;">
+                            Below are files from all previous levels, hidden and encrypted. Find the hidden password across all locations. It uses elements from each level's password.
                         </div>
                     </div>
 
                     <div style="background: rgba(0, 255, 0, 0.05); padding: 15px; border-left: 4px solid #00ff00; border-radius: 3px; margin-bottom: 20px; text-align: left; font-size: 13px;">
-                        <strong>This is a multi-layer cipher:</strong><br>
-                        ✓ Vigenère (outer layer)<br>
-                        ✓ Atbash transformation<br>
-                        ✓ Caesar shift<br>
-                        ✓ ROT13 (innermost layer)<br><br>
-                        <strong>Decrypt all layers to reveal the hacker!</strong>
+                        <strong>Instructions:</strong><br>
+                        ✓ Take specific parts from each previous password<br>
+                        ✓ Combine them in sequence (Level 1 to 4)<br><br>
+                        <strong>Combine them correctly to reveal the hacker!</strong>
                     </div>
 
                     <div style="background: rgba(255, 165, 0, 0.1); padding: 15px; border-left: 4px solid #ffa500; border-radius: 3px; text-align: left; font-size: 12px;">
                         <strong style="color: #ffa500;">SOLVING HINTS:</strong><br><br>
-                        Keyword: BREACH<br>
-                        Answer: The hacker's full name + identity confirmation<br>
-                        Length: 15 characters
+                        Look at the original decrypted passwords.<br>
+                        Length: 12 characters
                     </div>
                 </div>
 
@@ -1195,42 +1192,42 @@
         function openMegaChallenge() {
             currentPasswordChallenge = {
                 level: 5,
-                password: "ALEXTORESCAUGHT",
+                password: "PROT2024K6P3",
                 levelData: {
-                    hint1: "Multi-layer cipher with keyword BREACH. Work through each layer.",
-                    hint2: "15 characters: Hacker's name + CAUGHT",
-                    hint3: "The password is ALEXTORESCAUGHT"
+                    hint1: "This puzzle is ABOUT the puzzles. Look at the passwords.",
+                    hint2: "Extract parts from each password. First 4 letters of Level 1...",
+                    hint3: "PROT from Lvl 1, 2024 from Lvl 2, K6 from Lvl 3, P3 from Lvl 4"
                 },
                 hintStage: 0,
                 title: "MEGA CIPHER - HACKER IDENTIFICATION",
-                cipherText: "YQVG-8642-XSGM",
-                cipherType: "Combined Multi-Layer"
+                cipherText: "Combine previous clues.",
+                cipherType: "Meta-Puzzle"
             };
 
             document.getElementById('passwordTitle').textContent = `🔐 ${currentPasswordChallenge.title}`;
             document.getElementById('passwordPrompt').innerHTML = `
                 <div style="margin-bottom: 20px; text-align: left;">
                     <strong>FINAL CHALLENGE</strong><br>
-                    Multi-layer encrypted cipher combining all previous methods.
+                    Meta-puzzle combining previous answers.
                 </div>
                 
                 <div class="cipher-display">
-                    ${currentPasswordChallenge.cipherText}
+                    P _ _ _ | _ _ _ _ | _ _ | _ _
                 </div>
                 
                 <div style="text-align: left; margin: 20px 0; padding: 15px; background: rgba(0, 255, 0, 0.05); border: 1px solid #00ff00; border-radius: 3px; font-size: 13px;">
                     <strong style="color: #00ffff;">To Decrypt:</strong><br><br>
-                    1. Apply reverse Vigenère (Key: BREACH)<br>
-                    2. Reverse Atbash transformation<br>
-                    3. Apply reverse Caesar shift<br>
-                    4. Apply reverse ROT13<br><br>
-                    The answer will be the hacker's full name plus CAUGHT.
+                    1. From Level 1: Take first 4 letters<br>
+                    2. From Level 2: Take last 4 letters<br>
+                    3. From Level 3: Take first letter and middle digit<br>
+                    4. From Level 4: Take middle letter (TCP) and middle digit (443)<br><br>
+                    The answer will be the 12-character combination.
                 </div>
             `;
 
             document.getElementById('passwordFeedback').innerHTML = '';
             document.getElementById('passwordInput').value = '';
-            document.getElementById('passwordInput').placeholder = 'Enter hacker identification (15 chars)...';
+            document.getElementById('passwordInput').placeholder = 'Enter hacker identification (12 chars)...';
             document.getElementById('passwordInput').focus();
             document.getElementById('actionButtons').setAttribute('style', 'display: block !important; margin-top: 20px;');
             document.getElementById('nextLevelContainer').setAttribute('style', 'display: none !important; margin-top: 20px;');
