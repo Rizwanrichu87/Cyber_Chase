@@ -475,6 +475,7 @@
             <div class="sidebar-item" onclick="showEvidence()">📋 EVIDENCE LOG</div>
             <div class="sidebar-item" onclick="showTimeline()">⏱ TIMELINE</div>
             <div class="sidebar-item" onclick="showMegaPuzzle()">🔓 MEGA CIPHER</div>
+            <div class="sidebar-item" onclick="showScore()">🏆 POINTS & TIMING</div>
         </div>
 
         <div class="content-area" id="contentArea">
@@ -561,7 +562,10 @@
             eliminatedSuspects: [],
             gameStarted: false,
             finalRevealed: false,
-            hintsUsed: []
+            hintsUsed: {},
+            startTime: null,
+            levelTimes: {},
+            levelPoints: {}
         };
 
                 const characters = {
@@ -681,6 +685,7 @@
 
         function startGame() {
             gameState.gameStarted = true;
+            gameState.startTime = new Date();
             document.getElementById('introModal').classList.remove('active');
             showHome();
             updateTime();
@@ -980,6 +985,10 @@
                 currentPasswordChallenge.hintStage++;
             }
             
+            // Track hints used for points penalty
+            const levelId = currentPasswordChallenge.level;
+            gameState.hintsUsed[levelId] = currentPasswordChallenge.hintStage;
+            
             const hintDisplay = document.getElementById('hintTextDisplay');
             let html = "";
             const levelData = currentPasswordChallenge.levelData;
@@ -1007,6 +1016,19 @@
             if (currentPasswordChallenge.level === 5) {
                 if (input === "QUANGENECYBEZERO") {
                     feedback.innerHTML = '<div class="alert success">✓ MEGA CIPHER SOLVED! HACKER IDENTIFIED!</div>';
+                    
+                    if (!gameState.completedLevels.includes(4)) {
+                        gameState.completedLevels.push(4);
+                        gameState.levelTimes[4] = new Date();
+                        
+                        let hints = gameState.hintsUsed[4] || 0;
+                        let points = 50; // Special 50 points for mega puzzle
+                        if (hints > 0) points -= 10;
+                        if (hints > 1) points -= 10;
+                        if (hints > 2) points -= 10;
+                        gameState.levelPoints[4] = Math.max(0, points);
+                    }
+                    
                     setTimeout(revealHacker, 800);
                 } else {
                     feedback.innerHTML = '<div class="alert error">✗ INCORRECT. Try again!</div>';
@@ -1036,6 +1058,15 @@
 
                         if (!gameState.completedLevels.includes(levelIndex)) {
                             gameState.completedLevels.push(levelIndex);
+                            gameState.levelTimes[levelIndex] = new Date();
+                            
+                            // Calculate points
+                            let hints = gameState.hintsUsed[levelIndex] || 0;
+                            let points = 10;
+                            if (hints > 0) points -= 2; // -2 for first hint
+                            if (hints > 1) points -= 1; // -1 for second hint
+                            if (hints > 2) points -= 1; // -1 for third hint
+                            gameState.levelPoints[levelIndex] = Math.max(0, points);
                         }
 
                         if (!gameState.eliminatedSuspects.includes(level.eliminates)) {
@@ -1296,6 +1327,82 @@
 
         updateTime();
         setInterval(updateTime, 1000);
+    
+        function showScore() {
+            let content = `<h1>🏆 SURVIVAL SCORECARD</h1>`;
+
+            if (!gameState.gameStarted) {
+                content += `<div class="alert warning">Game has not started yet.</div>`;
+                document.getElementById('contentArea').innerHTML = content;
+                return;
+            }
+
+            let totalPoints = 0;
+            let displayRows = "";
+            let currentTime = new Date();
+            let totalElapsedMs = currentTime - gameState.startTime;
+            
+            if(gameState.completedLevels.includes(4)) { // Changed from 5 to 4 for 0-indexed levels
+                 totalElapsedMs = gameState.levelTimes[4] - gameState.startTime; // Changed from 5 to 4
+            }
+            
+            let totalElapsedMins = Math.floor(totalElapsedMs / 60000);
+            let totalElapsedSecs = Math.floor((totalElapsedMs % 60000) / 1000);
+
+            // Draw each level's scorecard (0 to 3 for standard levels, 4 for mega cipher)
+            for (let i = 0; i <= 4; i++) {
+                if (gameState.completedLevels.includes(i)) {
+                    let points = gameState.levelPoints[i] || 0;
+                    totalPoints += points;
+                    
+                    let timeTaken = "N/A";
+                    if (gameState.levelTimes[i]) {
+                        // Calculate time from start of game (or previous level)
+                        let startTimeForLevel = i === 0 ? gameState.startTime : (gameState.levelTimes[i-1] || gameState.startTime);
+                        let ms = gameState.levelTimes[i] - startTimeForLevel;
+                        let mins = Math.floor(ms / 60000);
+                        let secs = Math.floor((ms % 60000) / 1000);
+                        timeTaken = `${mins}m ${secs}s`;
+                    }
+                    
+                    let hints = gameState.hintsUsed[i] || 0;
+                    let numHintsStr = hints === 0 ? "Perfect / No Hints" : `${hints} Hint(s) Used`;
+                    
+                    displayRows += `
+                        <div style="background: rgba(0, 255, 0, 0.05); border-left: 4px solid #00ff00; padding: 15px; margin-bottom: 10px; display: flex; justify-content: space-between;">
+                            <div>
+                                <strong style="color: #00ff00;">${i === 4 ? 'MEGA CIPHER' : 'LEVEL ' + (i + 1)}</strong><br>
+                                <span style="font-size: 12px; color: #ffff00;">${numHintsStr}</span>
+                            </div>
+                            <div style="text-align: right;">
+                                <div style="color: #00ffff;">Time: ${timeTaken}</div>
+                                <div style="color: #00ff00; font-weight: bold;">+${points} PTS</div>
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    displayRows += `
+                        <div style="background: rgba(255, 255, 255, 0.05); border-left: 4px solid #555; padding: 15px; margin-bottom: 10px; display: flex; justify-content: space-between; color: #555;">
+                            <div><strong>${i === 4 ? 'MEGA CIPHER' : 'LEVEL ' + (i + 1)}</strong></div>
+                            <div>LOCKED</div>
+                        </div>
+                    `;
+                }
+            }
+
+            content += `
+                <div class="clue-box" style="margin-bottom: 30px; text-align: center;">
+                    <h2 style="color: #00ff00; margin-top: 0;">TOTAL AGENT SCORE</h2>
+                    <div style="font-size: 48px; text-shadow: 0 0 15px #00ff00;">${totalPoints}</div>
+                    <div style="color: #00ffff; margin-top: 10px;">Total Operation Time: ${totalElapsedMins}m ${totalElapsedSecs}s</div>
+                </div>
+                
+                ${displayRows}
+            `;
+
+            document.getElementById('contentArea').innerHTML = content;
+        }
+
     </script>
 </body>
 </html>
