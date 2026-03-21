@@ -75,24 +75,24 @@ Password: QUANTUMCORE
 Puzzle: What security protocol + breach time minute = password?
 Difficulty: ⭐ EASY
 
-LEVEL 2: EMAIL ARCHIVES  
+LEVEL 2: EMAIL ARCHIVES
 Password: GENESISVIRUS
-Puzzle: Microsoft email software + current year = password?
-Difficulty: ⭐⭐ EASY-MEDIUM
+Puzzle: Caesar Cipher on neural comm headers.
+Difficulty: ⭐⭐ MEDIUM
 
 LEVEL 3: SYSTEM LOGS
 Password: CYBERDEFENSE
 Puzzle: OS core software + architecture type = password?
 Difficulty: ⭐⭐⭐ MEDIUM
 
-LEVEL 4: FIREWALL RECORDS
+LEVEL 4: PERIMETER SHIELDS
 Password: ZEROEXPLOIT
-Puzzle: Network protocol + secure port + encryption = password?
-Difficulty: ⭐⭐⭐⭐ HARD
+Puzzle: Cross-reference security alerts with the Breach Timeline.
+Difficulty: ⭐⭐ EASY-MEDIUM
 
-LEVEL 5: MEGA PUZZLE (Meta-Challenge)
-Password: QUANGENECYBEZERO
-Puzzle: Extract parts from each previous password and combine
+LEVEL 5: MEGA PUZZLE (Evidence Challenge)
+Password: HOLOMEDIPROXLUNA
+Puzzle: Extract the key truth from each suspect's evidence log and combine
 Difficulty: ⭐⭐⭐⭐⭐ EXTREMELY HARD
 
 
@@ -138,7 +138,7 @@ START
   ↓
 → LEVEL 5: Meta-puzzle unlocks with all 4 password elements
   ↓
-→ Solve mega puzzle: QUANGENECYBEZERO
+→ Solve mega puzzle: HOLOMEDIPROXLUNA
   ↓
 → REVELATION: LYRA VANCE is the hacker!
   ↓
@@ -157,11 +157,11 @@ Thought process:
 Answer: QUANTUMCORE ✓
 
 LEVEL 2 SOLUTION EXAMPLE:
-Question: "What is Microsoft's enterprise email software? Add the year."
+Question: "Caesar cipher from neural comm headers"
 Thought process:
-  1. Microsoft's email server? → Exchange
-  2. Current year? → 2024
-  3. Format: Software name + year → GENESISVIRUS
+  1. Received cipher: JHQHVLVYLUXV
+  2. The AI's name is GENESIS.
+  3. Shifting JHQHVLVYLUXV backwards by 3 gives GENESISVIRUS.
 Answer: GENESISVIRUS ✓
 
 LEVEL 3 SOLUTION EXAMPLE:
@@ -173,23 +173,23 @@ Thought process:
 Answer: CYBERDEFENSE ✓
 
 LEVEL 4 SOLUTION EXAMPLE:
-Question: "Network protocol suite? Secure port number? Encryption?"
+Question: "ERROR: BACKDOOR DETECTED. ENTER VULNERABILITY NAME TO PROCEED."
 Thought process:
-  1. Network foundation? → TCP/IP
-  2. Secure HTTPS port? → 443
-  3. Encryption standard? → SSL (or TLS)
-  4. Format: Combine all → ZEROEXPLOIT (no spaces or slashes)
+  1. I need to find the name of the vulnerability used for the backdoor.
+  2. Check the TIMELINE or INVESTIGATION tab.
+  3. Look at 03:05 AM - BACKDOOR INSTALLATION.
+  4. It says: "Remote access installed using unpatched ZEROEXPLOIT vulnerability"
 Answer: ZEROEXPLOIT ✓
 
 LEVEL 5 SOLUTION EXAMPLE:
-Question: "Extract and combine elements from previous passwords"
+Question: "Extract the truth hidden in those records."
 Thought process:
-  1. From QUANTUMCORE: First 4 letters → PROT
-  2. From GENESISVIRUS: Last 4 letters → 2024
-  3. From CYBERDEFENSE: First letter (K) + digit (6) → K6
-  4. From ZEROEXPLOIT: Middle letter (P) + port digit (3) → P3
-  5. Combine in order: QUAN + GENE + CYBE + ZERO → QUANGENECYBEZERO
-Answer: QUANGENECYBEZERO ✓
+  1. Level 1 Evidence (Nova Black): Mentioned a live address → HOLOCAST
+  2. Level 2 Evidence (Elias Vance): Mentioned the bay type → MEDICAL
+  3. Level 3 Evidence (Aris Thorne): Mentioned the farm type → PROXY
+  4. Level 4 Evidence (Kaelen Cross): Mentioned the facility type → LUNAR
+  5. Combine first 4 letters: HOLO + MEDI + PROX + LUNA → HOLOMEDIPROXLUNA
+Answer: HOLOMEDIPROXLUNA ✓
 
 
 💡 HINT SYSTEM (ADMIN REQUIRED)
@@ -198,11 +198,12 @@ Answer: QUANGENECYBEZERO ✓
 Each level includes an admin-locked 3-tier hint system. If you're stuck:
 
 STEP 1: Click the "HINTS" button on the decryption modal
-STEP 2: Enter the master admin password: ADMIN (or ADMIN123)
+STEP 2: Enter the master admin password: OMEGAOVERRIDE
 STEP 3: Read Tier 1 (Hard) Hint
-STEP 4: If still stuck, enter "ADMIN" again to unlock Tier 2 (Medium) Hint
-STEP 5: If completely lost, enter "ADMIN" a third time for Tier 3 (Easy) Hint
-STEP 6: As a last resort, ask the Game Master for help.
+STEP 4: If still stuck, enter "OMEGAOVERRIDE" again to unlock Tier 2 (Medium) Hint
+STEP 5: If completely lost, enter "OMEGAOVERRIDE" a third time for Tier 3 (Easy) Hint
+STEP 6: If all else fails, enter "OMEGAOVERRIDE" a fourth time for Final Override 🔥 (3 points penalty)
+STEP 7: As a last resort, ask the Game Master for help.
 
 
 🎬 NARRATIVE EXPERIENCE
@@ -460,7 +461,7 @@ AWARENESS TOPICS:
 🎉 WHAT HAPPENS AT THE END
 ═══════════════════════════════════════════════════════════════════════════════
 
-After solving the mega puzzle with password QUANGENECYBEZERO, you will:
+After solving the mega puzzle with password HOLOMEDIPROXLUNA, you will:
 
 1. See the final file unlock
 2. Discover that LYRA VANCE is the hacker

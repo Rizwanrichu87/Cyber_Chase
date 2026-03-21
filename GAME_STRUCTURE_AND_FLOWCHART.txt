@@ -69,7 +69,7 @@ LEVEL 2
 ┌────────────────────────────────────────────┐
 │ FILE: email_archives.enc                   │
 │ PASSWORD: GENESISVIRUS                     │
-│ HINT: Microsoft software + year            │
+│ HINT: Caesar cipher backward shift         │
 ├────────────────────────────────────────────┤
 │ ✓ CORRECT                                  │
 │ ↓                                          │
@@ -103,9 +103,9 @@ LEVEL 3
 
 LEVEL 4
 ┌────────────────────────────────────────────┐
-│ FILE: firewall_records.enc                 │
+│ FILE: shield_grid.enc                      │
 │ PASSWORD: ZEROEXPLOIT                      │
-│ HINT: Network protocol + port + encryption │
+│ HINT: Check the Timeline for backdoor      │
 ├────────────────────────────────────────────┤
 │ ✓ CORRECT                                  │
 │ ↓                                          │
@@ -122,12 +122,12 @@ LEVEL 4
 LEVEL 5 (MEGA PUZZLE)
 ┌────────────────────────────────────────────┐
 │ META-PUZZLE CHALLENGE                      │
-│ Extract from previous passwords:           │
-│ L1 (QUANTUMCORE) → first 4 = PROT           │
-│ L2 (GENESISVIRUS) → last 4 = 2024          │
-│ L3 (CYBERDEFENSE) → K & 6 = K6              │
-│ L4 (ZEROEXPLOIT) → P & 3 = P3              │
-│ Combine: QUANGENECYBEZERO                      │
+│ Extract key truth from evidence logs:      │
+│ L1 Evidence → HOLOCAST                     │
+│ L2 Evidence → MEDICAL                      │
+│ L3 Evidence → PROXY                        │
+│ L4 Evidence → LUNAR                        │
+│ Combine: HOLOMEDIPROXLUNA                      │
 ├────────────────────────────────────────────┤
 │ ✓ CORRECT                                  │
 │ ↓                                          │
@@ -227,7 +227,7 @@ AFTER LEVEL 5: REVEALED
     │  ├─ Level 1: Access Logs [LOCKED/COMPLETED]
     │  ├─ Level 2: Email Archives [LOCKED/COMPLETED]
     │  ├─ Level 3: System Logs [LOCKED/COMPLETED]
-    │  ├─ Level 4: Firewall Records [LOCKED/COMPLETED]
+    │  ├─ Level 4: Perimeter Shields [LOCKED/COMPLETED]
     │  └─ Level 5: Mega Puzzle [LOCKED/COMPLETED]
     │
     📋 EVIDENCE
@@ -260,10 +260,10 @@ AFTER LEVEL 5: REVEALED
     
     ⭐⭐⭐ MEDIUM
     ├─ Level 3: CYBERDEFENSE (OS + Architecture)
-    └─ Level 4: ZEROEXPLOIT (3 components)
+    └─ Level 4: ZEROEXPLOIT (Timeline Analysis)
     
     ⭐⭐⭐⭐⭐ MEGA PUZZLE
-    └─ Level 5: QUANGENECYBEZERO (Meta-puzzle)
+    └─ Level 5: HOLOMEDIPROXLUNA (Evidence-puzzle)
 
 
 🔑 META-PUZZLE SOLUTION PATH
@@ -271,38 +271,38 @@ AFTER LEVEL 5: REVEALED
 
 LEVEL 5 PUZZLE SOLVING:
 
-Step 1: Review Level 1 Password
-        QUANTUMCORE
+Step 1: Review Level 1 Evidence
+        NOVA BLACK's alibi
         ↓
-        Extract first 4 letters
+        Extract key truth
         ↓
-        PROT
+        HOLOCAST
         
-Step 2: Review Level 2 Password
-        GENESISVIRUS
+Step 2: Review Level 2 Evidence
+        ELIAS VANCE's alibi
         ↓
-        Extract last 4 letters/digits
+        Extract key truth
         ↓
-        2024
+        MEDICAL
         
-Step 3: Review Level 3 Password
-        CYBERDEFENSE
+Step 3: Review Level 3 Evidence
+        DR. ARIS THORNE's alibi
         ↓
-        Extract K (first letter) + 6 (first digit)
+        Extract key truth
         ↓
-        K6
+        PROXY
         
-Step 4: Review Level 4 Password
-        ZEROEXPLOIT
+Step 4: Review Level 4 Evidence
+        KAELEN CROSS's alibi
         ↓
-        Extract P (from TCP) + 3 (from 443)
+        Extract key truth
         ↓
-        P3
+        LUNAR
         
-Step 5: Combine in order
-        PROT + 2024 + K6 + P3
+Step 5: Combine in order (first 4 letters)
+        HOLO + MEDI + PROX + LUNA
         ↓
-        QUANGENECYBEZERO
+        HOLOMEDIPROXLUNA
         
 Step 6: Enter password
         ↓
@@ -322,21 +322,26 @@ TIMELINE OF HINTS FOR STUCK PLAYERS:
 
 5+ MIN: 
   └─ Player clicks "HINTS" button
-  └─ Enters Admin Password: ADMIN (or ADMIN123)
+  └─ Enters Admin Password: OMEGAOVERRIDE
   └─ Unlocks: TIER 1 HINT (Hard - Explains Cipher Mechanic)
 
 10+ MIN: If still struggling
   └─ Player clicks "HINTS" button again
-  └─ Enters Admin Password: ADMIN
+  └─ Enters Admin Password: OMEGAOVERRIDE
   └─ Unlocks: TIER 2 HINT (Medium - Thematic Clue)
 
-15+ MIN: If completely stuck
+333: 15+ MIN: If completely stuck
   └─ Player clicks "HINTS" button again
-  └─ Enters Admin Password: ADMIN
+  └─ Enters Admin Password: OMEGAOVERRIDE
   └─ Unlocks: TIER 3 HINT (Easy - Exact Equation)
 
+20+ MIN: If absolutely unable to progress
+  └─ Player clicks "HINTS" button again
+  └─ Enters Admin Password: OMEGAOVERRIDE
+  └─ Unlocks: FINAL OVERRIDE 🔥 (Direct Answer Prefix - 3 point penalty)
+
 GAME MASTER OVERRIDE:
-  └─ Game Master can enter ADMIN at any time to reveal hints
+  └─ Game Master can enter OMEGAOVERRIDE at any time to reveal hints
   └─ Game Master can provide the exact password as a last resort
 
 

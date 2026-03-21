@@ -503,7 +503,7 @@
             <input type="text" class="password-input" id="passwordInput" placeholder="Enter decrypted password...">
             <div id="hintContainer" style="display: none; margin-top: 20px; padding: 15px; border: 1px solid #ffa500; border-radius: 3px; background: rgba(255, 165, 0, 0.05); text-align: left;">
                 <div style="color: #ffa500; font-weight: bold; margin-bottom: 10px;">⚠ ADMIN AUTHENTICATION REQUIRED FOR HINTS ⚠</div>
-                <input type="text" class="password-input" id="adminPasswordInput" placeholder="Enter Admin Password..." style="border-color: #ffa500; color: #ffa500; margin-top: 0; margin-bottom: 10px;">
+                <input type="password" class="password-input" id="adminPasswordInput" placeholder="Enter Admin Password..." style="border-color: #ffa500; color: #ffa500; margin-top: 0; margin-bottom: 10px;">
                 <button class="btn" onclick="unlockHint()" style="background: rgba(255, 165, 0, 0.1); border: 2px solid #ffa500; color: #ffa500; width: 100%; margin: 0;">UNLOCK NEXT HINT</button>
                 <div id="adminFeedback" style="color: #ff0000; margin-top: 10px; font-size: 14px;"></div>
                 <div id="hintTextDisplay" style="margin-top: 15px;"></div>
@@ -625,9 +625,10 @@
                 cipherText: "DHNAGHAPBER",
                 cipherType: "ROT13",
                 password: "QUANTUMCORE",
-                hint1: "Look at the first letter of the cipher `D`. What is the 13th letter after it?",
-                hint2: "It refers to the heart of the stolen AI's hardware.",
-                hint3: "Combine the technology type with what it represents (the heart).",
+                hint1: "A cipher where letters mirror halfway across the alphabet.",
+                hint2: "ROT13 shifts each letter 13 positions forward.",
+                hint3: "The result relates to advanced computing and the core of a system.",
+                hint4: "The decoded word starts with ‘QUAN...’",
                 clue: "Surveillance footage shows NOVA BLACK's access card was used to ping the vault. However, during the exact minute of the breach, she was live on a cross-continental holocast giving the keynote address to 50,000 people. Her card was cloned. NOVA BLACK CLEARED.",
                 suspect: 2,
                 eliminates: 2,
@@ -641,9 +642,10 @@
                 cipherText: "JHQHVLVYLUXV",
                 cipherType: "Caesar (Shift 3)",
                 password: "GENESISVIRUS",
-                hint1: "Caesar Cipher: Try shifts 1-10 until it makes sense.",
-                hint2: "It relates to the stolen AI and a malicious program.",
-                hint3: "Combine the name of the AI with the type of malicious software it became.",
+                hint1: "All letters are shifted equally. Try different shifts.",
+                hint2: "A Caesar cipher is used. The correct shift is small.",
+                hint3: "Not all shifts move forward… sometimes you must go backward",
+                hint4: "The decoded word starts with ‘GEN...’",
                 clue: "ELIAS VANCE's security override code was used to bypass the inner grid. But medical bay biometrics show he was undergoing mandatory neural implant maintenance during that entire 4-hour window. He was unconscious. ELIAS VANCE CLEARED.",
                 suspect: 0,
                 eliminates: 0,
@@ -657,9 +659,10 @@
                 cipherText: "XBYVIWUVUMHV",
                 cipherType: "Atbash (A↔Z, B↔Y)",
                 password: "CYBERDEFENSE",
-                hint1: "Atbash Cipher: Each letter maps backward in alphabet.",
-                hint2: "It refers to the department that failed to stop the breach.",
-                hint3: "Combine the prefix for digital systems with the department's primary function.",
+                hint1: "A cipher where the alphabet is reversed.",
+                hint2: "Atbash maps A↔Z, B↔Y.",
+                hint3: "It describes protection systems used in the digital world.",
+                hint4: "The decoded word starts with ‘CYB...’",
                 clue: "Analysis of DR. ARIS THORNE's terminal shows the breach originated from his network node. But external perimeter logs show his credentials were brute-forced by a Chinese megacorp proxy farm just seconds prior. He was the victim, not the attacker. DR. ARIS THORNE CLEARED.",
                 suspect: 1,
                 eliminates: 1,
@@ -668,18 +671,19 @@
             {
                 id: 4,
                 name: "PERIMETER SHIELDS",
-                description: "Solve Vigenère cipher from energy grid data",
+                description: "Cross-reference security alerts with the Breach Timeline",
                 fileName: "shield_grid.enc",
-                cipherText: "MIFBRBDYBMH",
-                cipherType: "Vigenère (Key: NEON)",
+                cipherText: "ERROR: BACKDOOR DETECTED.\nENTER VULNERABILITY NAME TO PROCEED.",
+                cipherType: "Timeline Analysis",
                 password: "ZEROEXPLOIT",
-                hint1: "Vigenère Cipher: Uses a keyword to encrypt/decrypt.",
-                hint2: "The keyword is NEON. It means a flaw with 0 days of warning.",
-                hint3: "Combine the number of days of warning with the technical term for a software attack.",
+                hint1: "Not all answers are encrypted.",
+                hint2: "Check the breach timeline carefully.",
+                hint3: "The attack used a vulnerability that required no prior access.",
+                hint4: "The answer starts with ‘ZERO...’",
                 clue: "The heist required a physical manual bypass of the cooling rods by a maintenance tech. KAELEN CROSS was the only logged tech on duty. However, transport manifests prove he was actively repairing server racks at the off-world lunar facility Delta-9. KAELEN CROSS CLEARED.",
                 suspect: 4,
                 eliminates: 4,
-                solution: "Vigenère (Key: NEON) decoded: MIFBRBDYBMH → ZEROEXPLOIT"
+                solution: "Checked timeline for 03:05 AM Backdoor event → ZEROEXPLOIT"
             }
         ];
 
@@ -763,7 +767,7 @@
 
                 <div class="timeline">
                     <div class="timestamp">03:05 AM - BACKDOOR INSTALLATION</div>
-                    Persistent remote access mechanism deployed
+                    Persistent remote access mechanism deployed via ZEROEXPLOIT vulnerability
                 </div>
 
                 <div class="timeline">
@@ -895,7 +899,7 @@
                         <div style="font-size: 24px; font-weight: bold; margin-bottom: 10px; color: #ff0000; text-shadow: 0 0 10px #ff0000;">🔓 MEGA CIPHER - LEVEL 5</div>
                         <div style="font-size: 16px; margin-bottom: 15px; color: #ff6600;">The Final Challenge - Reveals the Hacker</div>
                         <div style="font-size: 13px; margin-bottom: 20px; color: rgba(255, 100, 0, 0.7);">
-                            Combines all cipher types. Solving this reveals the hacker's true identity.
+                            A final evidence-based puzzle. Solving this reveals the hacker's true identity.
                         </div>
                         
                         ${canAccessMega ? `
@@ -957,11 +961,11 @@
             const helps = [
                 "<strong>ROT13:</strong> Each letter shifts 13 places.<br>A→N, B→O, C→P, ... Z→M<br>Apply this shift to every letter in the cipher.",
                 
-                "<strong>Caesar Cipher:</strong> All letters shift by same amount.<br>Try shifts 1-10 until readable.<br>Look for 'GENESIS' and 'VIRUS'.",
+                "<strong>Caesar Cipher:</strong> All letters shift by same amount.<br>Try shifts 1-10 until readable.<br>Think about the stolen AI's name and its malicious new form.",
                 
                 "<strong>Atbash:</strong> A↔Z, B↔Y, C↔X, etc.<br>Each letter maps to opposite position.<br>Apply reverse mapping to every letter.",
                 
-                "<strong>Vigenère:</strong> Uses keyword NEON.<br>Repeat keyword under cipher text.<br>Subtract letter positions to decrypt."
+                "<strong>Timeline Analysis:</strong> Read the error message carefully. Then navigate to the TIMELINE or INVESTIGATION tab to find the missing information."
             ];
             return helps[levelIndex];
         }
@@ -971,40 +975,74 @@
             hintContainer.style.display = hintContainer.style.display === 'none' ? 'block' : 'none';
         }
 
-        function unlockHint() {
+        let isDecryptingHint = false;
+
+        async function unlockHint() {
+            if (isDecryptingHint) return;
             const pass = document.getElementById('adminPasswordInput').value.toUpperCase();
             const feedback = document.getElementById('adminFeedback');
             
-            if (pass !== "ADMIN" && pass !== "ADMIN123") {
+            if (pass !== "OMEGAOVERRIDE") {
                 feedback.textContent = "ACCESS DENIED: INVALID ADMIN PASSWORD";
                 return;
             }
             feedback.textContent = "";
             
-            if (currentPasswordChallenge.hintStage < 3) {
-                currentPasswordChallenge.hintStage++;
+            if (currentPasswordChallenge.hintStage >= 4) {
+                 return;
             }
+
+            isDecryptingHint = true;
+            document.getElementById('adminPasswordInput').value = "";
+            document.getElementById('adminPasswordInput').disabled = true;
             
-            // Track hints used for points penalty
+            const currentStage = currentPasswordChallenge.hintStage + 1;
+            feedback.innerHTML = `<span style="color:#00ffff; font-family: monospace; animation: blink 0.5s infinite;">> DECRYPTING CLASSIFIED FILE [TIER ${currentStage}]...</span>`;
+
+            currentPasswordChallenge.hintStage++;
+            const stage = currentPasswordChallenge.hintStage;
+            
             const levelId = currentPasswordChallenge.level;
-            gameState.hintsUsed[levelId] = currentPasswordChallenge.hintStage;
+            gameState.hintsUsed[levelId] = stage;
+            
+            // Wait 1.5 seconds for effect
+            await new Promise(r => setTimeout(r, 1500));
+            
+            feedback.innerHTML = "";
+            document.getElementById('adminPasswordInput').disabled = false;
+            document.getElementById('adminPasswordInput').focus();
             
             const hintDisplay = document.getElementById('hintTextDisplay');
             let html = "";
             const levelData = currentPasswordChallenge.levelData;
             
-            if (currentPasswordChallenge.hintStage >= 1) {
-                html += `<div class="password-hint" style="margin-top: 10px;"><strong>HINT 1:</strong> ${levelData.hint1}</div>`;
+            if (stage >= 1) {
+                html += `<div class="password-hint" style="margin-top: 10px; background: rgba(255,165,0,0.1); padding: 10px; border: 1px solid #ffa500; border-left: 4px solid #ffa500;">
+                    <div style="font-family: monospace; color: #ffa500; border-bottom: 1px dashed #ffa500; margin-bottom: 5px; font-size: 11px; letter-spacing: 1px;">[ CLASSIFIED DATA // TIER 1 CLEARANCE ]</div>
+                    <div style="font-family: monospace; color: #dddddd;">${levelData.hint1}</div>
+                </div>`;
             }
-            if (currentPasswordChallenge.hintStage >= 2) {
-                html += `<div class="password-hint" style="margin-top: 10px;"><strong>HINT 2:</strong> ${levelData.hint2}</div>`;
+            if (stage >= 2) {
+                html += `<div class="password-hint" style="margin-top: 10px; background: rgba(255,165,0,0.1); padding: 10px; border: 1px solid #ffa500; border-left: 4px solid #ffa500;">
+                    <div style="font-family: monospace; color: #ffa500; border-bottom: 1px dashed #ffa500; margin-bottom: 5px; font-size: 11px; letter-spacing: 1px;">[ CLASSIFIED DATA // TIER 2 CLEARANCE ]</div>
+                    <div style="font-family: monospace; color: #dddddd;">${levelData.hint2}</div>
+                </div>`;
             }
-            if (currentPasswordChallenge.hintStage >= 3) {
-                html += `<div class="password-hint" style="margin-top: 10px;"><strong>HINT 3 (EASIEST):</strong> ${levelData.hint3}</div>`;
+            if (stage >= 3) {
+                html += `<div class="password-hint" style="margin-top: 10px; background: rgba(255,165,0,0.1); padding: 10px; border: 1px solid #ffa500; border-left: 4px solid #ffa500;">
+                    <div style="font-family: monospace; color: #ffa500; border-bottom: 1px dashed #ffa500; margin-bottom: 5px; font-size: 11px; letter-spacing: 1px;">[ CLASSIFIED DATA // TIER 3 CLEARANCE ]</div>
+                    <div style="font-family: monospace; color: #dddddd;">${levelData.hint3}</div>
+                </div>`;
+            }
+            if (stage >= 4) {
+                html += `<div class="password-hint" style="margin-top: 10px; background: rgba(255,0,0,0.15); padding: 10px; border: 1px solid #ff0000; border-left: 4px solid #ff0000; box-shadow: 0 0 10px rgba(255,0,0,0.3);">
+                    <div style="font-family: monospace; color: #ff0000; border-bottom: 1px dashed #ff0000; margin-bottom: 5px; font-size: 12px; font-weight: bold; letter-spacing: 2px;">[ ⚠ FINAL OVERRIDE DECRYPTED ⚠ ]</div>
+                    <div style="font-family: monospace; color: #ff5555; font-weight: bold; text-shadow: 0 0 3px rgba(255,0,0,0.5);">${levelData.hint4}</div>
+                </div>`;
             }
             
             hintDisplay.innerHTML = html;
-            document.getElementById('adminPasswordInput').value = "";
+            isDecryptingHint = false;
         }
 
         let currentPasswordChallenge = null;
@@ -1014,7 +1052,7 @@
             const feedback = document.getElementById('passwordFeedback');
 
             if (currentPasswordChallenge.level === 5) {
-                if (input === "QUANGENECYBEZERO") {
+                if (input === "HOLOMEDIPROXLUNA") {
                     feedback.innerHTML = '<div class="alert success">✓ MEGA CIPHER SOLVED! HACKER IDENTIFIED!</div>';
                     
                     if (!gameState.completedLevels.includes(4)) {
@@ -1026,6 +1064,7 @@
                         if (hints > 0) points -= 10;
                         if (hints > 1) points -= 10;
                         if (hints > 2) points -= 10;
+                        if (hints > 3) points -= 3;
                         gameState.levelPoints[4] = Math.max(0, points);
                     }
                     
@@ -1066,6 +1105,7 @@
                             if (hints > 0) points -= 2; // -2 for first hint
                             if (hints > 1) points -= 1; // -1 for second hint
                             if (hints > 2) points -= 1; // -1 for third hint
+                            if (hints > 3) points -= 3; // -3 for fourth hint
                             gameState.levelPoints[levelIndex] = Math.max(0, points);
                         }
 
@@ -1148,7 +1188,7 @@
                 </div>
                 <div class="timeline">
                     <div class="timestamp">03:05 AM - BACKDOOR</div>
-                    Remote access installed
+                    Remote access installed using unpatched ZEROEXPLOIT vulnerability
                 </div>
                 <div class="timeline">
                     <div class="timestamp">03:15 AM - LOG ENCRYPTION</div>
@@ -1180,7 +1220,7 @@
                 
                 <div class="alert error" style="font-size: 16px; margin: 20px 0;">
                     ⚠ CRITICAL CHALLENGE<br>
-                    This cipher combines ALL cipher types.<br><br>
+                    This puzzle uses the EVIDENCE LOGS from previous levels.<br><br>
                     <strong>Solving this REVEALS THE HACKER'S IDENTITY.</strong>
                 </div>
 
@@ -1192,21 +1232,21 @@
                     <div style="background: rgba(0, 0, 0, 0.3); padding: 20px; border-radius: 3px; margin-bottom: 20px;">
                         <div style="color: #ffff00; font-weight: bold; margin-bottom: 15px; font-size: 14px;">META-PUZZLE:</div>
                         <div style="font-family: 'Courier New'; font-size: 14px; text-align: left; line-height: 1.6;">
-                            Below are files from all previous levels, hidden and encrypted. Find the hidden password across all locations. It uses elements from each level's password.
+                            Four suspects were cleared. Each left behind a truth that could not be faked. Combine these truths. That is your final key.
                         </div>
                     </div>
 
                     <div style="background: rgba(0, 255, 0, 0.05); padding: 15px; border-left: 4px solid #00ff00; border-radius: 3px; margin-bottom: 20px; text-align: left; font-size: 13px;">
                         <strong>Instructions:</strong><br>
-                        ✓ Take specific parts from each previous password<br>
+                        ✓ Extract a key word from each piece of revealed evidence.<br>
                         ✓ Combine them in sequence (Level 1 to 4)<br><br>
                         <strong>Combine them correctly to reveal the hacker!</strong>
                     </div>
 
                     <div style="background: rgba(255, 165, 0, 0.1); padding: 15px; border-left: 4px solid #ffa500; border-radius: 3px; text-align: left; font-size: 12px;">
                         <strong style="color: #ffa500;">SOLVING HINTS:</strong><br><br>
-                        Look at the original decrypted passwords.<br>
-                        Length: 12 characters
+                        Look at the clues revealed when each file was decrypted.<br>
+                        Length: 16 characters
                     </div>
                 </div>
 
@@ -1223,16 +1263,17 @@
         function openMegaChallenge() {
             currentPasswordChallenge = {
                 level: 5,
-                password: "QUANGENECYBEZERO",
+                password: "HOLOMEDIPROXLUNA",
                 levelData: {
-                    hint1: "This puzzle is ABOUT the puzzles. Look at the passwords.",
-                    hint2: "Extract parts from each password. First 4 letters of Level 1...",
-                    hint3: "QUAN from Lvl 1, GENE from Lvl 2, CYBE from Lvl 3, ZERO from Lvl 4"
+                    hint1: "This puzzle is about the evidence, not the passwords.",
+                    hint2: "Each cleared suspect has one key piece of proof.",
+                    hint3: "Extract one important keyword from each alibi.",
+                    hint4: "Each word starts with: HOLO… MED… PROX… LUNA…"
                 },
                 hintStage: 0,
                 title: "MEGA CIPHER - HACKER IDENTIFICATION",
-                cipherText: "Combine previous clues.",
-                cipherType: "Meta-Puzzle"
+                cipherText: "H _ _ _ | M _ _ _ | P _ _ _ | L _ _ _",
+                cipherType: "Evidence-Puzzle"
             };
 
             document.getElementById('passwordTitle').textContent = `🔐 ${currentPasswordChallenge.title}`;
@@ -1243,13 +1284,13 @@
                 </div>
                 
                 <div class="cipher-display">
-                    Q _ _ _ | G _ _ _ | C _ _ _ | Z _ _ _
+                    H _ _ _ | M _ _ _ | P _ _ _ | L _ _ _
                 </div>
                 
                 <div style="text-align: left; margin: 20px 0; padding: 15px; background: rgba(0, 255, 0, 0.05); border: 1px solid #00ff00; border-radius: 3px; font-size: 13px;">
                     <strong style="color: #00ffff;">To Decrypt:</strong><br><br>
-                    Take the first 4 letters of each of the 4 passwords.<br><br>
-                    The answer will be the 12-character combination.
+                    Extract the key truth from each piece of evidence (Levels 1-4).<br><br>
+                    The answer will be the 16-character combination.
                 </div>
             `;
 

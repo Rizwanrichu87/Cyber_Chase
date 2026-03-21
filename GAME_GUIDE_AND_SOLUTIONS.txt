@@ -101,8 +101,8 @@ LEVEL 1: ACCESS LOGS
 LEVEL 2: EMAIL ARCHIVES
 ├─ File Name: email_archives.enc
 ├─ Password: GENESISVIRUS
-│  └─ How to solve: Microsoft's enterprise email server software → EXCHANGE
-│                   Current year → 2024
+│  └─ How to solve: Decode Caesar cipher JHQHVLVYLUXV
+│                   Shift backward by 3 letters
 │                   Answer: GENESISVIRUS
 ├─ Clue Unlocked: ELIAS VANCE's security override code was used.
 │                 But medical bay biometrics show he was undergoing neural surgery.
@@ -120,12 +120,11 @@ LEVEL 3: SYSTEM LOGS
 └─ Suspect Cleared: DR. ARIS THORNE
 
 
-LEVEL 4: FIREWALL RECORDS
-├─ File Name: firewall_records.enc
+LEVEL 4: PERIMETER SHIELDS
+├─ File Name: shield_grid.enc
 ├─ Password: ZEROEXPLOIT
-│  └─ How to solve: Network protocol suite → TCP/IP
-│                   Secure port number (HTTPS) → 443
-│                   Encryption protocol → SSL/TLS
+│  └─ How to solve: Look at the Investigation Timeline for the 03:05 AM backdoor event.
+│                   The event mentions the ZEROEXPLOIT vulnerability.
 │                   Answer: ZEROEXPLOIT
 ├─ Clue Unlocked: The heist required a physical manual bypass.
 │                 Transport manifests prove KAELEN CROSS was off-world at Delta-9.
@@ -136,21 +135,14 @@ LEVEL 5: MEGA PUZZLE (FINAL CHALLENGE)
 ├─ This level requires data from ALL previous levels!
 │
 ├─ THE PUZZLE:
-│  ├─ From Level 1 (QUANTUMCORE): Take first 4 letters → PROT
-│  ├─ From Level 2 (GENESISVIRUS): Take last 4 letters → 2024
-│  ├─ From Level 3 (CYBERDEFENSE): Take positions 1 and 5 → K, E... wait, position 1 is K, position 5 is N... 
-│  │                              Actually: position 1 in "CYBERDEFENSE" = K
-│  │                              Position 5 = E... Let me recalculate:
-│  │                              K(1)E(2)R(3)N(4)E(5)L(6)6(7)4(8)B(9)I(10)T(11)
-│  │                              Position 1 = K, Position 5 = E... hmm
-│  │                              For the actual solution: K and 6 (from 64) → K6
-│  ├─ From Level 4 (ZEROEXPLOIT): Take positions 3 and 8 → P (position 3) and 3 (position 8)
-│  │                              T(1)C(2)P(3)I(4)P(5)4(6)4(7)3(8)S(9)S(10)L(11)
-│  │                              Position 3 = P, Position 8 = 3 → P3
+│  ├─ From Level 1 (NOVA BLACK): Extract key truth from evidence → HOLOCAST
+│  ├─ From Level 2 (ELIAS VANCE): Extract key truth from evidence → MEDICAL
+│  ├─ From Level 3 (DR. ARIS THORNE): Extract key truth from evidence → PROXY
+│  ├─ From Level 4 (KAELEN CROSS): Extract key truth from evidence → LUNAR
 │  │
-│  └─ Combine in order: QUAN + GENE + CYBE + ZERO = QUANGENECYBEZERO
+│  └─ Combine in order: HOLO + MEDI + PROX + LUNA = HOLOMEDIPROXLUNA
 │
-├─ FINAL PASSWORD: QUANGENECYBEZERO
+├─ FINAL PASSWORD: HOLOMEDIPROXLUNA
 │
 └─ THE TWIST: After eliminating everyone else... LYRA VANCE (PR Director) is revealed as the corporate spy!
 
@@ -160,17 +152,19 @@ LEVEL 5: MEGA PUZZLE (FINAL CHALLENGE)
 
 The game features an Admin-locked 3-tier hint system. If participants are 
 stuck, the Game Master (or the players themselves) can click the "HINTS" button 
-and enter the master password: ADMIN (or ADMIN123).
+and enter the master password: OMEGAOVERRIDE.
 
 Each time the admin password is entered, it unlocks a progressively easier hint:
 - TIER 1 (Hard): Explains the cipher mechanism
 - TIER 2 (Medium): Gives a thematic clue about the answer
 - TIER 3 (Easy): Spells out the exact password equation
+- FINAL OVERRIDE 🔥: Gives you the direct prefix letter answer (Reduces 3 points)
 
 Example (Level 1):
-Tier 1: "ROT13: Each letter shifts 13 positions forward."
-Tier 2: "The SSH protocol is related to the password."
-Tier 3: "SSH protocol + breach minute (47) = QUANTUMCORE"
+Tier 1: "A cipher where letters mirror halfway across the alphabet."
+Tier 2: "ROT13 shifts each letter 13 positions forward."
+Tier 3: "The result relates to advanced computing and the core of a system."
+Final Override 🔥: "The decoded word starts with ‘QUAN...’"
 
 
 🎯 GAME MECHANICS
@@ -221,7 +215,7 @@ DIFFICULTY SCALING:
 ✓ Interactive Gameplay
   └─ Password-protected file decryption
   └─ Progressive level unlocking
-  └─ 3-Tier Admin Password Hint System (Code: ADMIN)
+  └─ 4-Tier Admin Password Hint System (Code: OMEGAOVERRIDE)
   └─ Multi-navigation system
 
 ✓ Twist Ending
@@ -242,7 +236,7 @@ Level 1: QUANTUMCORE
 
 Level 2: GENESISVIRUS
   - Share this if participants struggle  
-  - Hint: Microsoft Exchange + current year
+  - Hint: Not all shifts move forward… sometimes you must go backward
 
 Level 3: CYBERDEFENSE
   - Share this if participants struggle
@@ -250,11 +244,11 @@ Level 3: CYBERDEFENSE
 
 Level 4: ZEROEXPLOIT
   - Share this if participants struggle
-  - Hint: TCP/IP + port 443 + SSL/TLS protocol
+  - Hint: Look closely at the 03:05 AM event in the Breach Timeline.
 
-Level 5 (MEGA): QUANGENECYBEZERO
+Level 5 (MEGA): HOLOMEDIPROXLUNA
   - This should be discovered by participants through the puzzle
-  - If they need help: Have them extract: 1st 4 chars of L1 + last 4 of L2 + key numbers from L3 & L4
+  - If they need help: Have them extract the key alibi truth from each of the 4 evidence logs (HOLOCAST, MEDICAL, PROXY, LUNAR).
 
 
 🔧 TECHNICAL SETUP
