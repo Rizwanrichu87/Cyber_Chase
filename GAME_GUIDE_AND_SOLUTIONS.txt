@@ -123,8 +123,8 @@ LEVEL 3: SYSTEM LOGS
 LEVEL 4: PERIMETER SHIELDS
 ├─ File Name: shield_grid.enc
 ├─ Password: ZEROEXPLOIT
-│  └─ How to solve: Look at the Investigation Timeline for the 03:05 AM backdoor event.
-│                   The event mentions the ZEROEXPLOIT vulnerability.
+│  └─ How to solve: Look at the Investigation Timeline around 03:00 AM.
+│                   Failed Nodes Z-E-R-O + EXPLOIT packet deployed.
 │                   Answer: ZEROEXPLOIT
 ├─ Clue Unlocked: The heist required a physical manual bypass.
 │                 Transport manifests prove KAELEN CROSS was off-world at Delta-9.
