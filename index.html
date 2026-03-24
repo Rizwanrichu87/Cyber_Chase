@@ -279,7 +279,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: center top;
+            object-position: center 25%;
         }
 
         .suspect-info {
@@ -550,7 +550,7 @@
                         const introLines = [
                 "The Genesis AI source code was stolen from OmniCorp's quantum vault.",
                 "A sophisticated corporate spy has infiltrated the executive network.",
-                "You have 5 suspects ranging from tech leads to executives.",
+                "You have 8 suspects ranging from tech leads to executives.",
                 "Your mission: Crack the encryption layers and find the thief.",
                 "WARNING: The spy's identity remains completely obscured.",
                 "Solve the final mega cipher to reveal the corporate traitor."
@@ -598,7 +598,7 @@
                 name: "ELIAS VANCE",
                 role: "Head of Security",
                 dept: "Corporate Defense",
-                image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&auto=format&fit=crop&q=60",
+                image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&h=500&auto=format&fit=facearea&facepad=3&q=60",
                 desc: "Ex-military. Designing the quantum vault's physical security.",
                 eliminated: false,
                 reason: "Cybernetics biometrics prove he was unconscious in the medical bay during the breach"
@@ -607,7 +607,7 @@
                 name: "DR. ARIS THORNE",
                 role: "Chief Data Scientist",
                 dept: "Analytics",
-                image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=60",
+                image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&h=500&auto=format&fit=facearea&facepad=3&q=60",
                 desc: "Data-obsessed analyst. Has access to all employee records.",
                 eliminated: false,
                 reason: "His security credentials were stolen via external brute-force before the internal breach"
@@ -616,7 +616,7 @@
                 name: "NOVA BLACK",
                 role: "Lead AI Architect",
                 dept: "Quantum Research",
-                image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&auto=format&fit=crop&q=60", 
+                image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&h=500&auto=format&fit=facearea&facepad=3&q=60", 
                 desc: "Brilliant but obsessive. Created the Genesis AI.",
                 eliminated: false,
                 reason: "Livestreaming a keynote address during the exact time of the breach"
@@ -625,7 +625,7 @@
                 name: "LYRA VANCE",
                 role: "PR Director",
                 dept: "Public Relations",
-                image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=500&auto=format&fit=crop&q=60",
+                image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=500&h=500&auto=format&fit=facearea&facepad=3&q=60",
                 desc: "Elegant and extremely persuasive. Not technical at all.",
                 eliminated: false,
                 reason: "UNKNOWN - Will be revealed by mega cipher"
@@ -634,10 +634,37 @@
                 name: "KAELEN CROSS",
                 role: "Server Technician",
                 dept: "Maintenance",
-                image: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=500&auto=format&fit=crop&q=60", 
+                image: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=500&h=500&auto=format&fit=facearea&facepad=3&q=60", 
                 desc: "Maintains the cooling systems for the quantum cores.",
                 eliminated: false,
                 reason: "He was physically stationed at off-world data center Delta-9"
+            },
+            5: {
+                name: "JAXON REED",
+                role: "Network Engineer",
+                dept: "Infrastructure",
+                image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=500&h=500&auto=format&fit=facearea&facepad=3&q=60",
+                desc: "Handles physical routing and switch configurations.",
+                eliminated: false,
+                reason: "Building logs show he was trapped in Elevator B during the entire breach period"
+            },
+            6: {
+                name: "SILAS VOSS",
+                role: "Hardware Architect",
+                dept: "Hardware",
+                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&auto=format&fit=facearea&facepad=3&q=60",
+                desc: "Designs the custom server blades.",
+                eliminated: false,
+                reason: "Under constant camera surveillance receiving a shipment at the loading dock"
+            },
+            7: {
+                name: "ELARA QUINN",
+                role: "Cloud Ops Lead",
+                dept: "Cloud Operations",
+                image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=500&h=500&auto=format&fit=facearea&facepad=3&q=60",
+                desc: "Manages the AWS instances.",
+                eliminated: false,
+                reason: "Running an authorized stress test 300 miles away from the target"
             }
         };
 
@@ -709,6 +736,57 @@
                 suspect: 4,
                 eliminates: 4,
                 solution: "Checked timeline for 03:05 AM Backdoor event → ZEROEXPLOIT"
+            },
+            {
+                id: 5,
+                name: "ROUTING PROTOCOLS",
+                description: "Convert binary packet data to ASCII text",
+                fileName: "packet_headers.enc",
+                cipherText: "01000111 01001000 01001111 01010011 01010100 01001110 01001111 01000100 01000101",
+                cipherType: "Binary Encoding",
+                password: "GHOSTNODE",
+                hint1: "The text consists of 0s and 1s, which is binary code.",
+                hint2: "Each group of 8 digits represents one ASCII character.",
+                hint3: "Use a binary to text converter or ASCII table. 01000111 is 'G'.",
+                hint4: "The decoded word starts with 'GHOS…'",
+                clue: "Investigation of JAXON REED's network access reveals his VLAN was explicitly isolated from the quantum vault. Furthermore, building logs prove he was trapped in Elevator B during the entire breach window. JAXON REED CLEARED.",
+                suspect: 5,
+                eliminates: 5,
+                solution: "Binary to text → GHOSTNODE"
+            },
+            {
+                id: 6,
+                name: "MEMORY DUMP",
+                description: "Decode hexadecimal memory addresses",
+                fileName: "memory_dump.enc",
+                cipherText: "53 59 53 54 45 4d 46 41 49 4c",
+                cipherType: "Hexadecimal Decoder",
+                password: "SYSTEMFAIL",
+                hint1: "These are base-16 numbers (Hexadecimal).",
+                hint2: "Each pair of characters represents one ASCII letter.",
+                hint3: "Convert the hex string to ASCII text. '53' is 'S'.",
+                hint4: "The decoded word starts with 'SYST…'",
+                clue: "SILAS VOSS was flagged for unmapped hardware requests. However, logistics tracking shows he was receiving a shipment of servers at the loading dock, under constant camera surveillance. SILAS VOSS CLEARED.",
+                suspect: 6,
+                eliminates: 6,
+                solution: "Hex to text → SYSTEMFAIL"
+            },
+            {
+                id: 7,
+                name: "EMERGENCY COMMS",
+                description: "Translate the backup communication frequency",
+                fileName: "backup_comms.enc",
+                cipherText: "-... .- -.-. -.- -.. --- --- ..-.",
+                cipherType: "Morse Code",
+                password: "BACKDOOR",
+                hint1: "Dots and dashes represent letters in a classic communication method.",
+                hint2: "It's Morse Code. Use a chart to translate each group.",
+                hint3: "'-...' is B, '.-' is A. Keep going.",
+                hint4: "The decoded word starts with 'BACK…'",
+                clue: "ELARA QUINN's cloud instances spiked in CPU usage, resembling an attack. But AWS logs show she was running an authorized stress test requested by the CEO, 300 miles away. ELARA QUINN CLEARED.",
+                suspect: 7,
+                eliminates: 7,
+                solution: "Morse code to text → BACKDOOR"
             }
         ];
 
@@ -756,6 +834,9 @@
                     <div class="level-badge" onclick="showLevels()">3</div>
                     <div class="level-badge" onclick="showLevels()">4</div>
                     <div class="level-badge" onclick="showLevels()">5</div>
+                    <div class="level-badge" onclick="showLevels()">6</div>
+                    <div class="level-badge" onclick="showLevels()">7</div>
+                    <div class="level-badge" onclick="showLevels()">8</div>
                 </div>
 
                 <div style="margin-top: 40px; text-align: center;">
@@ -841,14 +922,14 @@
                 <h1>👥 SUSPECT PROFILES - ACTUAL PHOTOS</h1>
                 
                 <div class="alert warning">
-                    ⚠ Five employees had access. ONE is the hacker.
+                    ⚠ Eight employees had access. ONE is the hacker.
                     <br>Use cipher decryption to collect evidence and eliminate suspects.
                 </div>
 
                 <div class="suspect-grid">
             `;
 
-            for (let i = 0; i < 5; i++) {
+            for (let i = 0; i < 8; i++) {
                 const char = characters[i];
                 const isEliminated = gameState.eliminatedSuspects.includes(i);
                 
@@ -896,7 +977,7 @@
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0;">
             `;
 
-            for (let i = 0; i < 4; i++) {
+            for (let i = 0; i < 7; i++) {
                 const level = levels[i];
                 const isCompleted = gameState.completedLevels.includes(i);
                 const canAccess = i === 0 || gameState.completedLevels.includes(i - 1);
@@ -937,11 +1018,11 @@
                 `;
             }
 
-            const canAccessMega = gameState.completedLevels.length === 4;
+            const canAccessMega = gameState.completedLevels.length === 7;
 
             content += `
                     <div style="background: ${canAccessMega ? 'rgba(255, 0, 0, 0.1)' : 'rgba(100, 100, 100, 0.1)'}; border: 3px solid ${canAccessMega ? '#ff0000' : '#666666'}; border-radius: 5px; padding: 20px; grid-column: 1 / -1;">
-                        <div style="font-size: 24px; font-weight: bold; margin-bottom: 10px; color: #ff0000; text-shadow: 0 0 10px #ff0000;">🔓 MEGA CIPHER - LEVEL 5</div>
+                        <div style="font-size: 24px; font-weight: bold; margin-bottom: 10px; color: #ff0000; text-shadow: 0 0 10px #ff0000;">🔓 MEGA CIPHER - LEVEL 8</div>
                         <div style="font-size: 16px; margin-bottom: 15px; color: #ff6600;">The Final Challenge - Reveals the Hacker</div>
                         <div style="font-size: 13px; margin-bottom: 20px; color: rgba(255, 100, 0, 0.7);">
                             A final evidence-based puzzle. Solving this reveals the hacker's true identity.
@@ -950,7 +1031,7 @@
                         ${canAccessMega ? `
                             <button class="btn" onclick="showMegaPuzzle()" style="width: 100%; background: rgba(255, 0, 0, 0.2); border: 2px solid #ff0000; color: #ff0000;">UNLOCK MEGA CIPHER</button>
                         ` : `
-                            <div style="color: #888888; text-align: center; padding: 10px;">LOCKED - Complete all 4 levels</div>
+                            <div style="color: #888888; text-align: center; padding: 10px;">LOCKED - Complete all 7 levels</div>
                         `}
                     </div>
             `;
@@ -1010,7 +1091,13 @@
                 
                 "<strong>Atbash:</strong> A↔Z, B↔Y, C↔X, etc.<br>Each letter maps to opposite position.<br>Apply reverse mapping to every letter.",
                 
-                "<strong>Timeline Analysis:</strong> Read the error message carefully. Then navigate to the TIMELINE or INVESTIGATION tab to find the missing information."
+                "<strong>Timeline Analysis:</strong> Read the error message carefully. Then navigate to the TIMELINE or INVESTIGATION tab to find the missing information.",
+                
+                "<strong>Binary Encoding:</strong> Each group of 8 digits maps to a single letter in ASCII. Use an online converter or translate manually.",
+                
+                "<strong>Hexadecimal Decoder:</strong> Base-16 numbers. Each pair maps to one text character in ASCII. '53' is 'S'.",
+                
+                "<strong>Morse Code:</strong> Translate dots and dashes into letters. '-...' is B, '.-' is A, and so on."
             ];
             return helps[levelIndex];
         }
@@ -1096,21 +1183,21 @@
             const input = document.getElementById('passwordInput').value.toUpperCase().replace(/\s/g, '');
             const feedback = document.getElementById('passwordFeedback');
 
-            if (currentPasswordChallenge.level === 5) {
-                if (input === "HOLOMEDIPROXLUNA") {
+            if (currentPasswordChallenge.level === 8) {
+                if (input === "HOLOMEDIPROXLUNAELEVLOADCLOU") {
                     feedback.innerHTML = '<div class="alert success">✓ MEGA CIPHER SOLVED! HACKER IDENTIFIED!</div>';
                     
-                    if (!gameState.completedLevels.includes(4)) {
-                        gameState.completedLevels.push(4);
-                        gameState.levelTimes[4] = new Date();
+                    if (!gameState.completedLevels.includes(7)) {
+                        gameState.completedLevels.push(7);
+                        gameState.levelTimes[7] = new Date();
                         
-                        let hints = gameState.hintsUsed[4] || 0;
+                        let hints = gameState.hintsUsed[7] || 0;
                         let points = 50; // Special 50 points for mega puzzle
                         if (hints > 0) points -= 10;
                         if (hints > 1) points -= 10;
                         if (hints > 2) points -= 10;
                         if (hints > 3) points -= 3;
-                        gameState.levelPoints[4] = Math.max(0, points);
+                        gameState.levelPoints[7] = Math.max(0, points);
                     }
                     
                     setTimeout(revealHacker, 800);
@@ -1267,10 +1354,10 @@
         }
 
         function showMegaPuzzle() {
-            if (gameState.completedLevels.length < 4) {
+            if (gameState.completedLevels.length < 7) {
                 document.getElementById('contentArea').innerHTML = `
                     <div class="alert error">
-                        ✗ Complete all 4 cipher levels first!
+                        ✗ Complete all 7 cipher levels first!
                     </div>
                 `;
                 return;
@@ -1300,14 +1387,14 @@
                     <div style="background: rgba(0, 255, 0, 0.05); padding: 15px; border-left: 4px solid #00ff00; border-radius: 3px; margin-bottom: 20px; text-align: left; font-size: 13px;">
                         <strong>Instructions:</strong><br>
                         ✓ Extract a key word from each piece of revealed evidence.<br>
-                        ✓ Combine them in sequence (Level 1 to 4)<br><br>
+                        ✓ Combine them in sequence (Level 1 to 7)<br><br>
                         <strong>Combine them correctly to reveal the hacker!</strong>
                     </div>
 
                     <div style="background: rgba(255, 165, 0, 0.1); padding: 15px; border-left: 4px solid #ffa500; border-radius: 3px; text-align: left; font-size: 12px;">
                         <strong style="color: #ffa500;">SOLVING HINTS:</strong><br><br>
                         Look at the clues revealed when each file was decrypted.<br>
-                        Length: 16 characters
+                        Length: 28 characters
                     </div>
                 </div>
 
@@ -1323,17 +1410,17 @@
 
         function openMegaChallenge() {
             currentPasswordChallenge = {
-                level: 5,
-                password: "HOLOMEDIPROXLUNA",
+                level: 8,
+                password: "HOLOMEDIPROXLUNAELEVLOADCLOU",
                 levelData: {
                     hint1: "This puzzle is about the evidence, not the passwords.",
                     hint2: "Each cleared suspect has one key piece of proof.",
                     hint3: "Extract one important keyword from each alibi.",
-                    hint4: "Each word starts with: HOLO… MED… PROX… LUNA…"
+                    hint4: "Each word starts with: HOLO… MED… PROX… LUNA… ELEV… LOAD… CLOU…"
                 },
                 hintStage: 0,
                 title: "MEGA CIPHER - HACKER IDENTIFICATION",
-                cipherText: "H _ _ _ | M _ _ _ | P _ _ _ | L _ _ _",
+                cipherText: "H_ _ _ | M_ _ _ | P_ _ _ | L_ _ _ | E _ _ _ | L _ _ _ | C _ _ _",
                 cipherType: "Evidence-Puzzle"
             };
 
@@ -1350,14 +1437,14 @@
                 
                 <div style="text-align: left; margin: 20px 0; padding: 15px; background: rgba(0, 255, 0, 0.05); border: 1px solid #00ff00; border-radius: 3px; font-size: 13px;">
                     <strong style="color: #00ffff;">To Decrypt:</strong><br><br>
-                    Extract the key truth from each piece of evidence (Levels 1-4).<br><br>
-                    The answer will be the 16-character combination.
+                    Extract the key truth from each piece of evidence (Levels 1-7).<br><br>
+                    The answer will be the 28-character combination.
                 </div>
             `;
 
             document.getElementById('passwordFeedback').innerHTML = '';
             document.getElementById('passwordInput').value = '';
-            document.getElementById('passwordInput').placeholder = 'Enter hacker identification (16 chars)...';
+            document.getElementById('passwordInput').placeholder = 'Enter hacker identification (28 chars)...';
             document.getElementById('passwordInput').focus();
             document.getElementById('actionButtons').setAttribute('style', 'display: block !important; margin-top: 20px;');
             document.getElementById('nextLevelContainer').setAttribute('style', 'display: none !important; margin-top: 20px;');
@@ -1444,15 +1531,15 @@
             let currentTime = new Date();
             let totalElapsedMs = currentTime - gameState.startTime;
             
-            if(gameState.completedLevels.includes(4)) { // Changed from 5 to 4 for 0-indexed levels
-                 totalElapsedMs = gameState.levelTimes[4] - gameState.startTime; // Changed from 5 to 4
+            if(gameState.completedLevels.includes(7)) {
+                 totalElapsedMs = gameState.levelTimes[7] - gameState.startTime;
             }
             
             let totalElapsedMins = Math.floor(totalElapsedMs / 60000);
             let totalElapsedSecs = Math.floor((totalElapsedMs % 60000) / 1000);
 
-            // Draw each level's scorecard (0 to 3 for standard levels, 4 for mega cipher)
-            for (let i = 0; i <= 4; i++) {
+            // Draw each level's scorecard (0 to 6 for standard levels, 7 for mega cipher)
+            for (let i = 0; i <= 7; i++) {
                 if (gameState.completedLevels.includes(i)) {
                     let points = gameState.levelPoints[i] || 0;
                     totalPoints += points;
@@ -1473,7 +1560,7 @@
                     displayRows += `
                         <div style="background: rgba(0, 255, 0, 0.05); border-left: 4px solid #00ff00; padding: 15px; margin-bottom: 10px; display: flex; justify-content: space-between;">
                             <div>
-                                <strong style="color: #00ff00;">${i === 4 ? 'MEGA CIPHER' : 'LEVEL ' + (i + 1)}</strong><br>
+                                <strong style="color: #00ff00;">${i === 7 ? 'MEGA CIPHER' : 'LEVEL ' + (i + 1)}</strong><br>
                                 <span style="font-size: 12px; color: #ffff00;">${numHintsStr}</span>
                             </div>
                             <div style="text-align: right;">
@@ -1485,7 +1572,7 @@
                 } else {
                     displayRows += `
                         <div style="background: rgba(255, 255, 255, 0.05); border-left: 4px solid #555; padding: 15px; margin-bottom: 10px; display: flex; justify-content: space-between; color: #555;">
-                            <div><strong>${i === 4 ? 'MEGA CIPHER' : 'LEVEL ' + (i + 1)}</strong></div>
+                            <div><strong>${i === 7 ? 'MEGA CIPHER' : 'LEVEL ' + (i + 1)}</strong></div>
                             <div>LOCKED</div>
                         </div>
                     `;

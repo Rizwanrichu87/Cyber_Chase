@@ -6,10 +6,10 @@ A browser-based interactive mystery game where players must use cryptography and
 
 Your company's main server has been compromised. A sophisticated attacker has infiltrated your network, extracted gigabytes of data, installed a backdoor, and encrypted the system logs. 
 
-You have **5 suspects**. Only **ONE** of them is the hacker.
+You have **8 suspects**. Only **ONE** of them is the hacker.
 
 Your mission is to:
-1. Crack 4 encrypted files using classic ciphers (ROT13, Caesar, Atbash, Vigenère).
+1. Crack 7 encrypted files using classic ciphers, encoding standards, and communication protocols.
 2. Gather evidence to eliminate suspects one by one.
 3. Solve the Final Mega Cipher to reveal the true identity of the attacker!
 

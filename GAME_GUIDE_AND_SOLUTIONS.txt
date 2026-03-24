@@ -1,6 +1,6 @@
 ╔══════════════════════════════════════════════════════════════════════════════╗
 ║                  OPERATION: NEON SHADOW - COMPLETE GAME GUIDE                    ║
-║                    Server Hack Mystery - 5 Levels Challenge                  ║
+║                    Server Hack Mystery - 8 Levels Challenge                  ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
 🎬 STORYLINE OVERVIEW
@@ -8,11 +8,11 @@
 
 INCIDENT: Corporate server hack on March 17, 2026 at 002:47 AM standard time
 SCOPE: Genesis AI source code from quantum vault compromised
-INVESTIGATION: Identify the hacker among 5 employees
+INVESTIGATION: Identify the hacker among 8 employees
 TWIST: The ignored executive IS the actual corporate spy!
 
 
-🕵️ CHARACTER PROFILES (5 SUSPECTS)
+🕵️ CHARACTER PROFILES (8 SUSPECTS)
 ═══════════════════════════════════════════════════════════════════════════════
 
 1. ELIAS VANCE
@@ -44,7 +44,7 @@ TWIST: The ignored executive IS the actual corporate spy!
    ├─ Department: Public Relations
    ├─ User ID: pr_dir
    ├─ Description: Elegant and extremely persuasive. Not technical at all.
-   ├─ Revealed In: MEGA PUZZLE (LEVEL 5)
+   ├─ Revealed In: MEGA PUZZLE (LEVEL 8)
    └─ Final Evidence: She used social engineering to have security bypassed on executive orders
 
 5. KAELEN CROSS
@@ -54,6 +54,30 @@ TWIST: The ignored executive IS the actual corporate spy!
    ├─ Description: Maintains the cooling systems for the quantum cores.
    ├─ Eliminated In: LEVEL 4
    └─ Elimination Reason: He was physically stationed at off-world data center Delta-9
+
+6. JAXON REED
+   ├─ Role: Network Engineer
+   ├─ Department: Infrastructure
+   ├─ User ID: net_eng
+   ├─ Description: Handles physical routing and switch configurations.
+   ├─ Eliminated In: LEVEL 5
+   └─ Elimination Reason: Trapped in Elevator B during the breach window.
+
+7. SILAS VOSS
+   ├─ Role: Hardware Architect
+   ├─ Department: Hardware
+   ├─ User ID: hw_arch
+   ├─ Description: Designs the custom server blades.
+   ├─ Eliminated In: LEVEL 6
+   └─ Elimination Reason: Video shows him at the loading dock receiving servers.
+
+8. ELARA QUINN
+   ├─ Role: Cloud Operations Lead
+   ├─ Department: Cloud Ops
+   ├─ User ID: cloud_lead
+   ├─ Description: Manages the AWS instances.
+   ├─ Eliminated In: LEVEL 7
+   └─ Elimination Reason: Running authorized stress test 300 miles away.
 
 
 ⏰ BREACH TIMELINE
@@ -131,7 +155,34 @@ LEVEL 4: PERIMETER SHIELDS
 └─ Suspect Cleared: KAELEN CROSS
 
 
-LEVEL 5: MEGA PUZZLE (FINAL CHALLENGE)
+LEVEL 5: ROUTING PROTOCOLS
+├─ File Name: packet_headers.enc
+├─ Password: GHOSTNODE
+│  └─ How to solve: Binary to ASCII text.
+│                   Answer: GHOSTNODE
+├─ Clue Unlocked: Investigation reveals VLAN isolation and trapped in elevator.
+└─ Suspect Cleared: JAXON REED
+
+
+LEVEL 6: MEMORY DUMP
+├─ File Name: memory_dump.enc
+├─ Password: SYSTEMFAIL
+│  └─ How to solve: Hexadecimal to ASCII text.
+│                   Answer: SYSTEMFAIL
+├─ Clue Unlocked: Security footage shows suspect at loading dock.
+└─ Suspect Cleared: SILAS VOSS
+
+
+LEVEL 7: EMERGENCY COMMS
+├─ File Name: backup_comms.enc
+├─ Password: BACKDOOR
+│  └─ How to solve: Morse code translation.
+│                   Answer: BACKDOOR
+├─ Clue Unlocked: Authorized stress test 300 miles away.
+└─ Suspect Cleared: ELARA QUINN
+
+
+LEVEL 8: MEGA PUZZLE (FINAL CHALLENGE)
 ├─ This level requires data from ALL previous levels!
 │
 ├─ THE PUZZLE:
@@ -139,10 +190,13 @@ LEVEL 5: MEGA PUZZLE (FINAL CHALLENGE)
 │  ├─ From Level 2 (ELIAS VANCE): Extract key truth from evidence → MEDICAL
 │  ├─ From Level 3 (DR. ARIS THORNE): Extract key truth from evidence → PROXY
 │  ├─ From Level 4 (KAELEN CROSS): Extract key truth from evidence → LUNAR
+│  ├─ From Level 5 (JAXON REED): Extract key truth from evidence → ELEVATOR
+│  ├─ From Level 6 (SILAS VOSS): Extract key truth from evidence → LOADING
+│  ├─ From Level 7 (ELARA QUINN): Extract key truth from evidence → CLOUD
 │  │
-│  └─ Combine in order: HOLO + MEDI + PROX + LUNA = HOLOMEDIPROXLUNA
+│  └─ Combine in order: HOLO + MEDI + PROX + LUNA + ELEV + LOAD + CLOU = HOLOMEDIPROXLUNAELEVLOADCLOU
 │
-├─ FINAL PASSWORD: HOLOMEDIPROXLUNA
+├─ FINAL PASSWORD: HOLOMEDIPROXLUNAELEVLOADCLOU
 │
 └─ THE TWIST: After eliminating everyone else... LYRA VANCE (PR Director) is revealed as the corporate spy!
 
@@ -174,7 +228,7 @@ PROGRESSION:
 - Players must complete Levels 1-4 in order
 - Each level reveals new suspect information
 - Each clue eliminates one suspect from suspicion
-- After all 4 levels complete, Level 5 (Mega Puzzle) unlocks
+- After all 7 levels complete, Level 8 (Mega Puzzle) unlocks
 
 TWIST ENDING:
 - Throughout the game, players are systematically eliminating suspects
@@ -188,7 +242,10 @@ DIFFICULTY SCALING:
 - Level 2: Slightly harder (Software name + year)
 - Level 3: Medium (Tech term + architecture)
 - Level 4: Harder (Three components to combine)
-- Level 5: Hardest (Meta-puzzle requiring all previous answers)
+- Level 5: Easy-Medium (Binary to ASCII)
+- Level 6: Medium (Hex to ASCII)
+- Level 7: Easy (Morse code translation)
+- Level 8: Hardest (Meta-puzzle requiring all previous answers)
 
 
 🎬 MOVIE-LIKE FEATURES IMPLEMENTED
@@ -246,9 +303,13 @@ Level 4: ZEROEXPLOIT
   - Share this if participants struggle
   - Hint: Look closely at the 03:05 AM event in the Breach Timeline.
 
-Level 5 (MEGA): HOLOMEDIPROXLUNA
+Level 5: GHOSTNODE
+Level 6: SYSTEMFAIL
+Level 7: BACKDOOR
+
+Level 8 (MEGA): HOLOMEDIPROXLUNAELEVLOADCLOU
   - This should be discovered by participants through the puzzle
-  - If they need help: Have them extract the key alibi truth from each of the 4 evidence logs (HOLOCAST, MEDICAL, PROXY, LUNAR).
+  - If they need help: Have them extract the key alibi truth from each of the 7 evidence logs.
 
 
 🔧 TECHNICAL SETUP
@@ -291,27 +352,33 @@ attacker managed to:
 - Partially cover their tracks
 
 THE INVESTIGATION:
-You have 5 suspects. All employees. All have different reasons they couldn't
+You have 8 suspects. All employees. All have different reasons they couldn't
 have done it... or do they?
 
-LEVEL 1: Access logs reveal suspicious IP activity. Marcus Chen had logged in
-from outside the office. But his gym's security cameras show he was there.
-Marcus is cleared.
+LEVEL 1: Access logs reveal suspicious IP activity. Nova Black was suspected,
+but she was livestreaming a keynote address during the exact time. Nova is cleared.
 
-LEVEL 2: Email archives show Paula Rodriguez's out-of-office status for Brazil.
-Visa stamps and airline records confirm. Paula is cleared.
+LEVEL 2: Elias Vance's override was used. But medical records show
+he was undergoing neural surgery at the time. Elias is cleared.
 
-LEVEL 3: System logs show commands from Devon Patel's workstation. But airport
-records show they were boarding a flight when the breach occurred.
-Devon is cleared.
+LEVEL 3: System logs show commands from Aris Thorne's workstation. External
+records show his credentials were brute-forced prior. Aris is cleared.
 
-LEVEL 4: Firewall records show the breach originated from inside the network.
-Iris Wagner was at work the whole time, witnessed by 8 colleagues.
-Iris is cleared.
+LEVEL 4: Evidence of physical bypass. Kaelen Cross was the only tech, but
+transport manifests prove he was off-world at Delta-9. Kaelen is cleared.
 
-LEVEL 5: THE TWIST.
+LEVEL 5: Network headers encoded. Jaxon Reed had network access, but building
+logs show he was trapped in an elevator. Jaxon is cleared.
+
+LEVEL 6: Memory dump reveals anomalies. Silas Voss had hardware access, but
+cam footage shows him at the loading dock. Silas is cleared.
+
+LEVEL 7: Emergency comms translated. Elara Quinn managed cloud ops, but was 
+running a stress test 300 miles away. Elara is cleared.
+
+LEVEL 8: THE TWIST.
 All suspects have alibis. All seem innocent. But one person remains:
-LYRA VANCE. The quiet junior developer nobody paid attention to.
+LYRA VANCE. The quiet PR director nobody suspected.
 
 Server logs reveal they were logged in TWICE at the same time—impossible unless
 they used advanced session hijacking techniques. Further investigation reveals:
@@ -334,8 +401,11 @@ TIMING EXPECTATIONS:
 - Level 2: 5-10 minutes (easy)
 - Level 3: 10-15 minutes (medium)
 - Level 4: 10-15 minutes (medium)  
-- Level 5 (Mega Puzzle): 15-30 minutes (hard)
-- Total: 45 minutes to 1.5 hours
+- Level 5: 5-10 minutes (easy-medium)
+- Level 6: 5-10 minutes (medium)
+- Level 7: 5-10 minutes (easy)
+- Level 8 (Mega Puzzle): 15-30 minutes (hard)
+- Total: 60 minutes to 2 hours
 
 DIFFICULTY SETTINGS:
 - Provide hints if participants are stuck for more than 10 minutes

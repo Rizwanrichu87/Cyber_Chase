@@ -18,7 +18,7 @@
                     ╔═══════════════════════════════╗
                     ║  HOME PAGE                    ║
                     ║  - Case Overview              ║
-                    ║  - 5 Level Progress Tracker   ║
+                    ║  - 8 Level Progress Tracker   ║
                     ║  - Navigation Menu            ║
                     ╚═══════════════════════════════╝
                                   ↓
@@ -32,7 +32,7 @@
                                   ↓
                     ╔═══════════════════════════════╗
                     ║  CHALLENGE LEVELS             ║
-                    ║  (4 Encrypted Files)          ║
+                    ║  (7 Encrypted Files)          ║
                     ║  (1 Mega Puzzle)              ║
                     ╚═══════════════════════════════╝
                                   ↓
@@ -116,10 +116,63 @@ LEVEL 4
          ↓
     Level 4 Complete
          ↓
-    [LEVEL 5 UNLOCKED - MEGA PUZZLE]
+    [LEVEL 5 UNLOCKED]
+
+LEVEL 5
+┌────────────────────────────────────────────┐
+│ FILE: packet_headers.enc                   │
+│ PASSWORD: GHOSTNODE                        │
+│ HINT: Binary to ASCII                      │
+├────────────────────────────────────────────┤
+│ ✓ CORRECT                                  │
+│ ↓                                          │
+│ CLUE REVEALED: Jaxon trapped in elevator   │
+│ ↓                                          │
+│ SUSPECT CLEARED: Jaxon Reed ✓              │
+└────────────────────────────────────────────┘
+         ↓
+    Level 5 Complete
+         ↓
+    [LEVEL 6 UNLOCKED]
 
 
-LEVEL 5 (MEGA PUZZLE)
+LEVEL 6
+┌────────────────────────────────────────────┐
+│ FILE: memory_dump.enc                      │
+│ PASSWORD: SYSTEMFAIL                       │
+│ HINT: Hexadecimal to ASCII                 │
+├────────────────────────────────────────────┤
+│ ✓ CORRECT                                  │
+│ ↓                                          │
+│ CLUE REVEALED: Silas at loading dock       │
+│ ↓                                          │
+│ SUSPECT CLEARED: Silas Voss ✓              │
+└────────────────────────────────────────────┘
+         ↓
+    Level 6 Complete
+         ↓
+    [LEVEL 7 UNLOCKED]
+
+
+LEVEL 7
+┌────────────────────────────────────────────┐
+│ FILE: backup_comms.enc                     │
+│ PASSWORD: BACKDOOR                         │
+│ HINT: Morse code translation               │
+├────────────────────────────────────────────┤
+│ ✓ CORRECT                                  │
+│ ↓                                          │
+│ CLUE REVEALED: Elara at AWS stress test    │
+│ ↓                                          │
+│ SUSPECT CLEARED: Elara Quinn ✓             │
+└────────────────────────────────────────────┘
+         ↓
+    Level 7 Complete
+         ↓
+    [LEVEL 8 UNLOCKED - MEGA PUZZLE]
+
+
+LEVEL 8 (MEGA PUZZLE)
 ┌────────────────────────────────────────────┐
 │ META-PUZZLE CHALLENGE                      │
 │ Extract key truth from evidence logs:      │
@@ -127,7 +180,10 @@ LEVEL 5 (MEGA PUZZLE)
 │ L2 Evidence → MEDICAL                      │
 │ L3 Evidence → PROXY                        │
 │ L4 Evidence → LUNAR                        │
-│ Combine: HOLOMEDIPROXLUNA                      │
+│ L5 Evidence → ELEVATOR                     │
+│ L6 Evidence → LOADING                      │
+│ L7 Evidence → CLOUD                        │
+│ Combine: HOLOMEDIPROXLUNAELEVLOADCLOU      │
 ├────────────────────────────────────────────┤
 │ ✓ CORRECT                                  │
 │ ↓                                          │
@@ -145,58 +201,112 @@ LEVEL 5 (MEGA PUZZLE)
 📈 SUSPECT ELIMINATION CHART
 ═══════════════════════════════════════════════════════════════════════════════
 
-START: 5 SUSPECTS
+START: 8 SUSPECTS
 ┌─────────────────────────────┐
 │ 1. Elias Vance              │
 │ 2. Dr. Aris Thorne          │
 │ 3. Nova Black               │
 │ 4. Lyra Vance               │
 │ 5. Kaelen Cross             │
+│ 6. Jaxon Reed               │
+│ 7. Silas Voss               │
+│ 8. Elara Quinn              │
 └─────────────────────────────┘
 
-AFTER LEVEL 1: 4 REMAINING
+AFTER LEVEL 1: 7 REMAINING
 ┌─────────────────────────────┐
 │ 1. Elias Vance              │
 │ 2. Dr. Aris Thorne          │
 │ ✓ Nova Black [CLEARED]      │
 │ 4. Lyra Vance               │
 │ 5. Kaelen Cross             │
+│ 6. Jaxon Reed               │
+│ 7. Silas Voss               │
+│ 8. Elara Quinn              │
 └─────────────────────────────┘
 
-AFTER LEVEL 2: 3 REMAINING
+AFTER LEVEL 2: 6 REMAINING
 ┌─────────────────────────────┐
 │ ✓ Elias Vance [CLEARED]     │
 │ 2. Dr. Aris Thorne          │
 │ ✓ Nova Black [CLEARED]      │
 │ 4. Lyra Vance               │
 │ 5. Kaelen Cross             │
+│ 6. Jaxon Reed               │
+│ 7. Silas Voss               │
+│ 8. Elara Quinn              │
 └─────────────────────────────┘
 
-AFTER LEVEL 3: 2 REMAINING
+AFTER LEVEL 3: 5 REMAINING
 ┌─────────────────────────────┐
 │ ✓ Elias Vance [CLEARED]     │
 │ ✓ Dr. Aris Thorne [CLEARED] │
 │ ✓ Nova Black [CLEARED]      │
 │ 4. Lyra Vance               │
 │ 5. Kaelen Cross             │
+│ 6. Jaxon Reed               │
+│ 7. Silas Voss               │
+│ 8. Elara Quinn              │
 └─────────────────────────────┘
 
-AFTER LEVEL 4: 1 REMAINING
+AFTER LEVEL 4: 4 REMAINING
 ┌─────────────────────────────┐
 │ ✓ Elias Vance [CLEARED]     │
 │ ✓ Dr. Aris Thorne [CLEARED] │
 │ ✓ Nova Black [CLEARED]      │
 │ 4. Lyra Vance               │
 │ ✓ Kaelen Cross [CLEARED]    │
+│ 6. Jaxon Reed               │
+│ 7. Silas Voss               │
+│ 8. Elara Quinn              │
 └─────────────────────────────┘
 
-AFTER LEVEL 5: REVEALED
+AFTER LEVEL 5: 3 REMAINING
+┌─────────────────────────────┐
+│ ✓ Elias Vance [CLEARED]     │
+│ ✓ Dr. Aris Thorne [CLEARED] │
+│ ✓ Nova Black [CLEARED]      │
+│ 4. Lyra Vance               │
+│ ✓ Kaelen Cross [CLEARED]    │
+│ ✓ Jaxon Reed [CLEARED]      │
+│ 7. Silas Voss               │
+│ 8. Elara Quinn              │
+└─────────────────────────────┘
+
+AFTER LEVEL 6: 2 REMAINING
+┌─────────────────────────────┐
+│ ✓ Elias Vance [CLEARED]     │
+│ ✓ Dr. Aris Thorne [CLEARED] │
+│ ✓ Nova Black [CLEARED]      │
+│ 4. Lyra Vance               │
+│ ✓ Kaelen Cross [CLEARED]    │
+│ ✓ Jaxon Reed [CLEARED]      │
+│ ✓ Silas Voss [CLEARED]      │
+│ 8. Elara Quinn              │
+└─────────────────────────────┘
+
+AFTER LEVEL 7: 1 REMAINING
+┌─────────────────────────────┐
+│ ✓ Elias Vance [CLEARED]     │
+│ ✓ Dr. Aris Thorne [CLEARED] │
+│ ✓ Nova Black [CLEARED]      │
+│ 4. Lyra Vance               │
+│ ✓ Kaelen Cross [CLEARED]    │
+│ ✓ Jaxon Reed [CLEARED]      │
+│ ✓ Silas Voss [CLEARED]      │
+│ ✓ Elara Quinn [CLEARED]     │
+└─────────────────────────────┘
+
+AFTER LEVEL 8: REVEALED
 ┌─────────────────────────────┐
 │ ✓ Elias Vance [CLEARED]     │
 │ ✓ Dr. Aris Thorne [CLEARED] │
 │ ✓ Nova Black [CLEARED]      │
 │ ⚠ Lyra Vance [GUILTY]       │
 │ ✓ Kaelen Cross [CLEARED]    │
+│ ✓ Jaxon Reed [CLEARED]      │
+│ ✓ Silas Voss [CLEARED]      │
+│ ✓ Elara Quinn [CLEARED]     │
 └─────────────────────────────┘
 
 
@@ -221,20 +331,29 @@ AFTER LEVEL 5: REVEALED
     │  ├─ Elias Vance (Head of Security) [CLEARED]
     │  ├─ Dr. Aris Thorne (Chief Data Scientist) [CLEARED]
     │  ├─ Kaelen Cross (Server Tech) [CLEARED]
-    │  └─ Lyra Vance (PR Director) [CLEARED/GUILTY]
+    │  ├─ Lyra Vance (PR Director) [CLEARED/GUILTY]
+    │  ├─ Jaxon Reed (Network Engineer) [CLEARED]
+    │  ├─ Silas Voss (Hardware Architect) [CLEARED]
+    │  └─ Elara Quinn (Cloud Ops Lead) [CLEARED]
     │
     🎯 CHALLENGE LEVELS
     │  ├─ Level 1: Access Logs [LOCKED/COMPLETED]
     │  ├─ Level 2: Email Archives [LOCKED/COMPLETED]
     │  ├─ Level 3: System Logs [LOCKED/COMPLETED]
     │  ├─ Level 4: Perimeter Shields [LOCKED/COMPLETED]
-    │  └─ Level 5: Mega Puzzle [LOCKED/COMPLETED]
+    │  ├─ Level 5: Routing Protocols [LOCKED/COMPLETED]
+    │  ├─ Level 6: Memory Dump [LOCKED/COMPLETED]
+    │  ├─ Level 7: Emergency Comms [LOCKED/COMPLETED]
+    │  └─ Level 8: Mega Puzzle [LOCKED/COMPLETED]
     │
     📋 EVIDENCE
     │  ├─ Level 1 Evidence
     │  ├─ Level 2 Evidence
     │  ├─ Level 3 Evidence
     │  ├─ Level 4 Evidence
+    │  ├─ Level 5 Evidence
+    │  ├─ Level 6 Evidence
+    │  ├─ Level 7 Evidence
     │  └─ Evidence Timeline
     │
     ⏱ TIMELINE
@@ -246,7 +365,7 @@ AFTER LEVEL 5: REVEALED
     │  └─ 03:47 AM - Detection
     │
     🔐 MEGA PUZZLE
-    └─ Final Challenge (Unlocks after Level 4)
+    └─ Final Challenge (Unlocks after Level 7)
 
 
 🔓 PASSWORD PUZZLE HIERARCHY
@@ -256,20 +375,23 @@ AFTER LEVEL 5: REVEALED
                     
     ⭐ EASY
     ├─ Level 1: QUANTUMCORE (SSH + 47)
-    └─ Level 2: GENESISVIRUS (Software + Year)
+    ├─ Level 2: GENESISVIRUS (Software + Year)
+    └─ Level 7: BACKDOOR (Morse Code)
     
     ⭐⭐⭐ MEDIUM
     ├─ Level 3: CYBERDEFENSE (OS + Architecture)
-    └─ Level 4: ZEROEXPLOIT (Timeline Analysis)
+    ├─ Level 4: ZEROEXPLOIT (Timeline Analysis)
+    ├─ Level 5: GHOSTNODE (Binary to ASCII)
+    └─ Level 6: SYSTEMFAIL (Hex to ASCII)
     
     ⭐⭐⭐⭐⭐ MEGA PUZZLE
-    └─ Level 5: HOLOMEDIPROXLUNA (Evidence-puzzle)
+    └─ Level 8: HOLOMEDIPROXLUNAELEVLOADCLOU (Evidence-puzzle)
 
 
 🔑 META-PUZZLE SOLUTION PATH
 ═══════════════════════════════════════════════════════════════════════════════
 
-LEVEL 5 PUZZLE SOLVING:
+LEVEL 8 PUZZLE SOLVING:
 
 Step 1: Review Level 1 Evidence
         NOVA BLACK's alibi
@@ -299,10 +421,31 @@ Step 4: Review Level 4 Evidence
         ↓
         LUNAR
         
-Step 5: Combine in order (first 4 letters)
-        HOLO + MEDI + PROX + LUNA
+Step 5: Review Level 5 Evidence
+        JAXON REED's alibi
         ↓
-        HOLOMEDIPROXLUNA
+        Extract key truth
+        ↓
+        ELEVATOR
+        
+Step 6: Review Level 6 Evidence
+        SILAS VOSS's alibi
+        ↓
+        Extract key truth
+        ↓
+        LOADING
+        
+Step 7: Review Level 7 Evidence
+        ELARA QUINN's alibi
+        ↓
+        Extract key truth
+        ↓
+        CLOUD
+        
+Step 8: Combine in order (first 4 letters)
+        HOLO + MEDI + PROX + LUNA + ELEV + LOAD + CLOU
+        ↓
+        HOLOMEDIPROXLUNAELEVLOADCLOU
         
 Step 6: Enter password
         ↓
@@ -353,14 +496,17 @@ ACT I: EXPOSITION
 └─ Setup: 5 suspects introduced
 └─ Stakes: Company's data, security at risk
 
-ACT II: INVESTIGATION (Levels 1-4)
+ACT II: INVESTIGATION (Levels 1-7)
 ├─ Clue 1: Nova Black seems suspicious (but cleared)
 ├─ Clue 2: Elias Vance pattern found (but cleared)
 ├─ Clue 3: Dr. Aris Thorne appears guilty (but cleared)
 ├─ Clue 4: Kaelen Cross is present (but cleared)
+├─ Clue 5: Jaxon Reed had network access (but cleared)
+├─ Clue 6: Silas Voss had hardware access (but cleared)
+├─ Clue 7: Elara Quinn was managing cloud ops (but cleared)
 └─ Tension: Everyone has alibis, who is guilty?
 
-ACT III: CLIMAX (Level 5)
+ACT III: CLIMAX (Level 8)
 └─ Final puzzle reveals duplicate login sessions
 └─ Connection: Only Lyra Vance could do this
 
